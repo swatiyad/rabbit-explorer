@@ -1,0 +1,20 @@
+@import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+    // background: url(https://tronscan.io/static/media/body_bg.0b5e1c3d.png);
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  background-color: #f6f7fa;
+
+  main {
+    flex-grow: 1;
+    // background-color: #fbfafc;
+  }
+}
+
+.logs-hash {
+  line-height: 24px !important;
+}

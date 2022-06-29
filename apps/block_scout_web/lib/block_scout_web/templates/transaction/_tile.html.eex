@@ -1,0 +1,129 @@
+<% status = transaction_status(@transaction) %>
+<% error_in_internal_tx = @transaction.has_error_in_internal_txs %>
+
+
+
+ <div class=" tile-type-<%= type_suffix(@transaction) %> fade-in <%= status_class(@transaction) %>" data-test="<%= type_suffix(@transaction) %>" data-identifier-hash="<%= @transaction.hash %>">
+
+  <div class="table-responsive">
+        <table class="table"style="width: 100%;margin-bottom: 1rem;background-color: transparent;color:none !important;">
+
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">
+                <div class="text-truncate d-flex m-2"style="width:100px;color:green;">
+                  <%= render "_link.html", transaction_hash: @transaction.hash, data_test: "address_hash_link" %>
+
+                </div>
+                </th>
+
+                <td>
+                <div class="m-1">
+                <span class="mr-2 mr-md-0 order-1" style="color:green;">
+                  <%= @transaction |> block_number() |> BlockScoutWeb.RenderHelpers.render_partial() %>
+                </span>
+                </div>
+                </td>
+
+                <td>
+                <div class="m-1">
+                <span class="mr-2 mr-md-0 order-2" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></span>
+                <%= if from_or_to_address?(@transaction, assigns[:current_address]) do %>
+                  <span class="mr-2 mr-md-0 order-0 order-md-3">
+                    <%= if @transaction.from_address_hash == assigns[:current_address].hash do %>
+                      <span data-test="transaction_type" class="badge badge-danger tile-badge">
+                        <%= gettext "OUT" %>
+                      </span>
+                    <% else %>
+                      <span data-test="transaction_type" class="badge badge-success tile-badge">
+                        <%= gettext "IN" %>
+                      </span>
+                    <% end %>
+                  </span>
+                <% end %>
+                </div>
+                </td>
+                <td>
+                <div class="m-1">
+                <span>
+                <% method_name = Transaction.get_method_name(@transaction) %>
+                  <%= if method_name do %>
+                    <%= render BlockScoutWeb.FormView, "_tag.html", text: method_name, additional_classes: ["method", "ml-1"] %>
+                  <% end %>
+                </span>
+                </div></td>
+
+                <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+                        <span>
+                              <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:from, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
+                        </span>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+                        <span>
+                            <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
+                        </span>
+                    </div>
+                </td>
+
+                  <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+                        <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
+                            <span class="tile-title">
+                              <%= value(@transaction, include_label: false) %> <%= gettext "Ether" %>
+                            </span>
+                            <span class="ml-0 ml-md-1 text-nowrap">
+                              <%= formatted_fee(@transaction, denomination: :ether, include_label: false) %> <%= gettext "TX Fee" %>
+                            </span>
+                        </span>
+                    </div>
+                </td>
+
+                  <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+                        <span>
+                        <div>
+                            <%= if error_in_internal_tx do %>
+                              <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html", text: gettext("Error in internal transactions"), additional_classes: ["color-inherit"] %>
+                            <% end %>
+                            <span class="tile-label" data-test="transaction_type">
+                              <%= transaction_display_type(@transaction) %>
+                            </span>
+                        </div>
+                        </span>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="m-1">
+                        <span class=" tile-status-label ml-2 ml-md-0 " data-test="transaction_status">
+                            <%= if status_class(@transaction) == "tile-status--pending" do %>
+                              <div class="loading-spinner-small">
+                                <span class="loading-spinner-block-1"></span>
+                                <span class="loading-spinner-block-2"></span>
+                              </div>
+                            <% end %>
+                            <%= formatted_result(status) %>
+                          </span>
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+  </div>
+
+
+</div>
+<style>
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: none !important;
+    background-color: transparent;
+}
+
+</style>

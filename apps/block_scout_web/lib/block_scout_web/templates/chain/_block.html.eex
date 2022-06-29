@@ -1,0 +1,61 @@
+<div class="col-lg-3 fade-up-blocks-chain" data-selector="chain-block" data-block-number="<%= @block.number %>" >
+  <div class=" p-3 mb-0 " >
+        <div class=" tile-type-block n-p d-flex flex-column">
+          <%= link(
+                @block,
+                class: "tile-title",
+                to: block_path(BlockScoutWeb.Endpoint, :show, @block),
+                "data-selector": "block-number"
+              ) %>
+          <div class="tileee tile-bottom-contents  mb-0" style=" border-radius: 4px;
+              border: 1px solid #dee2e6;
+              color: #6c757d;
+              -webkit-box-flex: 1;
+              -ms-flex-positive: 1;
+              flex-grow: 1;
+              font-size: 12px;
+              line-height: 1.4rem;
+              padding: 1rem;">
+            <div class="tile-transactions">
+              <span class="mr-2"><%= gettext("%{count} Transactions", count: Enum.count(@block.transactions)) %></span>
+              <span class="text-nowrap" data-from-now="<%= @block.timestamp %>"> </span>
+            </div>
+            <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
+              <div class="text-truncate">
+                <%= gettext "Miner" %>
+                <%= render BlockScoutWeb.AddressView,
+                  "_link.html",
+                  address: @block.miner,
+                  contract: false,
+                  use_custom_tooltip: false,
+                  custom_classes_tooltip: ["miner-address-tooltip"] %>
+              </div>
+            <% end %>
+            <%= if BlockScoutWeb.BlockView.show_reward?(@block.rewards) do %>
+              <div class="text-truncate " style="color:white;">
+                <%= gettext "Reward" %> <%= BlockScoutWeb.BlockView.combined_rewards_value(@block) %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+
+  </div>
+
+
+
+</div>
+
+
+<style>
+.tileee{
+      border-radius: 4px;
+    border: 1px solid #dee2e6;
+    color: #6c757d;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 12px;
+    line-height: 1.4rem;
+    padding: 1rem;
+}
+</style>

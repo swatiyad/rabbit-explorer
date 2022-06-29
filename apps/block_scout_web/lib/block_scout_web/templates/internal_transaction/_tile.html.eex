@@ -1,0 +1,87 @@
+<% error = @internal_transaction.error %>
+<div class=" tile-type-internal-transaction fade-in <%= if error, do: "tile-status--error--reason"%>" data-test="internal_transaction" data-key="<%= @internal_transaction.transaction_hash %>_<%= @internal_transaction.index %>" data-internal-transaction-transaction-hash="<%= @internal_transaction.transaction_hash %>" data-internal-transaction-index="<%= @internal_transaction.index %>">
+
+    <div class="table-responsive">
+        <table class="table"style="width: 100%;margin-bottom: 1rem;background-color: transparent;color:none !important;">
+
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">
+                    <div class="text-truncate d-flex m-2"style="width:100px;color:green;">
+                       <%= render BlockScoutWeb.TransactionView, "_link.html", transaction_hash: @internal_transaction.transaction_hash %>
+                    </div>
+                </th>
+
+                <td>
+                    <div class="m-1">
+                     <span class="mr-2 mr-md-0 order-1">
+                        <%= link(
+                          gettext("%{number}", number: to_string(@internal_transaction.block_number)),
+                          to: block_path(BlockScoutWeb.Endpoint, :show, @internal_transaction.block_number)
+                        ) %>
+                    </span>
+                    </div>
+                </td>
+
+                <td>
+                  <div class="m-1">
+                    <span class="mr-2 mr-md-0 order-2" in-tile data-from-now="<%= @internal_transaction.transaction.block.timestamp %>"></span>
+                        <%= if assigns[:current_address] do %>
+                          <span class="mr-2 mr-md-0 order-0 order-md-3">
+                            <%= if assigns[:current_address].hash == @internal_transaction.from_address_hash do %>
+                              <span class="badge badge-danger tile-badge"><%= gettext "OUT" %></span>
+                            <% else %>
+                              <span class="badge badge-success tile-badge"><%= gettext "IN" %></span>
+                            <% end %>
+                          </span>
+                      <% end %>
+                  </div>
+                </td>
+
+                <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+                        <span>
+                             <%= @internal_transaction |> BlockScoutWeb.AddressView.address_partial_selector(:from, assigns[:current_address]) |> (&(if is_list(&1), do: Keyword.put(&1, :ignore_implementation_name, true), else: &1)).() |> BlockScoutWeb.RenderHelpers.render_partial() %>
+                        </span>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+                        <span>
+                           <%= @internal_transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> (&(if is_list(&1), do: Keyword.put(&1, :ignore_implementation_name, true), else: &1)).() |> BlockScoutWeb.RenderHelpers.render_partial() %>
+                        </span>
+                    </div>
+                </td>
+
+                  <td>
+                    <div class="d-flex m-1">
+                        <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
+                         <span class="tile-title">
+                          <%= BlockScoutWeb.TransactionView.value(@internal_transaction, include_label: false) %> <%= gettext "Ether" %>
+                        </span>
+                        </span>
+                    </div>
+                </td>
+
+                  <td>
+                    <div class=" d-flex m-1" style="width:100px">
+                    <span class="tile-label">
+                      <%= gettext("Internal Transaction") %>
+                    </span>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="m-1"style="width:100px">
+                        <span class="tile-status-label ml-2 ml-md-0"  data-internal-transaction-type="<%= type(@internal_transaction) %>"><%= type(@internal_transaction) %></span>
+                        <%= if error do %>
+                          <span class="tile-status-label ml-2 ml-md-0"><%= gettext "Error" %>: <%= error %></span>
+                        <% end %>
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+  </div>
+</div>
