@@ -82,6 +82,7 @@ defmodule BlockScoutWeb.WebRouter do
     end
 
     resources("/accounts", AddressController, only: [:index])
+    resources("/login", LoginController, only: [:index])
 
     resources("/tokens", TokensController, only: [:index])
 

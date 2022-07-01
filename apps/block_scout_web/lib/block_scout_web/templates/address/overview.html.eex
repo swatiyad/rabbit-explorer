@@ -32,9 +32,10 @@
           <% end %>
             <div style="background-color:#f4f4f2;">
                 <div class="p-1">
-                  <h1 class="card-title lg-card-title mb-2-desktop">
+                  <h1 class="card-title lg-card-title mb-2-desktop mt-3">
+                  <span class="overview-title-buttons float-left">
                     <h3 class="address-detail-hash-title mb-4 <%= if BlockScoutWeb.AddressView.contract?(@address) do %>contract-address<% end %>" data-test="address_detail_hash" style="padding-left: 20px;"><%= @address %></h3>
-
+                  </span>
                     <!-- buttons -->
                     <span class="overview-title-buttons float-right" style="padding-right: 10px;">
                       <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",

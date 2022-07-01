@@ -13,21 +13,17 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<%= gettext("Toggle navigation") %>">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
 
       <ul class="navbar-nav">
-        <%= if Application.get_env(:block_scout_web, BlockScoutWeb.WebRouter)[:enabled] do %>
-
-       <li class="nav-item dropdown">
-            <a class="nav-link topnav-nav-link dropdown-toggle" href="#" id="navbarBlocksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <span class="nav-link-icon">
-                <%= render BlockScoutWeb.IconsView, "_block_icon.html" %>
+      <div class="nav-link topnav-nav-link">
+       <span class="nav-link-icon">
+                <%= render BlockScoutWeb.IconsView, "_accounts_icon.html" %>
               </span>
-              <%= gettext("Blockchain") %>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarBlocksDropdown">
-
-      <ul class="">
+       <span><%= link("Login", to: "/login", class: "")%></span>
+       </div>
+        <%= if Application.get_env(:block_scout_web, BlockScoutWeb.WebRouter)[:enabled] do %>
           <li class="nav-item dropdown">
             <a class="nav-link topnav-nav-link dropdown-toggle" href="#" id="navbarBlocksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="nav-link-icon">
@@ -126,20 +122,22 @@
               </div>
             </li>
         <% end %>
-
-          </ul>
-          </div>
-          </li>
         <% end %>
       </ul>
       <!-- Dark mode changer -->
-      <button class="dark-mode-changer" id="dark-mode-changer">
+      <%# <button class="dark-mode-changer" id="dark-mode-changer">
         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16">
             <path fill="#9B62FF" fill-rule="evenodd" d="M14.88 11.578a.544.544 0 0 0-.599-.166 5.7 5.7 0 0 1-1.924.321c-3.259 0-5.91-2.632-5.91-5.866 0-1.947.968-3.759 2.59-4.849a.534.534 0 0 0-.225-.97A5.289 5.289 0 0 0 8.059 0C3.615 0 0 3.588 0 8s3.615 8 8.059 8c2.82 0 5.386-1.423 6.862-3.806a.533.533 0 0 0-.041-.616z"/>
         </svg>
-      </button>
+      </button> %>
 
   <%= render BlockScoutWeb.SmartContractView, "_connect_container.html" %>
+  <%= if account = assigns[:account] do %>
+      <%= if token =assigns[:token] do %>
+      <%= render BlockScoutWeb.StakesView, "_stakes_stats_item_account.html", account: @account, token: @token  %>
+
+      <%end %>
+      <%end %>
     </div>
   </div>
 </nav>
