@@ -1,561 +1,1139 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-
-.clearfix:after {
-  content: "";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  height: 0;
-}
-
-.form_wrapper {
-  background: #fff;
-  /* width: 400px; */
-  max-width: 100%;
-  padding: 25px;
-  margin: 2% auto 0;
-  position: relative;
-  z-index: 1;
- -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-  -webkit-transform-origin: 50% 0%;
-  transform-origin: 50% 0%;
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  -webkit-transition: none;
-  transition: none;
-  -webkit-animation: expand 0.8s 0.6s ease-out forwards;
-  animation: expand 0.8s 0.6s ease-out forwards;
-  opacity: 0;
-}
-.form_wrapper h2 {
-  font-size: 1.5em;
-  line-height: 1.5em;
-  margin: 0;
-}
-.form_wrapper .title_container {
-  text-align: center;
-  padding-bottom: 15px;
-}
-.form_wrapper h3 {
-  font-size: 1.1em;
-  font-weight: normal;
-  line-height: 1.5em;
-  margin: 0;
-}
-.form_wrapper label {
-  font-size: 12px;
-}
-.form_wrapper .row {
-  margin: 10px -15px;
-}
-.form_wrapper .row > div {
-  padding: 0 15px;
-  box-sizing: border-box;
-}
-.form_wrapper .col_half {
-  width: 50%;
-  float: left;
-}
-.form_wrapper .input_field {
-  position: relative;
-  margin-bottom: 20px;
-  -webkit-animation: bounce 0.6s ease-out;
-  animation: bounce 0.6s ease-out;
-}
-.form_wrapper .input_field > span {
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #333;
-  height: 100%;
-  border-right: 1px solid #cccccc;
-  text-align: center;
-  width: 30px;
-}
-.form_wrapper .input_field > span > i {
-  padding-top: 10px;
-}
-.form_wrapper .textarea_field > span > i {
-  padding-top: 10px;
-}
-.form_wrapper input[type=text], .form_wrapper input[type=email], .form_wrapper input[type=password] {
-  width: 100%;
-  padding: 8px 10px 9px 35px;
-  height: 35px;
-  border: 1px solid #cccccc;
-  box-sizing: border-box;
-  outline: none;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.form_wrapper input[type=text]:hover, .form_wrapper input[type=email]:hover, .form_wrapper input[type=password]:hover {
-  background: #fafafa;
-}
-.form_wrapper input[type=text]:focus, .form_wrapper input[type=email]:focus, .form_wrapper input[type=password]:focus {
-  -webkit-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
-  -moz-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
-  box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
-  border: 1px solid #f5ba1a;
-  background: #fafafa;
-}
-.form_wrapper input[type=submit] {
-  background: #12db1c;
-  height: 35px;
-  line-height: 35px;
-  width: 100%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: #fff;
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.form_wrapper input[type=submit]:hover {
-  background: #60e10a;
-}
-.form_wrapper input[type=submit]:focus {
-  background: #0ae12e;
-}
-.form_wrapper input[type=checkbox], .form_wrapper input[type=radio] {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-}
-
-.form_container .row .col_half.last {
-  border-left: 1px solid #cccccc;
-}
-
-.checkbox_option label {
-  margin-right: 1em;
-  position: relative;
-}
-.checkbox_option label:before {
-  content: "";
-  display: inline-block;
-  width: 0.5em;
-  height: 0.5em;
-  margin-right: 0.5em;
-  vertical-align: -2px;
-  border: 2px solid #cccccc;
-  padding: 0.12em;
-  background-color: transparent;
-  background-clip: content-box;
-  transition: all 0.2s ease;
-}
-.checkbox_option label:after {
-  border-right: 2px solid #000000;
-  border-top: 2px solid #000000;
-  content: "";
-  height: 20px;
-  left: 2px;
-  position: absolute;
-  top: 7px;
-  transform: scaleX(-1) rotate(135deg);
-  transform-origin: left top;
-  width: 7px;
-  display: none;
-}
-.checkbox_option input:hover + label:before {
-  border-color: #000000;
-}
-.checkbox_option input:checked + label:before {
-  border-color: #000000;
-}
-.checkbox_option input:checked + label:after {
-  -moz-animation: check 0.8s ease 0s running;
-  -webkit-animation: check 0.8s ease 0s running;
-  animation: check 0.8s ease 0s running;
-  display: block;
-  width: 7px;
-  height: 20px;
-  border-color: #000000;
-}
-
-.radio_option label {
-  margin-right: 1em;
-}
-.radio_option label:before {
-  content: "";
-  display: inline-block;
-  width: 0.5em;
-  height: 0.5em;
-  margin-right: 0.5em;
-  border-radius: 100%;
-  vertical-align: -3px;
-  border: 2px solid #cccccc;
-  padding: 0.15em;
-  background-color: transparent;
-  background-clip: content-box;
-  transition: all 0.2s ease;
-}
-.radio_option input:hover + label:before {
-  border-color: #000000;
-}
-.radio_option input:checked + label:before {
-  background-color: #000000;
-  border-color: #000000;
-}
-
-.select_option {
-  position: relative;
-  width: 100%;
-}
-.select_option select {
-  display: inline-block;
-  width: 100%;
-  height: 35px;
-  padding: 0px 15px;
-  cursor: pointer;
-  color: #7b7b7b;
-  border: 1px solid #cccccc;
-  border-radius: 0;
-  background: #fff;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  transition: all 0.2s ease;
-}
-.select_option select::-ms-expand {
-  display: none;
-}
-.select_option select:hover, .select_option select:focus {
-  color: #000000;
-  background: #fafafa;
-  border-color: #000000;
-  outline: none;
-}
-.select_arrow {
-  position: absolute;
-  top: calc(50% - 4px);
-  right: 15px;
-  width: 0;
-  height: 0;
-  pointer-events: none;
-  border-width: 8px 5px 0 5px;
-  border-style: solid;
-  border-color: #7b7b7b transparent transparent transparent;
-}
-
-.select_option select:hover + .select_arrow, .select_option select:focus + .select_arrow {
-  border-top-color: #000000;
-}
-
-.credit {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 15px;
-  color: #f5ba1a;
-}
-.credit a {
-  color: hsl(320, 88%, 54%);
-}
-
-@-webkit-keyframes check {
-  0% {
+<style>
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
     height: 0;
-    width: 0;
   }
-  25% {
-    height: 0;
-    width: 7px;
-  }
-  50% {
-    height: 20px;
-    width: 7px;
-  }
-}
-@keyframes check {
-  0% {
-    height: 0;
-    width: 0;
-  }
-  25% {
-    height: 0;
-    width: 7px;
-  }
-  50% {
-    height: 20px;
-    width: 7px;
-  }
-}
-@-webkit-keyframes expand {
-  0% {
-    -webkit-transform: scale3d(1, 0, 1);
-    opacity: 0;
-  }
-  25% {
-    -webkit-transform: scale3d(1, 1.2, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1, 0.85, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1, 1.05, 1);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    opacity: 1;
-  }
-}
-@keyframes expand {
-  0% {
-    -webkit-transform: scale3d(1, 0, 1);
-    transform: scale3d(1, 0, 1);
-    opacity: 0;
-  }
-  25% {
-    -webkit-transform: scale3d(1, 1.2, 1);
-    transform: scale3d(1, 1.2, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1, 0.85, 1);
-    transform: scale3d(1, 0.85, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1, 1.05, 1);
-    transform: scale3d(1, 1.05, 1);
-  }
-  100% {
+
+  .form_wrapper {
+    background: rgba(230, 225, 225, 0.322);
+    width: 80%;
+    /* max-width: 100%; */
+    /* padding: 25px; */
+    margin: 3% auto 0;
+    position: relative;
+    z-index: 1;
+    /* -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1); */
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: translate3d(0, -25px, 0);
+    -webkit-transition: none;
+    transition: none;
+    -webkit-animation: expand 0.8s 0.6s ease-out forwards;
+    animation: expand 0.8s 0.6s ease-out forwards;
     opacity: 0;
-  }
-  25% {
-    -webkit-transform: translate3d(0, 10px, 0);
-  }
-  50% {
-    -webkit-transform: translate3d(0, -6px, 0);
-  }
-  75% {
-    -webkit-transform: translate3d(0, 2px, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-@keyframes bounce {
-  0% {
-    -webkit-transform: translate3d(0, -25px, 0);
-    transform: translate3d(0, -25px, 0);
-    opacity: 0;
-  }
-  75% {
-    -webkit-transform: translate3d(0, 2px, 0);
-    transform: translate3d(0, 2px, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-@media (max-width: 600px) {
-  .form_wrapper .col_half {
-    width: 100%;
-    float: none;
   }
 
-  .bottom_row .col_half {
+  .form_wrapper h2 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+  }
+
+  .form_wrapper .title_container {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .form_wrapper h3 {
+    font-size: 1.1em;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin: 0;
+  }
+
+  .form_wrapper label {
+    font-size: 12px;
+  }
+
+  .form_wrapper .row {
+    margin: 10px -15px;
+  }
+
+  .form_wrapper .row>div {
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .form_wrapper .col_half {
     width: 50%;
     float: left;
   }
 
+  .form_wrapper .input_field {
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-animation: bounce 0.6s ease-out;
+    animation: bounce 0.6s ease-out;
+  }
+
+  .form_wrapper .input_field>span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #333;
+    height: 100%;
+    border-right: 1px solid #cccccc;
+    text-align: center;
+    width: 30px;
+  }
+
+  .form_wrapper .input_field>span>i {
+    padding-top: 10px;
+  }
+
+  .form_wrapper .textarea_field>span>i {
+    padding-top: 10px;
+  }
+
+  .form_wrapper input[type=text],
+  .form_wrapper input[type=email],
+  .form_wrapper input[type=password] {
+    width: 100%;
+    padding: 8px 10px 9px 35px;
+    height: 35px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    outline: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .form_wrapper input[type=text]:hover,
+  .form_wrapper input[type=email]:hover,
+  .form_wrapper input[type=password]:hover {
+    background: #fafafa;
+  }
+
+  .form_wrapper input[type=text]:focus,
+  .form_wrapper input[type=email]:focus,
+  .form_wrapper input[type=password]:focus {
+    -webkit-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    -moz-box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    box-shadow: 0 0 2px 1px rgba(255, 169, 0, 0.5);
+    border: 1px solid #f5ba1a;
+    background: #fafafa;
+  }
+
+  .form_wrapper input[type=submit] {
+    background: #12db1c;
+    height: 35px;
+    line-height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .form_wrapper input[type=submit]:hover {
+    background: #60e10a;
+  }
+
+  .form_wrapper input[type=submit]:focus {
+    background: #0ae12e;
+  }
+
+  .form_wrapper input[type=checkbox],
+  .form_wrapper input[type=radio] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
   .form_container .row .col_half.last {
-    border-left: none;
+    border-left: 1px solid #cccccc;
   }
 
-  .remember_me {
-    padding-bottom: 20px;
+  .checkbox_option label {
+    margin-right: 1em;
+    position: relative;
   }
+
+  .checkbox_option label:before {
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-right: 0.5em;
+    vertical-align: -2px;
+    border: 2px solid #cccccc;
+    padding: 0.12em;
+    background-color: transparent;
+    background-clip: content-box;
+    transition: all 0.2s ease;
+  }
+
+  .checkbox_option label:after {
+    border-right: 2px solid #000000;
+    border-top: 2px solid #000000;
+    content: "";
+    height: 20px;
+    left: 2px;
+    position: absolute;
+    top: 7px;
+    transform: scaleX(-1) rotate(135deg);
+    transform-origin: left top;
+    width: 7px;
+    display: none;
+  }
+
+  .checkbox_option input:hover+label:before {
+    border-color: #000000;
+  }
+
+  .checkbox_option input:checked+label:before {
+    border-color: #000000;
+  }
+
+  .checkbox_option input:checked+label:after {
+    -moz-animation: check 0.8s ease 0s running;
+    -webkit-animation: check 0.8s ease 0s running;
+    animation: check 0.8s ease 0s running;
+    display: block;
+    width: 7px;
+    height: 20px;
+    border-color: #000000;
+  }
+
+  .radio_option label {
+    margin-right: 1em;
+  }
+
+  .radio_option label:before {
+    content: "";
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    margin-right: 0.5em;
+    border-radius: 100%;
+    vertical-align: -3px;
+    border: 2px solid #cccccc;
+    padding: 0.15em;
+    background-color: transparent;
+    background-clip: content-box;
+    transition: all 0.2s ease;
+  }
+
+  .radio_option input:hover+label:before {
+    border-color: #000000;
+  }
+
+  .radio_option input:checked+label:before {
+    background-color: #000000;
+    border-color: #000000;
+  }
+
+  .select_option {
+    position: relative;
+    width: 100%;
+  }
+
+  .select_option select {
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    padding: 0px 15px;
+    cursor: pointer;
+    color: #7b7b7b;
+    border: 1px solid #cccccc;
+    border-radius: 0;
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: all 0.2s ease;
+  }
+
+  .select_option select::-ms-expand {
+    display: none;
+  }
+
+  .select_option select:hover,
+  .select_option select:focus {
+    color: #000000;
+    background: #fafafa;
+    border-color: #000000;
+    outline: none;
+  }
+
+  .select_arrow {
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 15px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    border-width: 8px 5px 0 5px;
+    border-style: solid;
+    border-color: #7b7b7b transparent transparent transparent;
+  }
+
+  .select_option select:hover+.select_arrow,
+  .select_option select:focus+.select_arrow {
+    border-top-color: #000000;
+  }
+
+  .credit {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 15px;
+    color: #f5ba1a;
+  }
+
+  .credit a {
+    color: hsl(320, 88%, 54%);
+  }
+
+  @-webkit-keyframes check {
+    0% {
+      height: 0;
+      width: 0;
+    }
+
+    25% {
+      height: 0;
+      width: 7px;
+    }
+
+    50% {
+      height: 20px;
+      width: 7px;
+    }
+  }
+
+  @keyframes check {
+    0% {
+      height: 0;
+      width: 0;
+    }
+
+    25% {
+      height: 0;
+      width: 7px;
+    }
+
+    50% {
+      height: 20px;
+      width: 7px;
+    }
+  }
+
+  @-webkit-keyframes expand {
+    0% {
+      -webkit-transform: scale3d(1, 0, 1);
+      opacity: 0;
+    }
+
+    25% {
+      -webkit-transform: scale3d(1, 1.2, 1);
+    }
+
+    50% {
+      -webkit-transform: scale3d(1, 0.85, 1);
+    }
+
+    75% {
+      -webkit-transform: scale3d(1, 1.05, 1);
+    }
+
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes expand {
+    0% {
+      -webkit-transform: scale3d(1, 0, 1);
+      transform: scale3d(1, 0, 1);
+      opacity: 0;
+    }
+
+    25% {
+      -webkit-transform: scale3d(1, 1.2, 1);
+      transform: scale3d(1, 1.2, 1);
+    }
+
+    50% {
+      -webkit-transform: scale3d(1, 0.85, 1);
+      transform: scale3d(1, 0.85, 1);
+    }
+
+    75% {
+      -webkit-transform: scale3d(1, 1.05, 1);
+      transform: scale3d(1, 1.05, 1);
+    }
+
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes bounce {
+    0% {
+      -webkit-transform: translate3d(0, -25px, 0);
+      opacity: 0;
+    }
+
+    25% {
+      -webkit-transform: translate3d(0, 10px, 0);
+    }
+
+    50% {
+      -webkit-transform: translate3d(0, -6px, 0);
+    }
+
+    75% {
+      -webkit-transform: translate3d(0, 2px, 0);
+    }
+
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      -webkit-transform: translate3d(0, -25px, 0);
+      transform: translate3d(0, -25px, 0);
+      opacity: 0;
+    }
+
+    75% {
+      -webkit-transform: translate3d(0, 2px, 0);
+      transform: translate3d(0, 2px, 0);
+    }
+
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .form_wrapper .col_half {
+      width: 100%;
+      float: none;
+    }
+
+    .bottom_row .col_half {
+      width: 50%;
+      float: left;
+    }
+
+    .form_container .row .col_half.last {
+      border-left: none;
+    }
+
+    .remember_me {
+      padding-bottom: 20px;
+    }
+  }
+
+  .image-input {
+    text-aling: center;
+  }
+
+  .image-input input {
+    display: none;
+  }
+
+  .image-input label {
+    display: block;
+    color: #FFF;
+    background: #000;
+    padding: 0.3rem 0.6rem;
+    font-size: 115%;
+    cursor: pointer;
+  }
+
+  .image-input label i {
+    font-size: 125%;
+    margin-right: 0.3rem;
+  }
+
+  .image-input label:hover i {
+    animation: shake 0.35s;
+  }
+
+  .image-input img {
+    max-width: 175px;
+    display: none;
+  }
+
+  .image-input span {
+    display: none;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(10deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+    }
+
+    75% {
+      transform: rotate(-10deg);
+    }
+
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .upload-setter{
+    border: none;
+    outline: none;
+  }
+  .container {
+  /* height: 100vh;
+  display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* background-color: #A1D5E2; */
 }
-.image-input {
-  text-aling: center;
+
+.file-uploader {
+  flex: 0 1 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border-radius: 5px;
 }
-.image-input input {
+.file-uploader #file-input {
   display: none;
 }
-.image-input label {
-  display: block;
-  color: #FFF;
-  background: #000;
-  padding: 0.3rem 0.6rem;
-  font-size: 115%;
-  cursor: pointer;
-}
-.image-input label i {
-  font-size: 125%;
-  margin-right: 0.3rem;
-}
-.image-input label:hover i {
-  animation: shake 0.35s;
-}
-.image-input img {
-  max-width: 175px;
-  display: none;
-}
-.image-input span {
-  display: none;
+.file-uploader label[for=file-input] {
+  padding: 1em 1.5em;
+  flex: 1 1 auto;
   text-align: center;
+  color: #FFF;
+  background-color: #1894AC;
+  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
   cursor: pointer;
 }
+.file-uploader .image-preview {
+  /* margin: 0 0 1rem; */
+  /* min-height: 250px; */
+  /* flex: 1 0 75%; */
+  background-color: #c1c1c1;
+}
+</style>
 
-@keyframes shake {
-  0% {
-    transform: rotate(0deg);
+
+<style>
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.wrapper{
+  display: flex;
+  min-height: 100%;
+}
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  min-height: 100vh;
+  width: 260px;
+  background: #11101d;
+  background-size: cover;
+  z-index: 100;
+  transition: all 0.5s ease;
+}
+.sidebar.close{
+  width: 78px;
+}
+.sidebar .logo-details{
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.sidebar .logo-details i{
+  font-size: 30px;
+  color: #fff;
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+}
+.sidebar .logo-details .logo_name{
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.3s ease;
+  transition-delay: 0.1s;
+}
+.sidebar.close .logo-details .logo_name{
+  transition-delay: 0s;
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar .nav-links{
+  height: 100%;
+  padding: 30px 0 100px 0;
+  overflow: auto;
+}
+.sidebar.close .nav-links{
+  overflow: visible;
+}
+.sidebar .nav-links::-webkit-scrollbar{
+  display: none;
+}
+.sidebar .nav-links li{
+  position: relative;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+.sidebar .nav-links li:hover{
+  background: #1d1b31;
+}
+.sidebar .nav-links li .icon-link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.sidebar.close .nav-links li .icon-link{
+  display: block
+}
+.sidebar .nav-links li i{
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sidebar .nav-links li.showMenu i.arrow{
+  transform: rotate(-180deg);
+}
+.sidebar.close .nav-links i.arrow{
+  display: none;
+}
+.sidebar .nav-links li a{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.sidebar .nav-links li a .link_name{
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.sidebar.close .nav-links li a .link_name{
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar .nav-links li .sub-menu{
+  padding: 6px 6px 14px 80px;
+  margin-top: -10px;
+  background: #1d1b31;
+  display: none;
+}
+.sidebar .nav-links li.showMenu .sub-menu{
+  display: block;
+}
+.sidebar .nav-links li .sub-menu a{
+  color: #fff;
+  font-size: 15px;
+  padding: 5px 0;
+  white-space: nowrap;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.sidebar .nav-links li .sub-menu a:hover{
+  opacity: 1;
+}
+.sidebar.close .nav-links li .sub-menu{
+  position: absolute;
+  left: 100%;
+  top: -10px;
+  margin-top: 0;
+  padding: 10px 20px;
+  border-radius: 0 6px 6px 0;
+  opacity: 0;
+  display: block;
+  pointer-events: none;
+  transition: 0s;
+}
+.sidebar.close .nav-links li:hover .sub-menu{
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.4s ease;
+}
+.sidebar .nav-links li .sub-menu .link_name{
+  display: none;
+}
+.sidebar.close .nav-links li .sub-menu .link_name{
+  font-size: 18px;
+  opacity: 1;
+  display: block;
+}
+.sidebar .nav-links li .sub-menu.blank{
+  opacity: 1;
+  pointer-events: auto;
+  padding: 3px 20px 6px 16px;
+  opacity: 0;
+  pointer-events: none;
+}
+.sidebar .nav-links li:hover .sub-menu.blank{
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sidebar .profile-details{
+  position: fixed;
+  bottom: 0;
+  width: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1d1b31;
+  padding: 12px 0;
+  transition: all 0.5s ease;
+}
+.sidebar.close .profile-details{
+  background: none;
+}
+.sidebar.close .profile-details{
+  width: 78px;
+}
+.sidebar .profile-details .profile-content{
+  display: flex;
+  align-items: center;
+}
+.sidebar .profile-details img{
+  height: 52px;
+  width: 52px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin: 0 14px 0 12px;
+  background: #1d1b31;
+  transition: all 0.5s ease;
+}
+.sidebar.close .profile-details img{
+  padding: 10px;
+}
+.sidebar .profile-details .profile_name,
+.sidebar .profile-details .job{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.sidebar.close .profile-details i,
+.sidebar.close .profile-details .profile_name,
+.sidebar.close .profile-details .job{
+  display: none;
+}
+.sidebar .profile-details .job{
+  font-size: 12px;
+}
+.home-section{
+  position: relative;
+  background: #E4E9F7;
+  min-height: 100%;
+  left: 0px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+}
+.sidebar.close ~ .home-section{
+  left: 0px;
+  width: calc(100% - 78px);
+}
+.home-section .home-content{
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.home-section .home-content .bx-menu,
+.home-section .home-content .text{
+  color: #11101d;
+  font-size: 35px;
+}
+.home-section .home-content .bx-menu{
+  margin: 0 15px;
+  cursor: pointer;
+}
+.home-section .home-content .text{
+  font-size: 26px;
+  font-weight: 600;
+}
+@media (max-width: 400px) {
+
+  .sidebar.close.small-screen{
+    width: 0;
   }
-  25% {
-    transform: rotate(10deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  75% {
-    transform: rotate(-10deg);
-  }
-  100% {
-    transform: rotate(0deg);
+
+  .sidebar.close.small-screen ~ .home-section{
+    width: 100%;
+    left: 0;
+    z-index: 100;
   }
 }
-    </style>
+
+
+</style>
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
 
 </head>
+
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
+  <link rel="stylesheet" href="dropdown-scroll.css">
+  <!-- Boxiocns CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
 <body>
-    <div class="form_wrapper container shadow-lg">
-        <div class="form_container container ">
-          <div class="title_container">
-            <h2>Complete Your Kyc Here</h2>
-          </div>
-          <div class="row clearfix">
-            <div class="">
-              <form>
-                <div class="row clearfix">
-                    <div class="col_half">
-                      <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                        <input type="text" name="name" placeholder="First Name" />
-                      </div>
-                    </div>
-                    <div class="col_half">
-                      <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                        <input type="text" name="name" placeholder="Father  Name" required />
-                      </div>
-                    </div>
-                  </div>
-
-
-                <div class="row clearfix">
-                  <div class="col_half">
-                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-                      <input type="text" name="email" placeholder="Enter Pan Card Number " required />
-                    </div>
-                  </div>
-                  <div class="col_half">
-                    <div class="input_field">
-                      <input type="File" name="File" placeholder="Upload FIle Here " required />Upload  Pan Card Photoss
-                    </div>
-                  </div>
-                </div>
-
-                <div class="row clearfix">
-                  <div class="col_half">
-                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-                      <input type="text" name="email" placeholder="Enter Adhaar Card Number" required />
-                    </div>
-                  </div>
-                  <div class="col_half">
-                    <div class="input_field">
-                      <input type="File" name="File" placeholder="Upload FIle Here " required />Upload  Adhaar card Photoss
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="row clearfix">
-                  <div class="col_half">
-                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-                      <input type="File" name="File" placeholder="Upload FIle Here " required />Upload  Adhaar BackSide Photo
-                    </div>
-                  </div>
-                  <div class="col_half">
-                    <div class="input_field">
-                      <input type="File" name="File" placeholder="Upload FIle Here " required />Upload  Adhaar card  With Selfie
-                    </div>
-                  </div>
-                </div>
-
-
-
-                    <div class="input_field radio_option">
-                    <input type="radio" name="radiogroup1" id="rd1">
-                    <label for="rd1">Male</label>
-                    <input type="radio" name="radiogroup1" id="rd2">
-                    <label for="rd2">Female</label>
-                    </div>
-
-                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>Enter Date of  Birth
-                        <input type="date" name="password" placeholder=" DOB" required />
-                      </div>
-
-                      <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                        <input type="text" name="password" placeholder=" State" required />
-                      </div>
-
-                      <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                        <input type="text" name="password" placeholder=" PIN" required />
-                      </div>
-                      <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                        <input type="text" name="password" placeholder=" City" required />
-                      </div>
-                      <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                        <input type="text" name="password" placeholder=" country" required />
-                      </div>
-                      <div class="select_arrow"></div>
-                    </div>
-                  <div class="input_field checkbox_option">
-                      <input type="checkbox" id="cb1">
-                      <label for="cb1">I agree with terms and conditions</label>
-                  </div>
-                  <!-- <div class="input_field checkbox_option">
-                      <input type="checkbox" id="cb2">s
-                      <label for="cb2">I want to receive the newsletter</label>
-                  </div> -->
-                <input class="button" type="submit" value="Register" />
-              </form>
-            </div>
-          </div>
-        </div>
+  <div class="wrapper">
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class='bx bxl-c-plus-plus'></i>
+        <span class="logo_name">hello</span>
       </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">
+            <i class='bx bx-grid-alt'></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Dashboard</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class='bx bx-collection'></i>
+              <span class="link_name">Verify KYC</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Verify KYC</a></li>
+            <li><a href="./new.html">Manual KYC</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">PHP & MySQL</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class='bx bx-book-alt'></i>
+              <span class="link_name">Posts</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Posts</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Login Form</a></li>
+            <li><a href="#">Card Design</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class='bx bx-book-alt'></i>
+              <span class="link_name">Posts</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Posts</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Login Form</a></li>
+            <li><a href="#">Card Design</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class='bx bx-book-alt'></i>
+              <span class="link_name">Posts</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Posts</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Login Form</a></li>
+            <li><a href="#">Card Design</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class='bx bx-book-alt'></i>
+              <span class="link_name">Posts</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Posts</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Login Form</a></li>
+            <li><a href="#">Card Design</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class='bx bx-book-alt'></i>
+              <span class="link_name">Posts</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Posts</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Login Form</a></li>
+            <li><a href="#">Card Design</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class='bx bx-book-alt'></i>
+              <span class="link_name">Posts</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Posts</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Login Form</a></li>
+            <li><a href="#">Card Design</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class='bx bx-book-alt'></i>
+              <span class="link_name">Posts</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Posts</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Login Form</a></li>
+            <li><a href="#">Card Design</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class='bx bx-book-alt'></i>
+              <span class="link_name">Posts</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Posts</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Login Form</a></li>
+            <li><a href="#">Card Design</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-pie-chart-alt-2'></i>
+            <span class="link_name">Analytics</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Analytics</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-line-chart'></i>
+            <span class="link_name">Chart</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Chart</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="icon-link">
+            <a href="#">
+              <i class='bx bx-plug'></i>
+              <span class="link_name">Plugins</span>
+            </a>
+            <i class='bx bxs-chevron-down arrow'></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="link_name" href="#">Plugins</a></li>
+            <li><a href="#">UI Face</a></li>
+            <li><a href="#">Pigments</a></li>
+            <li><a href="#">Box Icons</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-compass'></i>
+            <span class="link_name">Explore</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Explore</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-history'></i>
+            <span class="link_name">History</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">History</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog'></i>
+            <span class="link_name">Setting</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Setting</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Prem Shahi</div>
+              <div class="job">Web Desginer</div>
+            </div>
+            <i class='bx bx-log-out'></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="home-content">
+        <i class='bx bx-menu'></i>
+        <span class="text">Drop Down Sidebar</span> <br />
+      </div>
+
+
+    </section>
+  </div>
+
+  <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e) => {
+        let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+        arrowParent.classList.toggle("showMenu");
+      });
+    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    /* sidebarBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    }); */
+    $(function () {
+      /* console.log("width: "+ document.body.clientWidth); */
+
+      resizeScreen();
+      $(window).resize(function(){
+        resizeScreen();
+      });
+      $('.bx-menu').click(function(){
+
+        // 點選選單按鈕時，大螢幕為新增或移除.close，小螢幕新增或移除.small-screen預設有.close，
+        if(document.body.clientWidth > 400){
+          $('.sidebar').toggleClass('close');
+        }else{
+          $('.sidebar').toggleClass('small-screen');
+        }
+      });
+
+      function resizeScreen() {
+        // 大螢幕.sidebar預設為沒有.close，小螢幕.sidebar預設為有.close
+        if(document.body.clientWidth < 400){
+          $('.sidebar').addClass('close');
+        }else{
+          $('.sidebar').removeClass('close');
+        }
+      }
+    });
+  </script>
 </body>
+
+</html>
+
 </html>
