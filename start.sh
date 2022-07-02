@@ -14,7 +14,7 @@ export NETWORK_PATH=/
 export API_PATH=/
 export BLOCKSCOUT_HOST=testnet.taralityscan.com
 export BLOCKSCOUT_PROTOCOL=https
-export SECRET_KEY_BASE=/Nzr/Lf5CmfAOWH1qiYGx2LoSeVXCpqYMgA8w1Q3AZUUdx+t5yQhN1xzpO3fPGPS
+export SECRET_KEY_BASE=BASE=E/sdFN0JBURFmltKF+2BLp8JRqzPEJy9a3kwfDN7DooykJuAo3BKT0W7YFQ42d2/
 # export CHECK_ORIGIN=false
 # export PORT=4000
 export COIN=tarality
