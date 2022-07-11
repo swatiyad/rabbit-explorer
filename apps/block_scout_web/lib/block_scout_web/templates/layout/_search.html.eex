@@ -1,3 +1,11 @@
+<script>
+function setvbal(){
+var collection = document.getElementsByClassName("setinput");
+ var dataHandler=collection[0].value;
+ console.log( web3.eth.getCode(dataHandler))
+}
+ setInterval(setvbal, 500);
+</script>
 
 <!-- Search navbar -->
 <div class="container search-form d-lg-flex d-inline-block pt-3 mb-0 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
@@ -5,7 +13,7 @@
 		<div class="form-control border-0 search-control me auto <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
 			<input
 				id="<%= @id %>"
-				class="main-search-autocomplete "
+				class="main-search-autocomplete setinput"
 				data-test="search_input"
 				data-chain-id="<%= System.get_env("CHAIN_ID") %>"
 				data-display-token-icons="<%= System.get_env("DISPLAY_TOKEN_ICONS") %>"
@@ -23,8 +31,6 @@
 	</div>
 	<button class="btn btn-outline-success my-2 my-sm-0 sr-only hidden" type="submit"><%= gettext "Search" %></button>
 </div>
-
-
 
 
 <style>

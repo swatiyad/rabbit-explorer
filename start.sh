@@ -3,7 +3,7 @@
 export ETHEREUM_JSONRPC_VARIANT=parity
 export ETHEREUM_JSONRPC_HTTP_URL=https://rpc01.taralityscan.com
 # export ETHEREUM_JSONRPC_WS_URL=ws://rpc01.taralityscan.com/ws
-export DATABASE_URL=postgres://nadcab:nadcab123@localhost:5432/blockscout?ssl=false
+export DATABASE_URL=postgres://tom:jerry@localhost:5432/blockscout?ssl=false
 export ETHEREUM_JSONRPC_TRACE_URL=https://rpc01.taralityscan.com
 export NETWORK=Tarality
 export SUBNETWORK="Taral Testnet"
@@ -41,7 +41,7 @@ export APPS_MENU=true
 export TOKEN_METADATA_UPDATE_INTERVAL=1800
 export CACHE_TOKEN_EXCHANGE_RATE_PERIOD=3600000
 # export EXTERNAL_APPS='[{ "title": "Ana Bridge", "url": "https://bridge.inrx.io/" } ]'
-export ENABLE_SOURCIFY_INTEGRATION=true
+export ENABLE_SOURCIFY_INTEGRATION=true 
 export SOURCIFY_SERVER_URL=https://sourcify.dev/server
 export SOURCIFY_REPO_URL=https://repo.sourcify.dev/contracts/
 export CHAIN_ID=4369

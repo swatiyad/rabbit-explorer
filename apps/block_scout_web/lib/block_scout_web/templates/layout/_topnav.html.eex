@@ -132,12 +132,26 @@
       </button> %>
 
   <%= render BlockScoutWeb.SmartContractView, "_connect_container.html" %>
-  <%= if account = assigns[:account] do %>
-      <%= if token =assigns[:token] do %>
-      <%= render BlockScoutWeb.StakesView, "_stakes_stats_item_account.html", account: @account, token: @token  %>
 
-      <%end %>
-      <%end %>
+<div class="btn btn-danger" id="wallet_connect" onclick="waller()" >
+Connect wallet
+</div>+
+
+
+<script>
+
+function waller(){
+ var set= document.getElementById("wallet_connect")
+set.innerHTML="conected";
+if (typeof window.ethereum !== 'undefined') {
+ ethereum.request({ method: 'eth_requestAccounts' });
+}
+
+
+}
+
+</script>
+
     </div>
   </div>
 </nav>
