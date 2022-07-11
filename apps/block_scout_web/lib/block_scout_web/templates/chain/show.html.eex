@@ -1,5 +1,5 @@
  <div class="container pt-2">
-    <div class="card pt-4" style="padding-bottom:70px;">
+    <div class="card py-4 border shadow rounded">
           <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-6" style="display:grid;">
                       <div class="row mx-auto">
@@ -12,7 +12,7 @@
                                            <img src="https://tronscan.io/static/media/account_icon.e336f78f.png" style="width:50px;">
                                           </div>
                                               <div class="mx-2">
-                                                <span class="dashboard-banner-network-stats-label" style=" font-family: Lato;font-size: 14px;">
+                                                <span class="dashboard-banner-network-stats-label">
                                                   <%= gettext "Average block time" %>
                                                 </span>
                                                 <span class="dashboard-banner-network-stats-value" data-selector="average-block-time" style="font-weight: 700;font-size: 20px;">
@@ -26,7 +26,7 @@
                                           <img src="https://tronscan.io/static/media/transition_icon.2d0e2152.png" style="width:50px;">
                                           </div>
                                           <div class="mx-2" >
-                                                <span class="dashboard-banner-network-stats-label" style="font-family: Lato;font-size: 14px;">
+                                                <span class="dashboard-banner-network-stats-label" >
                                                   <%= gettext "Total transactions" %>
                                                 </span>
                                                 <div class="d-flex">
@@ -55,7 +55,7 @@
                                            <img src="https://tronscan.io/static/media/account_icon.e336f78f.png" style="width:50px;">
                                           </div>
                                         <div class="mx-4">
-                                              <span class="dashboard-banner-network-stats-label"style=" font-family: Lato;font-size: 14px;">
+                                              <span class="dashboard-banner-network-stats-label">
                                                 <%= gettext "Total blocks" %>
                                               </span>
                                               <span class="dashboard-banner-network-stats-value" data-selector="block-count" style=" font-weight: 700;font-size: 20px;">
@@ -68,7 +68,7 @@
                                            <img src="https://tronscan.io/static/media/transferToken_icon.a654e154.png" style="width:50px;">
                                           </div>
                                         <div class="mx-2">
-                                              <span class="dashboard-banner-network-stats-label" style=" font-family: Lato;font-size: 14px;">
+                                              <span class="dashboard-banner-network-stats-label">
                                                 <%= gettext "Wallet addresses" %>
                                               </span>
                                               <span class="dashboard-banner-network-stats-value" data-selector="address-count" style=" font-weight: 700;font-size: 20px;">
@@ -187,17 +187,17 @@
                                           </div>
                                           <!-- Stats -->
 
-                                        </div>
                                       </div>
                               </div>
                             </div>
                       </div>
               </div>
         </div>
+        </div>
 <section class="container" >
                   <%= link(gettext("View More Blocks"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "float-right mt-2") %>
       <h2 class="card-title"><%= gettext "Blocks" %></h2>
-  <div class="card card-chain-blocks js-ad-dependant-mb-3" >
+  <div class="card card-chain-blocks js-ad-dependant-mb-3 border" >
     <div class="card-body" style="position: relative;transition: transform .6s ease; z-index: 2;">
           <div class="block-bg-animate-wrap" style="position: absolute;top: calc(50% - 0.5rem); width: 92%; left:4%; height: 1rem; top:40%; ">
                 <div style="width: 100%; height: 100%; background: linear-gradient(0deg,hsl(0deg 0% 100% / 65%),hsl(0deg 0% 100% / 65%)),#e3e3e3;
