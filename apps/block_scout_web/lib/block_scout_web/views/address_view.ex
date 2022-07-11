@@ -13,6 +13,7 @@ defmodule BlockScoutWeb.AddressView do
   @dialyzer :no_match
 
   @tabs [
+    "contracts-tabs",
     "coin-balances",
     "contracts",
     "decompiled-contracts",
@@ -357,6 +358,7 @@ defmodule BlockScoutWeb.AddressView do
     |> tab_name()
   end
 
+  defp tab_name(["contracts-tabs"]), do: gettext("Contact")
   defp tab_name(["tokens"]), do: gettext("Tokens")
   defp tab_name(["internal-transactions"]), do: gettext("Internal Transactions")
   defp tab_name(["transactions"]), do: gettext("Transactions")

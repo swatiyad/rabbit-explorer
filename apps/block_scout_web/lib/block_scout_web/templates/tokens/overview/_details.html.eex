@@ -2,13 +2,13 @@
 <% address_hash_str = "0x" <> Base.encode16(@token.contract_address_hash.bytes, case: :lower) %>
 <% {:ok, created_from_address} = if @token.contract_address_hash, do: Chain.hash_to_address(@token.contract_address_hash), else: {:ok, nil} %>
 <% created_from_address_hash = if from_address_hash(created_from_address), do: "0x" <> Base.encode16(from_address_hash(created_from_address).bytes, case: :lower), else: nil %>
-<section class="address-overview" data-page="token-details" data-page-address-hash="<%= @token.contract_address_hash %>">
+<section class="address-overview mt-3" data-page="token-details" data-page-address-hash="<%= @token.contract_address_hash %>">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
   <div class="row js-ad-dependant-mb-2 js-ad-dependant-mb-5-reverse">
     <div class="col-md-12 js-ad-dependant-mb-2">
-      <div class="card js-ad-dependant-mb-2">
-        <div class="card-body fs-14" style="line-height: 31px;" token-page data-async-counters="<%= @counters_path %>">
-          <h1 class="card-title d-flex" style="justify-content: space-between; margin-bottom: 0.75rem">
+      <div class="card js-ad-dependant-mb-2 radius-0" style="border-top:4px solid green;">
+       <div class="p-2" style="background-color:#f4f4f2;">
+          <h1 class="ml-3 mr-3 card-title d-flex" style="justify-content: space-between; margin-bottom: 0.75rem" >
             <div style="line-height: 30px;">
               <%= cond do %>
                 <% Enum.member?(circles_addresses_list, address_hash_str) -> %>
@@ -52,6 +52,8 @@
               <%= render BlockScoutWeb.CommonComponentsView, "_btn_qr_code.html" %>
             </span>
           </h1>
+        </div>
+        <div class="card-body fs-14" style="line-height: 31px;" token-page data-async-counters="<%= @counters_path %>">
           <%= if @token.bridged do %>
             <div class="view-original-token-container">
               <%= if Map.has_key?(@token, :foreign_token_contract_address_hash) do %>
@@ -68,10 +70,10 @@
             <dd class="col-sm-8 col-md-8 col-lg-9 contract-address">
               <%= link(
                   @token.contract_address_hash,
-                  to: AccessHelpers.get_path(@conn, :address_path, :show, 
+                  to: AccessHelpers.get_path(@conn, :address_path, :show,
                   Address.checksum(@token.contract_address_hash)),
                   "data-test": "token_contract_address"
-                  ) 
+                  )
               %>
             </dd>
           </dl>
@@ -112,7 +114,7 @@
                     <span data-selector="token-price" data-usd-value="<%= @token.usd_value %>"></span>
                   </dd>
                 </dl>
-              <% end %>  
+              <% end %>
             <% end %>
           <% end %>
           <dl class="row">
@@ -148,7 +150,7 @@
                 <%= @token.decimals %>
               </dd>
             </dl>
-          <% end %>  
+          <% end %>
           <dl class="row">
             <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
               <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",

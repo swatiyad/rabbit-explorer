@@ -457,6 +457,7 @@
         <div class="form_container container ">
           <div class="title_container">
             <h2>Complete Your Kyc Here</h2>
+            <%= link("Logi123n", to: "/txs", class: "")%>
           </div>
           <div class="row clearfix">
             <div class="">

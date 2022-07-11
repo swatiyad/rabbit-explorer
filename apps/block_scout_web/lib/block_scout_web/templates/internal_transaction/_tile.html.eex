@@ -2,7 +2,7 @@
 <div class=" tile-type-internal-transaction fade-in <%= if error, do: "tile-status--error--reason"%>" data-test="internal_transaction" data-key="<%= @internal_transaction.transaction_hash %>_<%= @internal_transaction.index %>" data-internal-transaction-transaction-hash="<%= @internal_transaction.transaction_hash %>" data-internal-transaction-index="<%= @internal_transaction.index %>">
 
     <div class="table-responsive">
-        <table class="table"style="width: 100%;margin-bottom: 1rem;background-color: transparent;color:none !important;">
+        <table class="table mb-0">
 
             <tbody class="table-group-divider">
               <tr>

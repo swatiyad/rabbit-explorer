@@ -1,8 +1,8 @@
 $stakes-dashboard-copy-icon-color: $copy-icon-color !default;
 $stakes-address-color: $primary !default;
 $stakes-control-color: $primary !default;
-$stakes-stats-item-color: #fff !default;
-$stakes-stats-item-border-color: #fff !default;
+$stakes-stats-item-color: lightgreen !default;
+$stakes-stats-item-border-color: lightgreen !default;
 
 .stakes-top {
   @include gradient-container();
@@ -60,6 +60,7 @@ $stakes-stats-item-border-color: #fff !default;
 .stakes-top-stats-value {
   align-items: center;
   display: flex;
+  font-weight: bold;
 
   div:nth-child(1) {
     overflow: hidden;
@@ -70,6 +71,7 @@ $stakes-stats-item-border-color: #fff !default;
 
 .stakes-top-stats-label {
   overflow: hidden;
+  font-weight: bold;
   text-overflow: ellipsis;
   max-width: 100%;
 }

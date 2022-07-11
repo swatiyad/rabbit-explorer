@@ -7,8 +7,8 @@ export DATABASE_URL=postgres://nadcab:nadcab123@localhost:5432/blockscout?ssl=fa
 export ETHEREUM_JSONRPC_TRACE_URL=https://rpc01.taralityscan.com
 export NETWORK=Tarality
 export SUBNETWORK="Taral Testnet"
-export LOGO=/images/cropped-520-270x270.png
-export LOGO_FOOTER=/images/cropped-520-270x270.png
+export LOGO=/images/analog.png
+export LOGO_FOOTER=/images/analog.png
 export ETHEREUM_JSONRPC_TRANSPORT=http
 export NETWORK_PATH=/
 export API_PATH=/

@@ -1,6 +1,6 @@
 <% staking_enabled_in_menu = Application.get_env(:block_scout_web, BlockScoutWeb.Chain)[:staking_enabled_in_menu] %>
 <% apps_menu = Application.get_env(:block_scout_web, :apps_menu) %>
-<nav class="navbar navbar-dark navbar-expand-lg navbar-primary" data-selector="navbar" id="top-navbar">
+<nav class="navbar navbar-dark navbar-expand-lg navbar-primary" data-selector="navbar" id="top-navbar" style=" box-shadow: none !important;">
   <div class="container-fluid navbar-container">
     <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
       <%= if logo() do %>
@@ -132,24 +132,6 @@
       </button> %>
 
   <%= render BlockScoutWeb.SmartContractView, "_connect_container.html" %>
-  <%= if account = assigns[:account] do %>
-      <%= if token =assigns[:token] do %>
-      <%= render BlockScoutWeb.StakesView, "_stakes_stats_item_account.html", account: @account, token: @token  %>
-
-      <%end %>
-      <%end %>
     </div>
   </div>
 </nav>
-
-
-
-
-
-<style>
-
-.navbar {
-  box-shadow: none !important;
-}
-
-</style>

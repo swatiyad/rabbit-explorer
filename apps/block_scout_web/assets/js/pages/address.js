@@ -235,6 +235,7 @@ if ($addressDetailsPage.length) {
   const shouldScroll = pathParts.includes('transactions') ||
   pathParts.includes('audit') ||
   pathParts.includes('kyc') ||
+  pathParts.includes('contracts-tabs') ||
   pathParts.includes('token-transfers') ||
   pathParts.includes('tokens') ||
   pathParts.includes('internal-transactions') ||

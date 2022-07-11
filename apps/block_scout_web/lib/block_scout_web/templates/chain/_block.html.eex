@@ -8,8 +8,8 @@
                 "data-selector": "block-number"
               ) %>
           <div class="tileee tile-bottom-contents  mb-0" style=" border-radius: 4px;
-              border: 1px solid #dee2e6;
-              color: #6c757d;
+
+              color: #4e4e4e;
               -webkit-box-flex: 1;
               -ms-flex-positive: 1;
               flex-grow: 1;
@@ -32,7 +32,7 @@
               </div>
             <% end %>
             <%= if BlockScoutWeb.BlockView.show_reward?(@block.rewards) do %>
-              <div class="text-truncate " style="color:white;">
+              <div class="text-truncate fw-bold">
                 <%= gettext "Reward" %> <%= BlockScoutWeb.BlockView.combined_rewards_value(@block) %>
               </div>
             <% end %>
@@ -44,18 +44,3 @@
 
 
 </div>
-
-
-<style>
-.tileee{
-      border-radius: 4px;
-    border: 1px solid #dee2e6;
-    color: #6c757d;
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    font-size: 12px;
-    line-height: 1.4rem;
-    padding: 1rem;
-}
-</style>
