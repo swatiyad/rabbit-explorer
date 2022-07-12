@@ -30,7 +30,7 @@
 
                 <td>
                   <div class="">
-                  <span class="mr-2 mr-md-0 order-1" style="color:green;">
+                  <span class="mr-2 mr-md-0 order-1">
                           <span data-from-now="<%= @block.timestamp %>"></span>
                   </span>
                   </div>

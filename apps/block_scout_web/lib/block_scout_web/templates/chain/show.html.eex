@@ -1,5 +1,5 @@
  <div class="container pt-2">
-    <div class="card py-4 border shadow rounded">
+    <div class="card py-5 border shadow rounded">
           <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-6" style="display:grid;">
                       <div class="row mx-auto">
@@ -196,13 +196,12 @@
         </div>
 <section class="container" >
                   <%= link(gettext("View More Blocks"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "float-right mt-2") %>
-      <h2 class="card-title"><%= gettext "Blocks" %></h2>
-  <div class="card card-chain-blocks js-ad-dependant-mb-3 border" >
-    <div class="card-body" style="position: relative;transition: transform .6s ease; z-index: 2;">
+      <h2 class="font-weight-bold"><%= gettext "Blocks" %></h2>
+  <div class="card-chain-blocks js-ad-dependant-mb-3 mb-4">
+    <div class="" style="position: relative;transition: transform .6s ease; z-index: 2;">
           <div class="block-bg-animate-wrap" style="position: absolute;top: calc(50% - 0.5rem); width: 92%; left:4%; height: 1rem; top:40%; ">
-                <div style="width: 100%; height: 100%; background: linear-gradient(0deg,hsl(0deg 0% 100% / 65%),hsl(0deg 0% 100% / 65%)),#e3e3e3;
-    box-shadow: 0 -5px 20px -5px rgb(255 255 255 / 14%), inset 0 -3px 5px hsl(0deg 0% 100% / 70%), inset 0 3px 4px hsl(0deg 0% 95% / 70%);">
-                      <div class="slider-move" style="position: relative; width: 3rem; height: 1rem; background: url(https://tronscan.io/static/media/slider.8bc2e0a5.svg); animation-name: slider-move; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: linear;"></div>
+                <div style="width: 100%; height: 100%; background: #f3f3f3">
+                      <%# <div class="slider-move" style="position: relative; width: 3rem; height: 1rem; background: url(https://tronscan.io/static/media/slider.8bc2e0a5.svg); animation-name: slider-move; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: linear;"></div> %>
                 </div>
           </div>
       <div class="row" data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>" >
@@ -216,7 +215,7 @@
             <div data-selector="chain-block">
               <div class="tile tile-type-block n-p d-flex flex-column">
                 <a class="tile-title"><span class="tile-loader tile-label-loader"></span> </a>
-                <div class="tile-bottom-contents">
+                <div class="tile-bottom-contents border-top">
                   <div class="dark-block-loader"></div>
                   <div class="dark-block-loader"></div>
                 </div>
@@ -267,15 +266,15 @@
 
 
 <%= link(gettext("View More Transactions"), to: transaction_path(BlockScoutWeb.Endpoint, :index), class: "float-right ") %>
-<h2 class="card-title lg-card-title mb-2"><%= gettext "Transactions" %></h2>
-  <div class="card card-chain-transactions">
-    <div class="card-body table-responsive">
+<h2 class="font-weight-bold mb-2"><%= gettext "Transactions" %></h2>
+  <div class="card card-chain-transactions border shadow">
+    <div class="card-body table-responsive table-hover p-0 ">
    <div class="">
-        <table class="table mt-3 mb-0" style="width: 100%;background-color: transparent;color:none !important;">
+        <table class="table mb-0" style="width: 100%;">
               <thead>
-                <tr style="background-color:#dee2e6; color:black;">
-                  <th scope="col" style="width:157px;">Hash</th>
-                  <th scope="col" style="width:122px;">Block</th>
+                <tr>
+                  <th scope="col" style="width:147px;">Hash</th>
+                  <th scope="col" style="width:100px;">Block</th>
                   <th scope="col" style="width:117px;">Age</th>
                   <th scope="col" style="width:122px;">Method</th>
                   <th scope="col" style="width:146px;">From</th>
@@ -318,31 +317,169 @@ left: 100%;
   }
 }
 
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #eceeef;
+}
+
 .table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
+  vertical-align: bottom;
+  border-bottom: 2px solid #eceeef;
 }
 
-.table th, .table td {
-    padding: 0.75rem;
-    vertical-align: top;
-    border-top: 1px solid #dee2e6;
+.table tbody + tbody {
+  border-top: 2px solid #eceeef;
 }
 
-th {
-    text-align: inherit;
-    text-align: -webkit-match-parent;
+.table .table {
+  background-color: #fff;
 }
 
+.table-sm th,
+.table-sm td {
+  padding: 0.3rem;
+}
+
+.table-bordered {
+  border: 1px solid #eceeef;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #eceeef;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-active,
+.table-active > th,
+.table-active > td {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-hover .table-active:hover {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-hover .table-active:hover > td,
+.table-hover .table-active:hover > th {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.table-success,
+.table-success > th,
+.table-success > td {
+  background-color: #dff0d8;
+}
+
+.table-hover .table-success:hover {
+  background-color: #d0e9c6;
+}
+
+.table-hover .table-success:hover > td,
+.table-hover .table-success:hover > th {
+  background-color: #d0e9c6;
+}
+
+.table-info,
+.table-info > th,
+.table-info > td {
+  background-color: #d9edf7;
+}
+
+.table-hover .table-info:hover {
+  background-color: #c4e3f3;
+}
+
+.table-hover .table-info:hover > td,
+.table-hover .table-info:hover > th {
+  background-color: #c4e3f3;
+}
+
+.table-warning,
+.table-warning > th,
+.table-warning > td {
+  background-color: #fcf8e3;
+}
+
+.table-hover .table-warning:hover {
+  background-color: #faf2cc;
+}
+
+.table-hover .table-warning:hover > td,
+.table-hover .table-warning:hover > th {
+  background-color: #faf2cc;
+}
+
+.table-danger,
+.table-danger > th,
+.table-danger > td {
+  background-color: #f2dede;
+}
+
+.table-hover .table-danger:hover {
+  background-color: #ebcccc;
+}
+
+.table-hover .table-danger:hover > td,
+.table-hover .table-danger:hover > th {
+  background-color: #ebcccc;
+}
+
+.thead-inverse th {
+  color: #fff;
+  background-color: #292b2c;
+}
+
+.thead-default th {
+  color: #464a4c;
+  background-color: #eceeef;
+}
+
+.table-inverse {
+  color: #fff;
+  background-color: #292b2c;
+}
+
+.table-inverse th,
+.table-inverse td,
+.table-inverse thead th {
+  border-color: #fff;
+}
+
+.table-inverse.table-bordered {
+  border: 0;
+}
 
 .table-responsive {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
-.dashboard-banner-chart-legend-value{
-color:black!important;
+
+.table-responsive.table-bordered {
+  border: 0;
 }
 
 @media screen and (min-device-width: 290px) and (max-device-width: 768px){

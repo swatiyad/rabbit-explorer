@@ -1,7 +1,7 @@
 <% burned_fee = if !is_nil(@block.base_fee_per_gas), do: Wei.mult(@block.base_fee_per_gas, BlockBurnedFeeCounter.fetch(@block.hash)), else: nil %>
 <% priority_fee = if !is_nil(@block.base_fee_per_gas), do: BlockPriorityFeeCounter.fetch(@block.hash), else: nil %>
 
-   <h1 class="card-title mt-4 mb-1" data-test="detail_type">
+   <h1 class="mt-4 mb-2" data-test="detail_type">
       <%= gettext("%{block_type} Details", block_type: block_type(@block)) %>
    </h1>
 <section class="">
@@ -9,9 +9,9 @@
   <div class="row">
     <div class="col-md-12 js-ad-dependant-mb-2">
       <!-- Block Details -->
-      <div class="card js-ad-dependant-mb-2 rounded-0" style="border-top:4px solid green;">
-        <dl class="pagination-container " style="background-color:#f4f4f2;">
-              <ul class="pagination p-3">
+      <div class="card js-ad-dependant-mb-2 rounded shadow border">
+        <dl class="pagination-container">
+              <ul class="pagination p-2">
                 <li class="page-item">
                     <a
                         <%= if false do %>disabled<% end %>
@@ -44,11 +44,11 @@
                 </li>
               </ul>
           </dl>
-        <div class="card-body fs-14" style="line-height: 32px;">
+        <div class="card-body pt-0">
           <div class="row">
                 <div class="col-md-6">
                     <h1 class="card-title lg-card-title mb-2-desktop">
-                        <div class="title-with-label"> <%= gettext "Overview" %></div>
+                        <div class="title-with-label font-weight-bold mb-3"> <%= gettext "Overview" %></div>
                     </h1>
                       <!-- Block Height -->
                         <dl class="row">
@@ -160,7 +160,7 @@
                 </div>
                 <div class="col-md-6">
                     <h1 class="card-title lg-card-title mb-2-desktop" data-test="detail_type">
-                      <div class="title-with-label"> <%= gettext "More" %></div>
+                      <div class="title-with-label font-weight-bold mb-3"> <%= gettext "More Info" %></div>
                     </h1>
                     <!-- Difficulty -->
                     <dl class="row">

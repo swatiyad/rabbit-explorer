@@ -20,21 +20,21 @@
             <div class="stakes-table-container">
                 <table>
                     <thead>
-                        <tr>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">&nbsp;</div>
+                        <tr style="background-color:#b4e9d5;">
+                            <th>
+                                <div>&nbsp;</div>
                             </th>
-                            <th class="stakes-table-th">
+                            <th>
 			                    <div>&nbsp;</div>
 		                    </th>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Search Result</div>
+                            <th>
+                                <div>Search Result</div>
                             </th>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Hash</div>
+                            <th>
+                                <div>Hash</div>
                             </th>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Category</div>
+                            <th>
+                                <div>Category</div>
                             </th>
                         </tr>
                     </thead>

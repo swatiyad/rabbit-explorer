@@ -1,5 +1,5 @@
 
- <h1 class="card-title lg-card-title mb-2-desktop mt-4">
+ <h1 class="mb-2-desktop">
     <div class="title-with-label"><%= address_title(@address) %> <%= gettext "Details" %></div>
  </h1>
 <section class="address-overview mt-3" data-page="address-details" data-page-address-hash="<%= @address.hash %>" data-async-counters="<%= @counters_path %>">
@@ -12,8 +12,8 @@
   <div class="row js-ad-dependant-mb-2 js-ad-dependant-mb-5-reverse">
     <!-- Address details -->
     <div class="col-md-12 js-ad-dependant-mb-2">
-      <div class="fs-14" style="line-height: 31px;">
-        <div class="card js-ad-dependant-mb-2 rounded-0" style="border-top: 4px solid green;">
+      <div class="" style="line-height: 31px;">
+        <div class="card js-ad-dependant-mb-2 rounded shadow border">
           <%= cond do %>
             <% Enum.member?(dark_forest_addresses_list_0_4, current_address) -> %>
               <%= render BlockScoutWeb.AddressView, "_custom_view_df_title.html", title: "zkSnark space warfare (v0.4)" %>
@@ -30,11 +30,11 @@
             <% true -> %>
               <%= nil %>
           <% end %>
-            <div style="background-color:#f4f4f2;">
+            <div>
                 <div class="p-1">
-                  <h1 class="card-title lg-card-title mb-2-desktop mt-3">
+                  <h1 class="card-title lg-card-title mb-2-desktop mt-3 sub-text">
                   <span class="overview-title-buttons float-left">
-                    <h3 class="address-detail-hash-title mb-4 <%= if BlockScoutWeb.AddressView.contract?(@address) do %>contract-address<% end %>" data-test="address_detail_hash" style="padding-left: 20px;"><%= @address %></h3>
+                    <h3 class="address-detail-hash-title mb-3 <%= if BlockScoutWeb.AddressView.contract?(@address) do %>contract-address<% end %>" data-test="address_detail_hash" style="padding-left: 13px;"><%= @address %></h3>
                   </span>
                     <!-- buttons -->
                     <span class="overview-title-buttons float-right" style="padding-right: 10px;">
@@ -76,7 +76,7 @@
               <div class="row p-3">
                   <div class="col-md-6">
                        <h1 class="card-title lg-card-title mb-2-desktop">
-                          <div class="title-with-label"> <%= gettext "Contract Overview" %></div>
+                          <div class="title-with-label mb-3"> <%= gettext "Contract Overview" %></div>
                       </h1>
                         <!-- Implementation -->
                           <%= if @is_proxy do %>
@@ -190,7 +190,7 @@
                   </div>
                   <div class="col-md-6">
                        <h1 class="card-title lg-card-title mb-2-desktop">
-                          <div class="title-with-label"> <%= gettext "Information"%></div>
+                          <div class="title-with-label mb-3"> <%= gettext "Information"%></div>
                       </h1>
 
                       <% address_name = primary_name(@address) %>

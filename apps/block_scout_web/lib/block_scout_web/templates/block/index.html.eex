@@ -1,23 +1,23 @@
 <section class="container" data-page="<%= String.downcase(@block_type) %>-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
   <div class="card mt-3">
-  <div class="pt-2 m-3 mb-0 d-flex justify-content-between align-items-center">
-       <h1 class="card-title list-title-description"><%= gettext("%{block_type}s", block_type: @block_type) %></h1>
+  <div class="px-4 pt-3 d-flex justify-content-between align-items-center">
+       <h1 class="list-title-description"><%= gettext("%{block_type}s", block_type: @block_type) %></h1>
 
       <div class="list-top-pagination-container-wrapper">
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
       </div>
     </div>
-    <div class="card-body table-responsive" data-async-listing="<%= @current_path %>">
+    <div class="card-body py-0 table-responsive" data-async-listing="<%= @current_path %>">
       <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer blocks") %>
 
-           <div class="">
+           <div class="table-responsive table-hover">
             <table class="table mb-0">
                   <thead>
-                    <tr style="background-color:#dee2e6;">
+                    <tr style="background-color:#b4e9d5;">
                       <th scope="col" style="width:88px;">Block</th>
                       <th scope="col" style="width:110px;">Age</th>
-                      <th scope="col" style="width:121px;">validator</th>
+                      <th scope="col" style="width:121px;">Validator</th>
                       <th scope="col" style="width:130px;">Transactions</th>
                       <th scope="col" style="width:126px;">Taral Priority Fees</th>
                       <th scope="col" style="width:133px;">Taral Burnt Fees</th>
@@ -32,7 +32,9 @@
         <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
       </div>
       <div data-empty-response-message style="display: none;">
-          <span><%= gettext "There are no blocks." %></span>
+          <div class="tile tile-muted text-center my-2">
+            <span><%= gettext "There are no blocks." %></span>
+          </div>
       </div>
 
       <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>

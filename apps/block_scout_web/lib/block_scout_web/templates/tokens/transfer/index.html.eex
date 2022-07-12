@@ -20,7 +20,7 @@
         <div class="">
             <table class="table mb-0">
                   <thead>
-                    <tr style="background-color:#dee2e6;">
+                    <tr style="background-color:#b4e9d5;">
                       <th scope="col" style="width:155px;">Hash</th>
                       <th scope="col" style="width:110px;">Block</th>
                       <th scope="col" style="width:121px;">Age</th>

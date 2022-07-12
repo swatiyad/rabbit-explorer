@@ -7,7 +7,7 @@
   <div class="row js-ad-dependant-mb-2 js-ad-dependant-mb-5-reverse">
     <div class="col-md-12 js-ad-dependant-mb-2">
       <div class="card js-ad-dependant-mb-2 radius-0" style="border-top:4px solid green;">
-       <div class="p-2" style="background-color:#f4f4f2;">
+       <div class="p-2">
           <h1 class="ml-3 mr-3 card-title d-flex" style="justify-content: space-between; margin-bottom: 0.75rem" >
             <div style="line-height: 30px;">
               <%= cond do %>

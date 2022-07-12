@@ -2,7 +2,7 @@
    <div class="table-responsive">
         <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
               <thead>
-                <tr style="background-color:#dee2e6;">
+                <tr>
                   <th scope="col"></th>
                   <th scope="col"></th>
                   <th scope="col"></th>
@@ -78,162 +78,7 @@
      <div class="table-responsive">
         <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
               <thead>
-                <tr style="background-color:#dee2e6;">
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-            <tbody class="table-group-divider">
-              <tr>
-                <th scope="row">
-                <div class="text-truncate d-flex m-2"style="width:100px;">
-                </div>
-                </th>
-
-                <td>
-                <div class="m-1">
-                <span class="mr-2 mr-md-0 order-1">
-                </span>
-                </div>
-                </td>
-
-                <td>
-                <div class="m-1">
-
-                </div>
-                </td>
-                <td>
-                <div class="m-1">
-
-                </div></td>
-
-                <td>
-                    <div class="text-truncate d-flex m-1" style="width:100px">
-
-                    </div>
-                </td>
-
-                <td>
-                    <div class="text-truncate d-flex m-1" style="width:100px">
-
-                    </div>
-                </td>
-
-                  <td>
-                    <div class="text-truncate d-flex m-1" style="width:100px">
-                        <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
-
-                        </span>
-                    </div>
-                </td>
-
-                  <td>
-                    <div class="text-truncate d-flex m-1" style="width:100px">
-
-                    </div>
-                </td>
-
-                <td>
-                    <div class="m-1">
-                        <span class=" tile-status-label ml-2 ml-md-0" data-test="transaction_status">
-
-                          </span>
-                    </div>
-                </td>
-              </tr>
-            </tbody>
-        </table>
-  </div>
-
-     <div class="table-responsive">
-        <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
-              <thead>
-                <tr style="background-color:#dee2e6;">
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                </tr>
-              </thead>
-            <tbody class="table-group-divider">
-              <tr>
-                <th scope="row">
-                <div class="text-truncate d-flex m-2"style="width:100px;">
-                </div>
-                </th>
-
-                <td>
-                <div class="m-1">
-                <span class="mr-2 mr-md-0 order-1">
-                </span>
-                </div>
-                </td>
-
-                <td>
-                <div class="m-1">
-
-                </div>
-                </td>
-                <td>
-                <div class="m-1">
-
-                </div></td>
-
-                <td>
-                    <div class="text-truncate d-flex m-1" style="width:100px">
-
-                    </div>
-                </td>
-
-                <td>
-                    <div class="text-truncate d-flex m-1" style="width:100px">
-
-                    </div>
-                </td>
-
-                  <td>
-                    <div class="text-truncate d-flex m-1" style="width:100px">
-                        <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
-
-                        </span>
-                    </div>
-                </td>
-
-                  <td>
-                    <div class="text-truncate d-flex m-1" style="width:100px">
-
-                    </div>
-                </td>
-
-                <td>
-                    <div class="m-1">
-                        <span class=" tile-status-label ml-2 ml-md-0" data-test="transaction_status">
-
-                          </span>
-                    </div>
-                </td>
-              </tr>
-            </tbody>
-        </table>
-  </div>
-
-
-     <div class="table-responsive">
-        <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
-              <thead>
-                <tr style="background-color:#dee2e6;">
+                <tr>
                   <th scope="col"></th>
                   <th scope="col"></th>
                   <th scope="col"></th>
@@ -310,7 +155,162 @@
      <div class="table-responsive">
         <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
               <thead>
-                <tr style="background-color:#dee2e6;">
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">
+                <div class="text-truncate d-flex m-2"style="width:100px;">
+                </div>
+                </th>
+
+                <td>
+                <div class="m-1">
+                <span class="mr-2 mr-md-0 order-1">
+                </span>
+                </div>
+                </td>
+
+                <td>
+                <div class="m-1">
+
+                </div>
+                </td>
+                <td>
+                <div class="m-1">
+
+                </div></td>
+
+                <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+
+                    </div>
+                </td>
+
+                  <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+                        <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
+
+                        </span>
+                    </div>
+                </td>
+
+                  <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+
+                    </div>
+                </td>
+
+                <td>
+                    <div class="m-1">
+                        <span class=" tile-status-label ml-2 ml-md-0" data-test="transaction_status">
+
+                          </span>
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+  </div>
+
+
+     <div class="table-responsive">
+        <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
+              <thead>
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                </tr>
+              </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">
+                <div class="text-truncate d-flex m-2"style="width:100px;">
+                </div>
+                </th>
+
+                <td>
+                <div class="m-1">
+                <span class="mr-2 mr-md-0 order-1">
+                </span>
+                </div>
+                </td>
+
+                <td>
+                <div class="m-1">
+
+                </div>
+                </td>
+                <td>
+                <div class="m-1">
+
+                </div></td>
+
+                <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+
+                    </div>
+                </td>
+
+                <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+
+                    </div>
+                </td>
+
+                  <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+                        <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
+
+                        </span>
+                    </div>
+                </td>
+
+                  <td>
+                    <div class="text-truncate d-flex m-1" style="width:100px">
+
+                    </div>
+                </td>
+
+                <td>
+                    <div class="m-1">
+                        <span class=" tile-status-label ml-2 ml-md-0" data-test="transaction_status">
+
+                          </span>
+                    </div>
+                </td>
+              </tr>
+            </tbody>
+        </table>
+  </div>
+
+     <div class="table-responsive">
+        <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
+              <thead>
+                <tr>
                   <th scope="col"></th>
                   <th scope="col"></th>
                   <th scope="col"></th>

@@ -7,7 +7,7 @@
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
   <div class="card">
     <div class="card-body" data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls>
-	  <h1 class="card-title list-title-description"><%= gettext "Tokens" %></h1>
+	  <h1 class="list-title-description"><%= gettext "Tokens" %></h1>
 
 	<div class="list-top-pagination-container-wrapper tokens-list-search-input-outer-container d-flex" style="float: right;">
 		<label class="tokens-list-search-input-container tokens mr-3">
@@ -17,29 +17,29 @@
 	</div>
 
     <div class="addresses-table-container">
-      <div class="stakes-table-container">
+      <div class="card-body stakes-table-container table-responsive table-hover">
 	<table>
 	  <thead>
-	    <tr>
-	      <th class="stakes-table-th">
+	    <tr style="background-color:#b4e9d5;">
+	      <th>
 			<div class="stakes-table-th-content">&nbsp;</div>
 	      </th>
-		  <th class="stakes-table-th">
+		  <th>
 			<div>&nbsp;</div>
 		  </th>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">Token</div>
+	      <th>
+			<div>Token</div>
 	      </th>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">Address</div>
+	      <th>
+			<div>Address</div>
 	      </th>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">
+	      <th>
+			<div>
 			Total Supply
 			</div>
 	      </th>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">
+	      <th>
+			<div>
 			Holders Count
 			</div>
 	      </th>

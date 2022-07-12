@@ -9,34 +9,34 @@
 	</div>
 
     <div class="addresses-table-container">
-      <div class="stakes-table-container">
+      <div class="">
 	<table>
 	  <thead>
-	    <tr>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">
+	    <tr style="background-color:#b4e9d5;">
+	      <th class="">
+			<div class="">
 			&nbsp;
 			</div>
 	      </th>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">
+	      <th>
+			<div>
 			Address
 			</div>
 	      </th>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">
+	      <th>
+			<div>
 			Balance
 			</div>
 	      </th>
 		  <%= if balance_percentage_enabled?(@total_supply) do %>
-			<th class="stakes-table-th">
-				<div class="stakes-table-th-content">
+			<th>
+				<div>
 					Percentage
 				</div>
 			</th>
 		  <% end %>
-	      <th class="stakes-table-th">
-			<div class="stakes-table-th-content">
+	      <th>
+			<div>
 			Txn Count
 			</div>
 	      </th>
