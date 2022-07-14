@@ -20,7 +20,7 @@
             <div class="stakes-table-container">
                 <table>
                     <thead>
-                        <tr style="background-color:#b4e9d5;">
+                        <tr class="table-head">
                             <th>
                                 <div>&nbsp;</div>
                             </th>

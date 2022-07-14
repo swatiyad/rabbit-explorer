@@ -4,7 +4,7 @@
             <tbody class="table-group-divider">
               <tr>
                 <th scope="row">
-                    <div class="text-truncate d-flex m-2"style="width:100px;color:green;">
+                    <div class="text-truncate d-flex text-success" style="width:100px">
                        <%= render BlockScoutWeb.TransactionView, "_link.html", transaction_hash: @token_transfer.transaction_hash %>
                     </div>
                 </th>

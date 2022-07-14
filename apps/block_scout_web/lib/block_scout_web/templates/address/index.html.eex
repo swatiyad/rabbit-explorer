@@ -1,18 +1,24 @@
 <section class="container">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
-  <div class="card">
-    <div class="card-body" data-async-load data-async-listing="<%= @current_path %>">
-      <h1 class="card-title list-title-description"><%= gettext "Ether" %> <%= gettext "Addresses" %></h1>
 
-	<div class="list-top-pagination-container-wrapper">
-    	<%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+  <div class="row mb-2" data-async-load data-async-listing="<%= @current_path %>">
+	<div class="col-md-6">
+		<h1 class="mb-2 list-title-description">
+		<%= gettext "Ether" %> <%= gettext "Addresses" %>
+		</h1>
 	</div>
+	<div class="col-md-6">
+		<div class="list-top-pagination-container-wrapper mt-2">
+			<%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+		</div>
+	</div>
+  </div>
 
-    <div class="addresses-table-container">
-      <div class="">
-	<table>
+  <div class="card">
+    <div class="card-body table-responsive" data-async-load data-async-listing="<%= @current_path %>">
+	<table class="table table-hover">
 	  <thead>
-	    <tr style="background-color:#f4fdfa;">
+	    <tr class="table-head">
 	      <th class="">
 			<div class="">
 			&nbsp;
@@ -47,9 +53,6 @@
 	    <%= render BlockScoutWeb.CommonComponentsView, "_table-loader.html", columns_num: columns_num %>
 	  </tbody>
 	</table>
-      </div>
-    </div>
-
     <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
     </div>
   </div>

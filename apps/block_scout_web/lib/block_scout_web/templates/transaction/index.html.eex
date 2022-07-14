@@ -7,13 +7,21 @@
 </script>
 <section class="container pt-3" data-page="transaction-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
+  <div class="row mb-2">
+      <div class="col-md-6">
+        <h1 class="mb-2 list-title-description">
+          <%= gettext "Validated Transactions" %>
+        </h1>
+      </div>
+      <div class="col-md-6">
+        <div class="list-top-pagination-container-wrapper mt-1">
+          <%= render BlockScoutWeb.CommonComponentsView, "_rap_pagination_container.html", position: "top", showing_limit: if Chain.transactions_available_count() == Chain.limit_showing_transactions(), do: Chain.limit_showing_transactions(), else: nil %>
+        </div>
+      </div>
+  </div>
+
   <div class="card">
     <div class="card-body table-responsive" data-async-listing="<%= @current_path %>">
-      <h1 class="list-title-description"><%= gettext "Validated Transactions" %></h1>
-      <div class="list-top-pagination-container-wrapper">
-        <%= render BlockScoutWeb.CommonComponentsView, "_rap_pagination_container.html", position: "top", showing_limit: if Chain.transactions_available_count() == Chain.limit_showing_transactions(), do: Chain.limit_showing_transactions(), else: nil %>
-      </div>
-
       <div data-selector="channel-batching-message" class="d-none">
         <div data-selector="reload-button" class="alert alert-info">
           <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> <%= gettext "More transactions have come in" %></a>
@@ -35,7 +43,7 @@
           <div class="table-responsive table-hover">
             <table class="table mb-0">
                   <thead>
-                    <tr style="background-color:#b4e9d5;">
+                    <tr class="table-head">
                       <th scope="col" style="width:157px;">Hash</th>
                       <th scope="col" style="width:122px;">Block</th>
                       <th scope="col" style="width:117px;">Age</th>

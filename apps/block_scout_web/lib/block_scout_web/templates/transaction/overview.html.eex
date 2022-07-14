@@ -30,6 +30,7 @@
   <div class="row">
     <div class="col-md-12">
       <!-- Transaction Details -->
+      <h1> <%= gettext "Transaction Details" %></h1>
       <div class="card js-ad-dependant-mb-3 shadow border">
         <div class="card-body">
           <%= cond do %>
@@ -44,11 +45,7 @@
             <% true -> %>
               <%= nil %>
           <% end %>
-          <h1 class="card-title">
-            <div style="display: inline-block; vertical-align: bottom; line-height: 25px;">
-              <%= gettext "Transaction Details" %>
-            </div>
-          </h1>
+
           <%= if status == :pending do %>
             <div class="tile tile-muted d-flex justify-content-center align-items-center mb-4">
               <div class="loading-spinner">
@@ -186,7 +183,7 @@
               </dd>
             </dl>
           <% end %>
-          <hr/>
+          <hr class="mt-5 border-0"/>
           <!-- From -->
           <dl class="row">
             <dt class="col-sm-3 col-lg-2 text-muted">
@@ -331,7 +328,7 @@
             <% end %>
             </dd>
           </dl>
-          <hr/>
+          <hr class="mt-5 border-0"/>
           <!-- Transaction Fee -->
           <dl class="row">
             <dt class="col-sm-3 col-lg-2 text-muted">
@@ -366,7 +363,7 @@
               <dd class="col-sm-9 col-lg-10"> <%= type %> </dd>
             </dl>
           <% end %>
-          <hr>
+          <hr class="mt-5 border-0"/>
           <!-- Gas Limit -->
           <dl class="row">
             <dt class="col-sm-3 col-lg-2 text-muted">

@@ -1,8 +1,5 @@
 <div connect-to class="connect-container">
-    <span class="mr-2">
-      <%= render BlockScoutWeb.IconsView, "_inactive_icon.html" %>
-    </span>
-     <span class="text-danger">Disconnected</span>
+
     <button connect-wallet class="button ml-4 bg-success text-white">Connect wallet</button>
 </div>
 <div connected-to class="connect-container row hidden">
