@@ -1,8 +1,8 @@
 $card-background-color: #fff !default;
 $card-tab-active: $primary !default;
 $card-default-border-radius: 10px !default;
-$card-horizontal-padding: 30px;
-$card-vertical-padding: 30px;
+$card-horizontal-padding: 1.25rem ;
+$card-vertical-padding: 0.75rem;
 $card-background-1: $primary !default;
 $card-background-1-text-color: #fff !default;
 $card-tab-icon-color: #20b760 !default;
@@ -42,7 +42,7 @@ $card-tab-icon-color-active: #fff !default;
 }
 
 .card-header {
-  background: transparent;
+  background: #f1f1f1;
   border-bottom: 1px solid $base-border-color;
   padding: $card-vertical-padding $card-horizontal-padding;
 

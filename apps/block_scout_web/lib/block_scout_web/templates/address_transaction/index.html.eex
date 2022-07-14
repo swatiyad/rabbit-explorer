@@ -45,7 +45,7 @@
                        <div class="table-responsive">
             <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
                   <thead>
-                    <tr style="background-color:#b4e9d5;">
+                    <tr style="background-color:#f4fdfa;">
                       <th scope="col" style="width:157px;">Hash</th>
                       <th scope="col" style="width:122px;">Block</th>
                       <th scope="col" style="width:117px;">Age</th>

@@ -1,9 +1,9 @@
 <div class="col-lg-3 fade-up-blocks-chain" data-selector="chain-block" data-block-number="<%= @block.number %>" >
-  <div class="p-3 mb-0 shadow border rounded"  style="background:#fff">
+  <div class="p-3 mb-2 shadow border rounded"  style="background:#fff">
         <div class=" tile-type-block n-p d-flex flex-column" style="font-size:18px">
           <%= link(
                 @block,
-                class: "text-dark font-weight-bold",
+                class: "text-success font-weight-bold",
                 to: block_path(BlockScoutWeb.Endpoint, :show, @block),
                 "data-selector": "block-number"
               ) %>
@@ -15,8 +15,8 @@
               flex-grow: 1
               padding: 2rem;">
             <div class="tile-transactions text-dark">
-              <span class="mr-2 text-dark"><%= gettext("%{count} Transactions", count: Enum.count(@block.transactions)) %></span>
-              <span class="text-nowrap text-dark" data-from-now="<%= @block.timestamp %>"> </span>
+              <span class="mr-2 text-dark font-weight-bold"><%= gettext("%{count} Transactions", count: Enum.count(@block.transactions)) %></span>
+              <i class="text-nowrap text-dark" data-from-now="<%= @block.timestamp %>"> </i>
             </div>
             <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
               <div class="sub-text text-truncate">
@@ -36,8 +36,7 @@
             <% end %>
           </div>
         </div>
-
-  </div>
+      </div>
 
 
 

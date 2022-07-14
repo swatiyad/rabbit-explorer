@@ -14,7 +14,7 @@
            <div class="table-responsive table-hover">
             <table class="table mb-0">
                   <thead>
-                    <tr style="background-color:#b4e9d5;">
+                    <tr style="background-color:#f4fdfa;">
                       <th scope="col" style="width:88px;">Block</th>
                       <th scope="col" style="width:110px;">Age</th>
                       <th scope="col" style="width:121px;">Validator</th>

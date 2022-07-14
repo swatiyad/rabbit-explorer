@@ -7,7 +7,7 @@
     // background: url(https://tronscan.io/static/media/body_bg.0b5e1c3d.png);
   // background-size: cover;
   // background-repeat: no-repeat;
-  background-color: #F3F3F3;
+  background-color: #F8F8F8;
 
   main {
     flex-grow: 1;
@@ -17,4 +17,22 @@
 
 .logs-hash {
   line-height: 24px !important;
+}
+
+.min_height_376 {
+  min-height: 376px;
+
+}
+
+.btn-copy-icon svg {
+  width: 25px!important;
+  height: 25px!important;
+}
+
+.chart_box {
+  background: #ffffff;
+    padding: 7px;
+    border: 1px solid #84efc7;
+    border-radius: 3px;
+    margin: 0 5px;
 }
