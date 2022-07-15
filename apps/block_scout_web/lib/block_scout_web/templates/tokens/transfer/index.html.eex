@@ -32,9 +32,9 @@
             </table>
          </div>
 
-        <button data-error-message class="alert alert-danger col-12 text-left" style="display: none;">
+        <div data-error-message class="alert alert-danger" style="display: none;">
           <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
-        </button>
+        </div>
 
         <div data-empty-response-message class="tile tile-muted text-center" style="display: none;">
           <span data-selector="empty-transactions-list">

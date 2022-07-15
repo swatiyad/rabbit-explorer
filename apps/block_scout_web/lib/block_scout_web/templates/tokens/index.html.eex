@@ -23,8 +23,6 @@
 
   <div class="card">
     <div class="card-body" data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls>
-
-
     <div class="addresses-table-container">
       <div class="card-body stakes-table-container table-responsive table-hover">
 	<table class="table">
