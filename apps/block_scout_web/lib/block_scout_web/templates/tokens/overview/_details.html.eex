@@ -6,7 +6,7 @@
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
   <div class="row js-ad-dependant-mb-2 js-ad-dependant-mb-5-reverse pb-5">
     <div class="col-md-12 js-ad-dependant-mb-2">
-      <div class="row bg-light">
+      <div class="row">
         <div class="col-md-6">
           <%= cond do %>
             <% Enum.member?(circles_addresses_list, address_hash_str) -> %>

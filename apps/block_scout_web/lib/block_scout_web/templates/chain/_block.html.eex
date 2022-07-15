@@ -1,6 +1,6 @@
 <div class="col-lg-3 fade-up-blocks-chain" data-selector="chain-block" data-block-number="<%= @block.number %>" >
-  <div class="p-3 mb-2 shadow border rounded white-bg">
-        <div class=" tile-type-block n-p d-flex flex-column" style="font-size:18px">
+  <div class="p-3 mb-2 border rounded white-bg deep-shadow">
+        <div class="n-p d-flex flex-column" style="font-size:18px">
           <%= link(
                 @block,
                 class: "text-success font-weight-bold",

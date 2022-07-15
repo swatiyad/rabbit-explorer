@@ -108,3 +108,13 @@ dl:last-child {
 .dark-theme-applied dl {
   border-bottom: 1px dashed #3f426c;
 }
+.deep-shadow {
+  box-shadow: -10px -10px 0px 0px #eee;
+
+}
+.dark-theme-applied .shadow{
+  box-shadow: 2px 1px 5px #313355!important
+}
+.dark-theme-applied .deep-shadow{
+  box-shadow: -10px -10px 0px 0px #313355!important; 
+}

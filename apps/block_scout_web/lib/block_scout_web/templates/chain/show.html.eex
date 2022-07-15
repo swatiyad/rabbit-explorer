@@ -3,12 +3,12 @@
     <div class="card-body py-5">
       <div class="row">
         <div class="col-sm-12 col-md-3 col-sm-12 col-md-3 border-right">
-          <div class="media border-bottom mb-3 pb-3">
+          <div class="media border-bottom mb-4 pb-4">
             <%= case @average_block_time do %>
               <% {:error, :disabled} -> %>
                 <%= nil %>
               <% average_block_time -> %>
-              <img class="mr-3" src="https://tronscan.io/static/media/account_icon.e336f78f.png" style="width:50px;">
+              <img class="mr-3" src="images/clock-time-watch-svgrepo-com.svg" style="width:50px;">
               <div class="media-body">
                 <span class="dashboard-banner-network-stats-label">
                   <%= gettext "Average block time" %>
@@ -20,7 +20,7 @@
             <% end %>
           </div>
           <div class="media  mb-3 pb-3">
-            <img class="mr-3" src="https://tronscan.io/static/media/transition_icon.2d0e2152.png" style="width:50px;">
+            <img class="mr-3" src="images/cash-currency-dollars-svgrepo-com.svg" style="width:50px;">
             <div class="media-body" >
               <span class="dashboard-banner-network-stats-label" >
                 <%= gettext "Total transactions" %>
@@ -43,8 +43,8 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-3">
-          <div class="media border-bottom mb-3 pb-3">
-            <img class="mr-3" src="https://tronscan.io/static/media/tvl_icon.4d03b91a.png" style="width:50px;">
+          <div class="media border-bottom mb-4 pb-4">
+            <img class="mr-3" src="images/document-documents-file-svgrepo-com.svg" style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label">
                 <%= gettext "Total blocks" %>
@@ -56,7 +56,7 @@
           </div>
 
           <div class="media mb-3 pb-3">
-            <img class="mr-3" src="https://tronscan.io/static/media/transferToken_icon.a654e154.png" style="width:50px;">
+             <img class="mr-3" src="images/bag-business-case-svgrepo-com.svg" style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label">
                 <%= gettext "Wallet addresses" %>
@@ -193,7 +193,7 @@
                       <%# <div class="slider-move" style="position: relative; width: 3rem; height: 1rem; background: url(https://tronscan.io/static/media/slider.8bc2e0a5.svg); animation-name: slider-move; animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: linear;"></div> %>
                 </div>
           </div>
-      <div class="row" data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>" >
+      <div class="row mt-4" data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>" >
             <button data-selector="error-message" class="alert alert-danger col-12 text-left" style="display: none;">
               <span class="alert-link">
                 <%= gettext "Something went wrong, click to reload." %>
