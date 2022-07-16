@@ -16,18 +16,18 @@
     <div class="card-body" data-async-listing="<%= @current_path %>">
       <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer blocks") %>
 
-           <div class="table-responsive table-hover">
-            <table class="table mb-0">
+           <div class="table-responsive">
+            <table class="table table-hover mb-0" style="table-layout: fixed;">
                   <thead>
                     <tr class="table-head">
-                      <th scope="col" style="width:88px;">Block</th>
-                      <th scope="col" style="width:110px;">Age</th>
-                      <th scope="col" style="width:121px;">Validator</th>
-                      <th scope="col" style="width:130px;">Transactions</th>
-                      <th scope="col" style="width:126px;">Taral Priority Fees</th>
-                      <th scope="col" style="width:133px;">Taral Burnt Fees</th>
-                      <th scope="col" style="width:108px;">Gas Limit</th>
-                      <th scope="col" style="width:100px;">Gas Used</th>
+                      <th scope="col">Block</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Validator</th>
+                      <th scope="col">Transactions</th>
+                      <th scope="col">Taral Priority Fees</th>
+                      <th scope="col">Taral Burnt Fees</th>
+                      <th scope="col">Gas Limit</th>
+                      <th scope="col">Gas Used</th>
                       <%# <th scope="col">Status</th> %>
                     </tr>
                   </thead>
@@ -53,6 +53,10 @@
 @media screen and (min-device-width: 290px) and (max-device-width: 768px){
 .table{
      width:426% !important;
+
+    }
+    .width100 {
+      width:60px;
     }
  }
 </style>
