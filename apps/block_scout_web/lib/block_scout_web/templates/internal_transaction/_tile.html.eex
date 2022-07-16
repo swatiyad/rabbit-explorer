@@ -78,7 +78,7 @@
                     <div class="m-1"style="width:100px">
                         <span class="tile-status-label ml-2 ml-md-0"  data-internal-transaction-type="<%= type(@internal_transaction) %>"><%= type(@internal_transaction) %></span>
                         <%= if error do %>
-                          <span class="tile-status-label ml-2 ml-md-0"><%= gettext "Error" %>: <%= error %></span>
+                          <span class="tile-status-label ml-2 ml-md-0 text-danger"><%= gettext "Error" %>: <%= error %></span>
                         <% end %>
                     </div>
                 </td>

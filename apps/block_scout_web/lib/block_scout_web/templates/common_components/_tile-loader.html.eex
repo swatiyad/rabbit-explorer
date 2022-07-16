@@ -1,6 +1,6 @@
 <div data-loading-message data-selector="loading-message" class="tile tile-type-loading">
    <div class="table-responsive table-hover">
-        <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
+        <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent;table-layout:fixed">
               <thead>
                 <tr>
                   <th scope="col"></th>

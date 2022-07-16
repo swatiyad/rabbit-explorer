@@ -13,19 +13,12 @@
 				tabindex="1"
 			>
 		</div>
-			<select class="form-select border-left-0 border-radius-top-left-0 rounded-0 bg-success text-center text-white" aria-label="Default select example">
-				<option selected>All Filters</option>
-				<option value="1">Tokens</option>
-				<option value="2">Accounts</option>
-				<option value="3">Hash</option>
-				<option value="3">Blocks</option>
-		   </select>
+			<button class="btn btn-teal border">
+				<i class="fas fa-search"></i>
+			</button>
 	</div>
 	<button class="btn btn-outline-success my-2 my-sm-0 sr-only hidden" type="submit"><%= gettext "Search" %></button>
 </div>
-
-
-
 
 <style>
 

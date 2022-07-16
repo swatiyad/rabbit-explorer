@@ -125,3 +125,6 @@ dl:last-child {
 .width100 {
   width: 100px;
 }
+.dark-theme-applied .table-hover tbody tr:hover {
+  color: #fff;
+}

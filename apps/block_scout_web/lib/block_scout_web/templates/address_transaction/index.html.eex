@@ -42,19 +42,19 @@
           </div>
         </div>
 
-                       <div class="table-responsive">
-            <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
+          <div class="table-responsive">
+            <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent; table-layout:fixed">
                   <thead>
                     <tr class="table-head">
-                      <th scope="col" style="width:157px;">Hash</th>
-                      <th scope="col" style="width:122px;">Block</th>
-                      <th scope="col" style="width:117px;">Age</th>
-                      <th scope="col" style="width:122px;">Method</th>
-                      <th scope="col" style="width:146px;">From</th>
-                      <th scope="col" style="width:140px;">To</th>
-                      <th scope="col" style="width:140px;">Amount</th>
-                      <th scope="col" style="width:140px;">Transaction</th>
-                      <th scope="col" style="width:80px;">Status</th>
+                      <th scope="col">Hash</th>
+                      <th scope="col">Block</th>
+                      <th scope="col">Age</th>
+                      <th scope="col">Method</th>
+                      <th scope="col">From</th>
+                      <th scope="col">To</th>
+                      <th scope="col">Amount</th>
+                      <th scope="col">Transaction</th>
+                      <th scope="col">Status</th>
                     </tr>
                   </thead>
             </table>

@@ -13,7 +13,7 @@
                     <div class="m-1">
                      <span class="mr-2 mr-md-0 order-1">
                       <%= link(
-                        gettext("Block #%{number}", number: @token_transfer.block_number),
+                        gettext("#%{number}", number: @token_transfer.block_number),
                         to: block_path(BlockScoutWeb.Endpoint, :show, @token_transfer.block_number)
                       ) %>
                     </span>
@@ -28,7 +28,7 @@
 
                 <td>
                     <div class="text-truncate d-flex m-1" style="width:100px">
-                          <span class="text-nowrap">
+                          <span class="text-nowrap text-truncate">
                             <%= link to: address_token_transfers_path(@conn, :index, Address.checksum(@token_transfer.from_address), Address.checksum(@token.contract_address_hash)), "data-test": "address_hash_link" do %>
                                 <%= render(
                                       BlockScoutWeb.AddressView,
@@ -44,7 +44,7 @@
 
                 <td>
                     <div class="text-truncate d-flex m-1" style="width:100px">
-                        <span  class="text-nowrap">
+                        <span  class="text-nowrap text-truncate">
                          <%= link to: address_token_transfers_path(@conn, :index, Address.checksum(@token_transfer.to_address), Address.checksum(@token.contract_address_hash)), "data-test": "address_hash_link" do %>
                             <%= render(
                                   BlockScoutWeb.AddressView,

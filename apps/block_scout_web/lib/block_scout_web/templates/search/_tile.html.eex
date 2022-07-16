@@ -3,7 +3,7 @@
   <%= render BlockScoutWeb.SearchView, "_empty_td.html" %>
   <%= case @result.type do %>
         <% "token" -> %>
-            <td class="token-icon">
+            <td class="token-icon stakes-td">
                 <span
                     class="token-icon mr-1"
                     data-address-hash="<%= @result.address_hash %>"
