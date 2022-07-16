@@ -1,3 +1,4 @@
+
 <div class="container pt-2">
   <div class="card border shadow rounded">
     <div class="card-body py-5">
@@ -8,7 +9,7 @@
               <% {:error, :disabled} -> %>
                 <%= nil %>
               <% average_block_time -> %>
-              <img class="mr-3" src="images/clock-time-watch-svgrepo-com.svg" style="width:50px;">
+              <img class="mr-3 media_icon" src="images/clock-time-watch-svgrepo-com.svg"  style="width:50px;">
               <div class="media-body">
                 <span class="dashboard-banner-network-stats-label">
                   <%= gettext "Average block time" %>
@@ -20,7 +21,7 @@
             <% end %>
           </div>
           <div class="media  mb-3 pb-3">
-            <img class="mr-3" src="images/cash-currency-dollars-svgrepo-com.svg" style="width:50px;">
+            <img class="mr-3 media_icon" src="images/cash-currency-dollars-svgrepo-com.svg" style="width:50px;">
             <div class="media-body" >
               <span class="dashboard-banner-network-stats-label" >
                 <%= gettext "Total transactions" %>
@@ -44,7 +45,7 @@
         </div>
         <div class="col-sm-12 col-md-3">
           <div class="media border-bottom mb-4 pb-4">
-            <img class="mr-3" src="images/document-documents-file-svgrepo-com.svg" style="width:50px;">
+            <img class="mr-3 media_icon" src="images/document-documents-file-svgrepo-com.svg" style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label">
                 <%= gettext "Total blocks" %>
@@ -56,7 +57,7 @@
           </div>
 
           <div class="media mb-3 pb-3">
-             <img class="mr-3" src="images/bag-business-case-svgrepo-com.svg" style="width:50px;">
+             <img class="mr-3 media_icon" src="images/bag-business-case-svgrepo-com.svg" style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label">
                 <%= gettext "Wallet addresses" %>

@@ -9,12 +9,12 @@
         <table class="table mb-0" style="table-layout:fixed">
             <tbody class="table-group-divider">
               <tr>
-                <th scope="row">
-                <div class="text-truncate d-flex text-success" style="width:100px;">
+                <td>
+                <div class="text-truncate d-flex text-success width100">
                   <%= render "_link.html", transaction_hash: @transaction.hash, data_test: "address_hash_link" %>
 
                 </div>
-                </th>
+                </td>
 
                 <td>
                 <div class="">
@@ -53,7 +53,7 @@
                 </div></td>
 
                 <td>
-                    <div class="text-truncate d-flex " style="width:100px">
+                    <div class="text-truncate d-flex width100">
                         <span>
                               <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:from, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
                         </span>
@@ -61,7 +61,7 @@
                 </td>
 
                 <td>
-                    <div class="text-truncate d-flex " style="width:100px">
+                    <div class="text-truncate d-flex width100 ">
                         <span class="text-truncate">
                             <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
                         </span>
@@ -69,7 +69,7 @@
                 </td>
 
                   <td>
-                    <div class="text-truncate d-flex " style="width:115px">
+                    <div class="text-truncate d-flex width150">
                         <span class="d-flex flex-md-row flex-column mt-3 mt-md-0">
                             <span class="tile-title">
                               <%= value(@transaction, include_label: false) %> <%= gettext "Ether" %>
@@ -82,7 +82,7 @@
                 </td>
 
                   <td>
-                    <div class="text-truncate d-flex " style="width:100px">
+                    <div class="text-truncate d-flex width100">
                         <span>
                         <div>
                             <%= if error_in_internal_tx do %>

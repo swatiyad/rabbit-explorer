@@ -14,7 +14,7 @@
 			>
 		</div>
 			<button class="btn btn-teal border">
-				<i class="fas fa-search"></i>
+				<i class="fas fa-search"></i> Search
 			</button>
 	</div>
 	<button class="btn btn-outline-success my-2 my-sm-0 sr-only hidden" type="submit"><%= gettext "Search" %></button>

@@ -8,11 +8,11 @@
 
             <tbody class="table-group-divider">
               <tr>
-                <th scope="row">
+                <td>
                     <div class="text-truncate d-flex text-success" style="width:100px">
                        <%= render BlockScoutWeb.TransactionView, "_link.html", transaction_hash: @internal_transaction.transaction_hash %>
                     </div>
-                </th>
+                </td>
 
                 <td>
                     <div class="m-1">

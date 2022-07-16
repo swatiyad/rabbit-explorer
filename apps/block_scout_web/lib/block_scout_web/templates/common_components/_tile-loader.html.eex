@@ -16,10 +16,10 @@
               </thead>
             <tbody class="table-group-divider">
               <tr>
-                <th scope="row">
+                <td>
                 <div class="text-truncate d-flex m-2"style="width:100px;">
                 </div>
-                </th>
+                </td>
 
                 <td>
                 <div class="m-1">

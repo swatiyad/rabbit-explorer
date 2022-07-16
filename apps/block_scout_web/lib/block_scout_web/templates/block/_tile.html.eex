@@ -8,7 +8,7 @@
 
             <tbody class="table-group-divider mb-0">
               <tr>
-                <th scope="row">
+                <td>
                       <%= if @block_type == "Block" do %>
                         <%= link(
                               class: "tile-label",
@@ -26,7 +26,7 @@
                             #<%= @block %>
                           <% end %>
                       <% end %>
-                </th>
+                </td>
 
                 <td>
                   <div class="">
@@ -84,7 +84,7 @@
                 </td>
 
                 <td>
-                    <div class="text-nowrap text-truncate mt-3 mt-md-0" style="width:100px">
+                    <div class="text-nowrap text-truncate mt-3 mt-md-0 width100">
                         <span> <%= format_wei_value(burned_fee, :ether) %> </span>
                     </div>
                 </td>
@@ -98,7 +98,7 @@
                 </td>
 
                   <td>
-                    <div class="text-truncate d-flex m-1" style="width:110px">
+                    <div class="text-truncate d-flex m-1 width110">
                         <span>
                              <div class="mr-3 mr-md-0">
                               <%= formatted_gas(@block.gas_used) %>

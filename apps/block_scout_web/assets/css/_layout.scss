@@ -125,6 +125,31 @@ dl:last-child {
 .width100 {
   width: 100px;
 }
+.width150 {
+width: 150px;
+
+}
+.width110 {
+  width: 110px;
+}
 .dark-theme-applied .table-hover tbody tr:hover {
   color: #fff;
 }
+.dark-theme-applied .media_icon {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+
+@media only screen and (max-width: 600px) {
+.deep-shadow{
+ box-shadow: none;
+} 
+
+}
+
+@media only screen and (max-width: 900px) {
+  .deep-shadow{
+   box-shadow: none;
+  } }
+
