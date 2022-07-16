@@ -3,7 +3,7 @@
   <div class="card border shadow rounded">
     <div class="card-body py-5">
       <div class="row">
-        <div class="col-sm-12 col-md-3 col-sm-12 col-md-3 border-right">
+        <div class="col-sm-12 col-md-4 col-lg-3 border-right">
           <div class="media border-bottom mb-4 pb-4">
             <%= case @average_block_time do %>
               <% {:error, :disabled} -> %>
@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-3">
+        <div class="col-sm-12 col-md-4 col-lg-3">
           <div class="media border-bottom mb-4 pb-4">
             <img class="mr-3 media_icon" src="images/document-documents-file-svgrepo-com.svg" style="width:50px;">
             <div class="media-body">
@@ -68,7 +68,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-12 col-lg-6">
           <div class='mt-n5' data-page="chain-details">
                   <div class="">
                     <div class="dashboard-banner">

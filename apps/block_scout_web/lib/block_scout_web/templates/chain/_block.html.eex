@@ -3,7 +3,7 @@
         <div class="n-p d-flex flex-column" style="font-size:18px">
           <%= link(
                 @block,
-                class: "text-success font-weight-bold",
+                class: "text-teal font-weight-bold",
                 to: block_path(BlockScoutWeb.Endpoint, :show, @block),
                 "data-selector": "block-number"
               ) %>
