@@ -1,10 +1,10 @@
 
   <div class="">
-        <table class="table mb-0">
+        <table class="table table-hover mb-0 fixed-layout">
             <tbody class="table-group-divider">
               <tr>
                 <th scope="row">
-                    <div class="text-truncate d-flex text-success" style="width:100px">
+                    <div class="text-truncate d-flex text-success width100">
                        <%= render BlockScoutWeb.TransactionView, "_link.html", transaction_hash: @token_transfer.transaction_hash %>
                     </div>
                 </th>
@@ -27,7 +27,7 @@
                 </td>
 
                 <td>
-                    <div class="text-truncate d-flex m-1" style="width:100px">
+                    <div class="text-truncate d-flex m-1 width100">
                           <span class="text-nowrap text-truncate">
                             <%= link to: address_token_transfers_path(@conn, :index, Address.checksum(@token_transfer.from_address), Address.checksum(@token.contract_address_hash)), "data-test": "address_hash_link" do %>
                                 <%= render(
@@ -43,7 +43,7 @@
                 </td>
 
                 <td>
-                    <div class="text-truncate d-flex m-1" style="width:100px">
+                    <div class="text-truncate d-flex m-1 width100">
                         <span  class="text-nowrap text-truncate">
                          <%= link to: address_token_transfers_path(@conn, :index, Address.checksum(@token_transfer.to_address), Address.checksum(@token.contract_address_hash)), "data-test": "address_hash_link" do %>
                             <%= render(
@@ -59,7 +59,7 @@
                 </td>
 
                   <td>
-                    <div class="d-flex m-1" style="width:100px">
+                    <div class="d-flex m-1">
                         <span class="tile-title">
                           <%= render BlockScoutWeb.TransactionView, "_total_transfers.html", Map.put(assigns, :transfer, @token_transfer) %>
                         </span>
@@ -67,7 +67,7 @@
                 </td>
 
                   <td>
-                    <div class=" d-flex m-1" style="width:100px">
+                    <div class=" d-flex m-1">
                     <span class="tile-label">
                       <%= render(BlockScoutWeb.CommonComponentsView, "_token_transfer_type_display_name.html", type: Chain.get_token_transfer_type(@token_transfer)) %>
                     </span>

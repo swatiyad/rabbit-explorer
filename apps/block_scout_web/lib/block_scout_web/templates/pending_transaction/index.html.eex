@@ -30,7 +30,7 @@
         </span>
       </div>
       <div class="table-responsive table-hover">
-        <table class="table mb-0" style="table-layout:fixed">
+        <table class="table mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
                   <th scope="col">Hash</th>

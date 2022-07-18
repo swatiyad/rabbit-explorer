@@ -43,7 +43,7 @@
         </div>
 
           <div class="table-responsive">
-            <table class="table" style="width: 100%;margin-bottom: 1rem;background-color: transparent; table-layout:fixed">
+            <table class="table fixed-layout table-hover" style="width: 100%;margin-bottom: 1rem;background-color: transparent;">
                   <thead>
                     <tr class="table-head">
                       <th scope="col">Hash</th>

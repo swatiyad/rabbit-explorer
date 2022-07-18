@@ -1,5 +1,5 @@
  <div class="table-responsive">
-        <table class="table mb-0">
+        <table class="table mb-0 table-hover fixed-layout">
             <tbody class="table-group-divider">
               <tr>
                 <th scope="row">

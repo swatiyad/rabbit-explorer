@@ -140,6 +140,9 @@ width: 150px;
   filter: brightness(0) invert(1);
 }
 
+.fixed-layout {
+  table-layout:fixed
+}
 
 @media only screen and (max-width: 600px) {
 .deep-shadow{
@@ -151,5 +154,10 @@ width: 150px;
 @media only screen and (max-width: 900px) {
   .deep-shadow{
    box-shadow: none;
-  } }
+  } 
+
+.fixed-layout {
+  table-layout:unset
+  }
+}
 

@@ -165,13 +165,13 @@
 
 <style>
 .btnclass{
-      background: forestgreen;
+    background: #20c997;
     border-radius: 5px;
     color: white;
     width: 10%;
     cursor: pointer;
 }
 .btnclass:hover{
-      background-color: darkred !important;
+  background-color: #1a9365 !important;
 }
 </style>

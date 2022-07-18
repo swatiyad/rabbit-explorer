@@ -17,16 +17,16 @@
         </div>
 
         <div class="">
-            <table class="table mb-0">
+            <table class="table mb-0 table-hover fixed-layout">
                   <thead>
                     <tr class="table-head">
-                      <th scope="col" style="width:155px;">Hash</th>
-                      <th scope="col" style="width:110px;">Block</th>
-                      <th scope="col" style="width:121px;">Age</th>
-                      <th scope="col" style="width:130px;">From</th>
-                      <th scope="col" style="width:126px;">To</th>
-                      <th scope="col" style="width:133px;">Stake</th>
-                      <th scope="col" style="width:108px;">Method</th>
+                      <th>Hash</th>
+                      <th>Block</th>
+                      <th>Age</th>
+                      <th>From</th>
+                      <th>To</th>
+                      <th>Stake</th>
+                      <th>Method</th>
                     </tr>
                   </thead>
             </table>

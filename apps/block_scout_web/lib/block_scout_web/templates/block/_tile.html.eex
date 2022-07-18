@@ -4,7 +4,7 @@
 
 <div class=" tile-type-<%= String.downcase(@block_type) %> fade-up" data-selector="block-tile" data-block-number="<%= to_string(@block.number) %>" data-block-hash="<%= @block.hash %>">
     <div class="">
-        <table class="table table-hover" style="margin-bottom:0px;table-layout: fixed;">
+        <table class="table table-hover fixed-layout" style="margin-bottom:0px;">
 
             <tbody class="table-group-divider mb-0">
               <tr>
