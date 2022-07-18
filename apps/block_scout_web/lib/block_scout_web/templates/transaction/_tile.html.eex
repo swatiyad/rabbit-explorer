@@ -106,7 +106,7 @@
                             </div> %>
 
                             <%# <% end %>
-                            <span class="<%= if status_class(@transaction) == "tile-status--success" do %>bg-teal text-white p-1 rounded<% end %><%= if status_class(@transaction) == "tile-status--pending" do %>bg-warning text-white p-1 rounded<% end %>"><%= formatted_result(status) %></span>
+                            <span class="<%= if status_class(@transaction) == "tile-status--success" do %>bg-success text-white p-1 rounded<% end %><%= if status_class(@transaction) == "tile-status--pending" do %>bg-warning text-white p-1 rounded<% end %>"><%= formatted_result(status) %></span>
                         </span>
                     </div>
                 </td>
