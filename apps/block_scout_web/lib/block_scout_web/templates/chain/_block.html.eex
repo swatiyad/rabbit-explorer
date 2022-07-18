@@ -1,4 +1,4 @@
-<div class="col-lg-3 fade-up-blocks-chain" data-selector="chain-block" data-block-number="<%= @block.number %>" >
+<div class="col-lg-3 col-md-6 col-sm-12 fade-up-blocks-chain" data-selector="chain-block" data-block-number="<%= @block.number %>" >
   <div class="p-3 mb-2 border rounded white-bg deep-shadow">
         <div class="n-p d-flex flex-column" style="font-size:18px">
           <%= link(
@@ -16,7 +16,7 @@
               padding: 2rem;">
             <div class="tile-transactions text-dark">
               <span class="mr-2 text-dark font-weight-bold"><%= gettext("%{count} Transactions", count: Enum.count(@block.transactions)) %></span>
-              <i class="text-nowrap text-dark" data-from-now="<%= @block.timestamp %>"> </i>
+              <i class="text-nowrap text-dark d-sm-none" data-from-now="<%= @block.timestamp %>"> </i>
             </div>
             <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
               <div class="sub-text text-truncate">
