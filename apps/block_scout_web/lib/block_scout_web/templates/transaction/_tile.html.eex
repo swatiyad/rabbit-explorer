@@ -99,14 +99,15 @@
                 <td>
                     <div class="">
                         <span class=" tile-status-label ml-2 ml-md-0 " data-test="transaction_status">
-                            <%= if status_class(@transaction) == "tile-status--pending" do %>
-                              <div class="loading-spinner-small">
-                                <span class="loading-spinner-block-1"></span>
-                                <span class="loading-spinner-block-2"></span>
-                              </div>
-                            <% end %>
-                            <%= formatted_result(status) %>
-                          </span>
+                          <%# <%= if status_class(@transaction) == "tile-status--pending" do %>
+                            <%# <div class="loading-spinner-small">
+                              <span class="loading-spinner-block-1"></span>
+                              <span class="loading-spinner-block-2"></span>
+                            </div> %>
+
+                            <%# <% end %>
+                            <span class="<%= if status_class(@transaction) == "tile-status--success" do %>bg-teal text-white p-1 rounded<% end %><%= if status_class(@transaction) == "tile-status--pending" do %>bg-warning text-white p-1 rounded<% end %>"><%= formatted_result(status) %></span>
+                        </span>
                     </div>
                 </td>
               </tr>
