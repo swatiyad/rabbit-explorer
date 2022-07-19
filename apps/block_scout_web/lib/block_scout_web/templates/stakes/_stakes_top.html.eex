@@ -1,10 +1,20 @@
 <div class="stakes-top" style="padding-top: 70px; padding-bottom: 70px; margin-top: 20px; background-image: url(/images/geometic-bg-black.jpg) !important;">
   <div class="container">
     <div class="stakes-top-stats" data-block-number="<%= @block_number %>">
-      <%= render BlockScoutWeb.StakesView, "_stakes_stats_item.html", title: gettext("Epoch number"), value: @epoch_number %>
-      <%= render BlockScoutWeb.StakesView, "_stakes_stats_item.html", title: gettext("Block number"), value: @block_number %>
-      <%= render BlockScoutWeb.StakesView, "_stakes_stats_item.html", title: gettext("Next epoch in"), value: ngettext("%{blocks} block", "%{blocks} blocks", @epoch_end_in, blocks: @epoch_end_in) %>
-      <%= render BlockScoutWeb.StakesView, "_stakes_stats_item_account.html", account: @account, token: @token %>
+    <div class="row">
+        <div class="col-md-4" data-block-number="<%= @block_number %>">
+          <%= render BlockScoutWeb.StakesView, "_stakes_stats_item.html", title: gettext("Epoch number"), value: @epoch_number %>
+        </div>
+        <div class="col-md-4" data-block-number="<%= @block_number %>">
+          <%= render BlockScoutWeb.StakesView, "_stakes_stats_item.html", title: gettext("Block number"), value: @block_number %>
+        </div>
+        <div class="col-md-4" data-block-number="<%= @block_number %>">
+          <%= render BlockScoutWeb.StakesView, "_stakes_stats_item.html", title: gettext("Next epoch in"), value: ngettext("%{blocks} block", "%{blocks} blocks", @epoch_end_in, blocks: @epoch_end_in) %>
+      </div>
+        <div class="col mt-1 stakes-top-stats" data-block-number="<%= @block_number %>">
+        <%= render BlockScoutWeb.StakesView, "_stakes_stats_item_account.html", account: @account, token: @token %>
+        </div>
+         </div>
       <!-- Buttons -->
       <div class="stakes-top-buttons">
         <%= if @account[:pool] && @account.pool.is_active do %>

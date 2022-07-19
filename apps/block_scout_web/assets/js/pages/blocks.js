@@ -111,8 +111,8 @@ export function placeHolderBlock (blockNumber) {
   return `
     <div class="my-3" data-selector="place-holder" data-block-number="${blockNumber}">
       <div
-        class="tile tile-type-block d-flex align-items-center fade-up"
-        style="min-height: 90px;"
+        class="tile d-flex align-items-center fade-up white-bg"
+        style="min-height: 80px;"
       >
         <span class="loading-spinner-small ml-1 mr-4">
           <span class="loading-spinner-block-1"></span>

@@ -1,4 +1,4 @@
-<section data-page="contract-verification-choose-type" class="container new-smart-contract-container">
+<section data-page="contract-verification-choose-type mt-3" class="container new-smart-contract-container">
   <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost") %>
 
   <div class="new-smart-contract-form">
@@ -55,7 +55,7 @@
               b) otherwise you will be asked to upload source files and JSON metadata file(s).<br/>
             4. Verification of Vyper contract.
             </div>
-              
+
           </div>
         </div>
 

@@ -30,7 +30,7 @@ defmodule BlockScoutWeb.TransactionView do
 
   defdelegate formatted_timestamp(block), to: BlockView
 
-  def block_number(%Transaction{block_number: nil}), do: gettext("Block Pending")
+  def block_number(%Transaction{block_number: nil}), do: gettext("Pending" )
   def block_number(%Transaction{block: block}), do: [view_module: BlockView, partial: "_link.html", block: block]
   def block_number(%Reward{block: block}), do: [view_module: BlockView, partial: "_link.html", block: block]
 

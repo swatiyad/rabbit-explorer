@@ -200,7 +200,7 @@ $dark-stakes-banned-background: #3e314c;
 		}
 	}
 	.tile-bottom-contents {
-		background-color: $dark-bg;
+		background-color: $dark-light;
 	}
 	a.tile-title {
 		color: #fff !important;
@@ -607,7 +607,7 @@ $dark-stakes-banned-background: #3e314c;
 
 	// Form Controlls
 	.form-control {
-		background-color: $dark-light;
+		background-color: $dark-bg;
 		border-color: $dark-light;
 		color: #fff;
 		transition: border-color 0.15s ease-in-out;

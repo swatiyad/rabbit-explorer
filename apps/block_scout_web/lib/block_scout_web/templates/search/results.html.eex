@@ -16,25 +16,25 @@
 	</div>
     <h1 class="card-title list-title-description"><%= gettext "Search Results" %>: <strong class="js-search-results-query-display"><%= @query %></strong></h1>
 
-        <div class="addresses-table-container">
+        <div class="">
             <div class="stakes-table-container">
-                <table>
+                <table class="table">
                     <thead>
-                        <tr>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">&nbsp;</div>
+                        <tr class="table-head">
+                            <th>
+                                <div>&nbsp;</div>
                             </th>
-                            <th class="stakes-table-th">
+                            <th>
 			                    <div>&nbsp;</div>
 		                    </th>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Search Result</div>
+                            <th>
+                                <div>Search Result</div>
                             </th>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Hash</div>
+                            <th>
+                                <div>Hash</div>
                             </th>
-                            <th class="stakes-table-th">
-                                <div class="stakes-table-th-content">Category</div>
+                            <th>
+                                <div>Category</div>
                             </th>
                         </tr>
                     </thead>

@@ -5,7 +5,7 @@
 
 <!-- Search navbar -->
 <div class="container search-form d-lg-flex d-inline-block pt-3 mb-0 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
-	<div class="input-group rounded" style="width: 100%;" title='<%= gettext("Search by address, token symbol name, transaction hash, or block number") %>'>
+	<div class="input-group rounded shadow mb-4" style="width: 100%;" title='<%= gettext("Search by address, token symbol name, transaction hash, or block number") %>'>
 		<div class="form-control border-0 search-control me auto <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
 			<input
 				id="<%= @id %>"
@@ -17,6 +17,7 @@
 				tabindex="1"
 			>
 		</div>
+
 			<select class="form-select border-0 " aria-label="Default select example">
 				tribute specifies the coordinates of an area in an image map.on selected>All Filters</option>
 				<option value="1">Tokens</option>
@@ -24,9 +25,16 @@
 				<option value="3">Hash</option>
 				<option value="3">Blocks</option>
 		   </select>
+
+			<button class="btn btn-teal border">
+				<i class="fas fa-search"></i> Search
+			</button>
+
 	</div>
 	<button class="btn btn-outline-success my-2 my-sm-0 sr-only hidden" type="submit"><%= gettext "Search" %></button>
 </div>
+
+
 
 
 <style>

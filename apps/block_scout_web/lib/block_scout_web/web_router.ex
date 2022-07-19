@@ -123,6 +123,12 @@ defmodule BlockScoutWeb.WebRouter do
         as: :kyc
       )
 
+      resources(
+        "/contracts-tabs",
+        AddressContractsTabsController,
+        only: [:index],
+        as: :contracts_tabs
+      )
 
       resources(
         "/validations",
@@ -143,6 +149,35 @@ defmodule BlockScoutWeb.WebRouter do
         AddressDecompiledContractController,
         only: [:index],
         as: :decompiled_contract
+      )
+
+
+      resources(
+        "/read-contract",
+        AddressReadContractController,
+        only: [:index, :show],
+        as: :read_contract
+      )
+
+      resources(
+        "/read-proxy",
+        AddressReadProxyController,
+        only: [:index, :show],
+        as: :read_proxy
+      )
+
+      resources(
+        "/write-contract",
+        AddressWriteContractController,
+        only: [:index, :show],
+        as: :write_contract
+      )
+
+      resources(
+        "/write-proxy",
+        AddressWriteProxyController,
+        only: [:index, :show],
+        as: :write_proxy
       )
 
       resources(
@@ -185,34 +220,6 @@ defmodule BlockScoutWeb.WebRouter do
         AddressContractVerificationVyperController,
         only: [:new],
         as: :verify_vyper_contract
-      )
-
-      resources(
-        "/read-contract",
-        AddressReadContractController,
-        only: [:index, :show],
-        as: :read_contract
-      )
-
-      resources(
-        "/read-proxy",
-        AddressReadProxyController,
-        only: [:index, :show],
-        as: :read_proxy
-      )
-
-      resources(
-        "/write-contract",
-        AddressWriteContractController,
-        only: [:index, :show],
-        as: :write_contract
-      )
-
-      resources(
-        "/write-proxy",
-        AddressWriteProxyController,
-        only: [:index, :show],
-        as: :write_proxy
       )
 
       resources(

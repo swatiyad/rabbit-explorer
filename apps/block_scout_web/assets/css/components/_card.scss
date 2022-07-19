@@ -1,8 +1,8 @@
 $card-background-color: #fff !default;
 $card-tab-active: $primary !default;
 $card-default-border-radius: 10px !default;
-$card-horizontal-padding: 30px;
-$card-vertical-padding: 30px;
+$card-horizontal-padding: 1.25rem ;
+$card-vertical-padding: 0.75rem;
 $card-background-1: $primary !default;
 $card-background-1-text-color: #fff !default;
 $card-tab-icon-color: #20b760 !default;
@@ -10,11 +10,11 @@ $card-tab-icon-color-active: #fff !default;
 
 .card {
   background-color: $card-background-color;
-  border-radius: $card-default-border-radius;
-  border: none;
-  // box-shadow: 0 0 30px 0 rgba(202, 199, 226, 0.5);
-  box-shadow: none !important;
+  //border-radius: $card-default-border-radius;
+  //border: none;
+ // box-shadow: 0 0 30px 0 rgba(202, 199, 226, 0.5);
   margin-bottom: $common-container-margin;
+
 
   .block-details-row {
     flex-direction: row;
@@ -42,7 +42,7 @@ $card-tab-icon-color-active: #fff !default;
 }
 
 .card-header {
-  background: transparent;
+  background: #f1f1f1;
   border-bottom: 1px solid $base-border-color;
   padding: $card-vertical-padding $card-horizontal-padding;
 
@@ -170,7 +170,7 @@ $card-tab-icon-color-active: #fff !default;
 }
 
 .card-chain-blocks {
-  min-height: 233px;
+  min-height: 165px;
   max-height: auto;
   [class*="col-"]:last-child {
     .tile {
@@ -180,7 +180,7 @@ $card-tab-icon-color-active: #fff !default;
 }
 
 .card-chain-transactions {
-  min-height: 570px;
+  // min-height: 570px;
   max-height: auto;
 
   .tile {
@@ -189,12 +189,12 @@ $card-tab-icon-color-active: #fff !default;
 }
 
 .card-tabs {
-  background-color: #f4f4f2;
+  background-color: #fff;
   align-items: center;
   border-top-left-radius: $card-default-border-radius;
   border-top-right-radius: $card-default-border-radius;
   // border-bottom: 1px solid $base-border-color;
-  border-bottom: 1px solid $card-tab-active;
+  //border-bottom: 1px solid $card-tab-active;
   display: flex;
   justify-content: flex-start;
   overflow: hidden;
@@ -210,9 +210,9 @@ $card-tab-icon-color-active: #fff !default;
   color: #333;
   cursor: pointer;
   display: flex;
-  font-size: 14px;
+  font-size: 16.5px;
   font-weight: normal;
-  height: 70px;
+  height: 50px;
   padding: 0 25px;
   text-align: center;
   transition: $transition-cont;
@@ -220,7 +220,7 @@ $card-tab-icon-color-active: #fff !default;
   &:hover {
     // background-color: rgba($card-tab-active, .15);
     background-color: #fff;
-    border-top: 4px solid $card-tab-active ;
+    border-bpttom: 4px solid $card-tab-active ;
     color: $card-tab-active;
     text-decoration: none;
   }
@@ -237,7 +237,7 @@ $card-tab-icon-color-active: #fff !default;
 
   &.active {
     background-color: white;
-    border-top: 4px solid $card-tab-active ;
+    border-bottom: 4px solid $card-tab-active ;
     color: $card-tab-active;
     cursor: default;
     text-decoration: none;
