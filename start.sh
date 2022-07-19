@@ -3,7 +3,7 @@
 export ETHEREUM_JSONRPC_VARIANT=parity
 export ETHEREUM_JSONRPC_HTTP_URL=https://rpc01.taralityscan.com
 # export ETHEREUM_JSONRPC_WS_URL=ws://rpc01.taralityscan.com/ws
-export DATABASE_URL=postgres://tom:jerry@localhost:5432/blockscout?ssl=false
+export DATABASE_URL=postgres://nadcab:nadcab123@localhost:5432/blockscout?ssl=false
 export ETHEREUM_JSONRPC_TRACE_URL=https://rpc01.taralityscan.com
 export NETWORK=Tarality
 export SUBNETWORK="Taral Testnet"
@@ -14,7 +14,7 @@ export NETWORK_PATH=/
 export API_PATH=/
 export BLOCKSCOUT_HOST=testnet.taralityscan.com
 export BLOCKSCOUT_PROTOCOL=https
-export SECRET_KEY_BASE=BASE=E/sdFN0JBURFmltKF+2BLp8JRqzPEJy9a3kwfDN7DooykJuAo3BKT0W7YFQ42d2/
+export SECRET_KEY_BASE=BASE=/Nzr/Lf5CmfAOWH1qiYGx2LoSeVXCpqYMgA8w1Q3AZUUdx+t5yQhN1xzpO3fPGPS
 # export CHECK_ORIGIN=false
 # export PORT=4000
 export COIN=tarality
