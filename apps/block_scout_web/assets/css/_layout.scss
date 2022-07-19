@@ -143,6 +143,9 @@ width: 150px;
 .fixed-layout {
   table-layout:fixed
 }
+.min_page_height {
+  min-height: 65vh;
+}
 
 @media only screen and (max-width: 600px) {
 .deep-shadow{

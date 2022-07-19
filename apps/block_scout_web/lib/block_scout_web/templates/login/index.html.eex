@@ -7,16 +7,13 @@
 </div> %>
 
 <div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <div class="card shadow">
-        <div class="card-body">
-          <span><%= link("Kyc Verify", to: "/kycselect")%></span>
-          <a href="#" class="text-dark"> VERFIED CONTRACT ADDRESS</a>
-          <span><%= link("Token Update", to: "/tokenupdate")%></span>
-          <span><%= link("auditContract", to: "/auditContract")%></span>
-        <div>
-      </div>
+  <div class="card">
+    <div class="card-body">
+      <span><%= link("Kyc Verify", to: "/kycselect")%></span>
+      <a href="#" class="text-dark"> VERFIED CONTRACT ADDRESS</a>
+      <span><%= link("Token Update", to: "/tokenupdate")%></span>
+      <span><%= link("auditContract", to: "/auditContract")%></span>
     <div>
-  </div>
+  <div>
+
 </div>
