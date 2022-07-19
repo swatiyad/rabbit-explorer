@@ -1,19 +1,48 @@
+<div class="">
+  <form class=" mt-5">
+     <div class="row">
+        <div class="col-lg-12 d-flex justify-content-center">
+          <div class="card shadow">
+            <div class="card-body">
+              <div class="card-header">Enter the details to proceed</div>
+                <label for="username"> Enter Adhaar Card Number</label>
+                <input type="number" placeholder="Enter Adhaar Card Number" id="adhaarNum">
+                <div class="text-end">
+                  <b class="my-5 btn btn-warning " onclick="otpVerify()">Send OTP</b>
+                </div>
+                <label for="otp">Enter OTP</label>
+                <input type="number" placeholder="Enter OTP HERE" id="otp">
+                <div class="text-end">
+                  <b class="my-5 btn btn-success "  onclick="otpSubmit()"  >Verify OTP</b>
+                  <div class='' id="loadSelector">
+                    <div class='loader '>
+                      <div class='loader--dot'></div>
+                      <div class='loader--dot'></div>
+                      <div class='loader--dot'></div>
+                      <div class='loader--dot'></div>
+                      <div class='loader--dot'></div>
+                      <div class='loader--dot'></div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                <table id="fetchedRecord"> </table>
+                <img id="imgAdhaar" src="data:image/png;base64,"></div>
+
+                <div id="displayHider">
+                <label for="password"> Enter Pancard Number </label>
+                <input type="text" placeholder="Enter Pan Card Number" id="pan">
+                <button> Proceed </button>
+            <div>
+          </div>
+        <div>
+    </div>
+
+
+    </div>
+  </form>
 <style>
-
-form h3 {
-  font-size: 40px;
-  /* font-weight: 700; */
-  /* line-height: 42px; */
-  text-align: center;
-}
-
-label {
-  display: block;
-  margin-top: 30px;
-  font-size: 16px;
-  font-weight: 500;
-}
-input {
+  input {
   display: block;
   height: 40px;
   width: 100%;
@@ -25,54 +54,54 @@ input {
   margin-top: 8px;
   font-size: 14px;
   font-weight: 300;
-}
-::placeholder {
-  color: #000000;
-}
+  }
+  ::placeholder {
+    color: #000000;
+  }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
 
-button {
-  margin-top: 50px;
+  button {
+    margin-top: 50px;
 
-  width: 50%;
-  background-color: #ffffff;
-  color: #080710;
-  padding: 15px 0;
-  font-size: 18px;
-  font-weight: 600;
-  border-radius: 5px;
-  cursor: pointer;
-}
-#displayHider{
+    width: 50%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #displayHider{
 
-  display: none;
-}
+    display: none;
+  }
 
-@media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) {
 
-}
+  }
 
-.containers{
-  display:none;
-}
+  .containers{
+    display:none;
+  }
 
-.loader {
-  height: 20px;
-  width: 50px;
+  .loader {
+    height: 20px;
+    width: 50px;
 
-  margin: 10px 20px;
-}
-.loader--dot {
+    margin: 10px 20px;
+  }
+  .loader--dot {
   animation-name: loader;
   animation-timing-function: ease-in-out;
   animation-duration: 3s;
@@ -148,75 +177,8 @@ button {
 #imgAdhaar{
   display:none;
 }
-tr{
-  border:2px solid black !important;
-  font-size:18px !important;
-}
-
 </style>
-
-
-
-
-
-
-
-
-
-
-  <form class="container  mt-5">
-    <h3>ENTER DETAIL BELOW</h3>
-
-    <label for="username"> Enter Adhaar Card Number</label>
-    <input type="number" placeholder="Enter Adhaar Card Number" id="adhaarNum">
-
-    <div class="text-end">
-      <b class="my-5 btn btn-warning " onclick="otpVerify()">Send OTP</b>
-    </div>
-
-    <label for="otp">Enter OTP</label>
-    <input type="number" placeholder="Enter OTP HERE" id="otp">
-
-    <div class="text-end">
-      <b class="my-5 btn btn-success "  onclick="otpSubmit()"  >Verify OTP</b>
-
-
-<div class='containers ' id="loadSelector">
-  <div class='loader '>
-    <div class='loader--dot'></div>
-    <div class='loader--dot'></div>
-    <div class='loader--dot'></div>
-    <div class='loader--dot'></div>
-    <div class='loader--dot'></div>
-    <div class='loader--dot'></div>
-
-  </div>
-</div>
-
-    </div>
-
-    <div  >
-<table id="fetchedRecord" style=" border:2px solid red">  </table>
-
-<img id="imgAdhaar" src="data:image/png;base64,">
-
-    </div>
-
-<div id="displayHider">
-
-    <label for="password"> Enter Pancard Number </label>
-    <input type="text" placeholder="Enter Pan Card Number" id="pan">
-
-    <button> Proceed </button>
-  </div>
-
-
-
-  </form>
-
 <script>
-
-
 var clientID;
 var clientOTP;
 var res;
@@ -249,18 +211,11 @@ let response = await fetch("https://kyc-api.aadhaarkyc.io/api/v1/aadhaar-v2/gene
     clientID=client_id;
 
  }
-
-
-
  async function otpSubmit(){
 
  var clientOTP = document.getElementById("otp").value;
 
  document.getElementById("loadSelector").style.display="block";
-
-
-
-
 console.log(clientOTP);
 
 
