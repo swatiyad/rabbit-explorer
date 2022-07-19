@@ -52,6 +52,9 @@
         'Tx/day': '<%= gettext("Tx/day") %>'
       }
     </script>
+
+
+
   </head>
 
   <body>

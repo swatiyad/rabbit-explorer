@@ -135,7 +135,7 @@
 
 <div class="btn btn-danger" id="wallet_connect" onclick="waller()" >
 Connect wallet
-</div>+
+</div>
 
 
 <script>

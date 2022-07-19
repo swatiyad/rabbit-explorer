@@ -8,7 +8,7 @@ const loadFunctions = (element) => {
   const $element = $(element)
   const url = $element.data('url')
   const hash = $element.data('hash')
-  const type = $element.data('type')
+  const type = $element.data('type')  
   const action = $element.data('action')
 
   $.get(

@@ -85,6 +85,12 @@ defmodule BlockScoutWeb.WebRouter do
     resources("/login", LoginController, only: [:index])
     get("/tokenupdate", TokenupdateController, :index)
     get("/auditContract", AuditContractController, :index)
+    get("/kycselect", KycSelectController, :index)
+    get("/manualkycselect", ManualKycSelectController, :index)
+    get("/autokyc", AutoKycController, :index)
+
+
+
 
 
 

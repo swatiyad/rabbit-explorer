@@ -1,11 +1,7 @@
-<script>
-function setvbal(){
-var collection = document.getElementsByClassName("setinput");
- var dataHandler=collection[0].value;
- console.log( web3.eth.getCode(dataHandler))
-}
- setInterval(setvbal, 500);
-</script>
+
+
+
+
 
 <!-- Search navbar -->
 <div class="container search-form d-lg-flex d-inline-block pt-3 mb-0 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
@@ -22,7 +18,7 @@ var collection = document.getElementsByClassName("setinput");
 			>
 		</div>
 			<select class="form-select border-0 " aria-label="Default select example">
-				<option selected>All Filters</option>
+				tribute specifies the coordinates of an area in an image map.on selected>All Filters</option>
 				<option value="1">Tokens</option>
 				<option value="2">Accounts</option>
 				<option value="3">Hash</option>
