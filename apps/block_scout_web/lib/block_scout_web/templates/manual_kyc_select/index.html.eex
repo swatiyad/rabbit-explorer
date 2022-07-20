@@ -1,140 +1,161 @@
 <body>
   <!-- <h1 class="text-center ">KYC FORM</h1> -->
   <div class="page_min_height pt-5">
-    <div class="container"><h1 class="text-center"> KYC FORM</h1>
-    <div class="border-top py-1 width100 mx-auto"></div>
-    <p class="text-center sub-text">Compete your KYC Procedure to verify</p>
-    </div>
   <form>
     <div class="container">
-      <div class="row py-5">
-        <div class="col-xl-6 col-md-6 col-12">
-            <div class="card shadow">
-            <div class="card-header">Personal Details</div>
-              <div class="card-body">
-
-                  <div class="form-group">
-                    <label for="Father's Name">Father's Name</label>
-                    <input type="text" name="name" placeholder="Father Name" class="form-control" require/>
-                  </div>
-
-                  <div class="form-group">
-                    <div>
-                      <label for="Gender">Gender</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" name="radiogroup1" type="radio" id="rd1" value="male">
-                      <label class="form-check-label" for="Male">Male</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" id="rd2" value="Female">
-                      <label class="form-check-label" name="radiogroup1" for="Female">Female</label>
-                    </div>
-                  </div>
-
-                  <div class="form-group">
-                  <div>
-                      <label for="Dob">Date of Birth</label>
-                  </div>
-                    <input class="form-control" type="date" name="dob" placeholder=" DOB" required />
-                  </div>
-
-                  <div class="form-group">
-                  <div>
-                      <label for="zip">Zip Code</label>
-                  </div>
-                      <input class="form-control" type="text" name="zip" placeholder=" ZIP CODE" required />
-                  </div>
-
-                  <div class="form-group">
-                  <div>
-                      <label for="City">City</label>
-                  </div>
-                    <input class="form-control" type="text" name="City" placeholder=" City" required />
-                  </div>
-
-                  <div class="form-group">
-                  <div>
-                      <label for="Country">Country</label>
-                  </div>
-                    <input class="form-control" type="text" name="password" placeholder="Country" required />
-                  </div>
-
-
-              </div>
+      <div class="row px-3">
+        <div class="col-lg-3 bg-white py-2 shadow border rounded stickysidebar">
+          <div class="card-body border-0">
+            <h2 class="card-title">Quick Links</h2>
+            <ul class="side_nav my-3">
+            <li><%= link("KYC Verification", to: "/kycselect")%></li>
+            <li><%= link("Contract Address verification", to: "/#")%></li>
+            <li><%= link("Token Update", to: "/tokenupdate")%></li>
+            <li><%= link("Audit Contract", to: "/auditContract")%></li>
+            </ul>
             </div>
-        </div>
-        <div class="col-xl-6 col-md-6 col-12">
-          <div class="card mb-4">
-            <div class="card-header">Adhar Card </div>
-            <div class="card-body">
-              <div class="form-group">
-                <input class="form-control" type="text" name="adhar" placeholder="Enter Adhar Card Number " required />
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
-                  <input type="file" name="" class="d-none">
-                  <input type="text" class="form-control py-4" placeholder="Front Side Adhaar" x-model="fileName">
-                  <button class="btn btn-secondary px-4" type="button"> Browse</button>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
-                  <input type="file" name="" class="d-none">
-                  <input type="text" class="form-control py-4" placeholder="Back Side Adhaar" x-model="fileName">
-                  <button class="btn btn-secondary px-4" type="button"> Browse</button>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
-                  <input type="file" name="" class="d-none">
-                  <input type="text" class="form-control py-4" placeholder="Adhaar card with selfie" x-model="fileName">
-                  <button class="btn btn-secondary px-4" type="button"> Browse</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header">Pan Card </div>
-            <div class="card-body">
-              <div class="form-group">
-                <input class="form-control" type="text" name="adhar" placeholder="Enter Pan Card Number " required />
-              </div>
-
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
-                  <input type="file" name="" class="d-none">
-                  <input type="text" class="form-control py-4 file-upload-wrapper" placeholder="Pan Card">
-                  <button class="btn btn-secondary px-4 file-upload-field" type="button"> Browse</button>
-                </div>
-              </div>
-
-            </div>
+            <div class="card-body border-0">
+              <div class="card-title">Watch List & Notes</div>
+              <ul class="side_nav my-3">
+              <li><%= link("Watch List", to: "/#")%></li>
+              <li><%= link("Private Name Tag", to: "/#")%></li>
+              <li><%= link("txn Private Notes", to: "/#")%></li>
+              </ul>
           </div>
         </div>
+        <div class="col-xl-9 col-md-9 col-12">
+         <h1 class=""> KYC FORM</h1>
+          <hr class="hor_line"/>
+          <div class="row">
+            <div class="col-xl-12 col-md-6 col-12">
+              <div class="card shadow">
+                <div class="card-header">Personal Details</div>
+                  <div class="card-body row">
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="Father's Name">Father's Name</label>
+                        <input type="text" name="name" placeholder="Father Name" class="form-control" require/>
+                      </div>
 
-        <div class="col-md-12 text-right">
-          <div class="input_field checkbox_option">
-            <input type="checkbox" id="cb1">
-            <label for="cb1">I agree with terms and conditions</label>
+
+                      <div class="form-group">
+                      <div>
+                          <label for="Dob">Date of Birth</label>
+                      </div>
+                        <input class="form-control" type="date" name="dob" placeholder=" DOB" required />
+                      </div>
+                      <div class="form-group">
+                        <div>
+                          <label for="Gender">Gender</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" name="radiogroup1" type="radio" id="rd1" value="male">
+                          <label class="form-check-label" for="Male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" id="rd2" value="Female">
+                          <label class="form-check-label" name="radiogroup1" for="Female">Female</label>
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-lg-6">
+
+                      <div class="form-group">
+                      <div>
+                          <label for="zip">Zip Code</label>
+                      </div>
+                          <input class="form-control" type="text" name="zip" placeholder=" ZIP CODE" required />
+                      </div>
+
+                      <div class="form-group">
+                      <div>
+                          <label for="City">City</label>
+                      </div>
+                        <input class="form-control" type="text" name="City" placeholder=" City" required />
+                      </div>
+
+                      <div class="form-group">
+                      <div>
+                          <label for="Country">Country</label>
+                      </div>
+                        <input class="form-control" type="text" name="password" placeholder="Country" required />
+                      </div>
+                      </div>
+
+
+                  </div>
+                </div>
+            </div>
+            <div class="col-xl-12 col-md-6 col-12">
+              <div class="card mb-4">
+                <div class="card-header">Adhar Card </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="adhar" placeholder="Enter Adhar Card Number " required />
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
+                      <input type="file" name="" class="d-none">
+                      <input type="text" class="form-control py-4" placeholder="Front Side Adhaar" x-model="fileName">
+                      <button class="btn btn-secondary px-4" type="button"> Browse</button>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
+                      <input type="file" name="" class="d-none">
+                      <input type="text" class="form-control py-4" placeholder="Back Side Adhaar" x-model="fileName">
+                      <button class="btn btn-secondary px-4" type="button"> Browse</button>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
+                      <input type="file" name="" class="d-none">
+                      <input type="text" class="form-control py-4" placeholder="Adhaar card with selfie" x-model="fileName">
+                      <button class="btn btn-secondary px-4" type="button"> Browse</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">Pan Card </div>
+                <div class="card-body">
+                  <div class="form-group">
+                    <input class="form-control" type="text" name="adhar" placeholder="Enter Pan Card Number " required />
+                  </div>
+
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-text text-muted rounded-0"><i class="fas fa-image"></i></span>
+                      <input type="file" name="" class="d-none">
+                      <input type="text" class="form-control py-4 file-upload-wrapper" placeholder="Pan Card">
+                      <button class="btn btn-secondary px-4 file-upload-field" type="button"> Browse</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 ">
+              <div class="card">
+                <div class="card-body">
+                  <div class="input_field checkbox_option">
+                    <input type="checkbox" id="cb1">
+                    <label for="cb1">I agree with terms and conditions</label>
+                  </div>
+                  <input class="btn btn-primary" type="submit" value="Register" />
+                </div>
+              </div>
           </div>
-          <input class="btn btn-primary" type="submit" value="Register" />
         </div>
       </div>
     </div>
   </div>
   </form>
-
-
-
-
-
-
 
 </body>
 <script>
@@ -160,9 +181,9 @@ font-family:arial;
 .font_setter{
 font-size:15px;
 }
+
 .font-size-setter{
   font-size:15px;
-
-
 }
+
 </style>

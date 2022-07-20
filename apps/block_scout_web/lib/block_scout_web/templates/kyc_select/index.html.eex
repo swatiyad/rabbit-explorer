@@ -1,34 +1,60 @@
-<div class="container pt-5 mt-5 min_page_height">
+<div class="container min_page_height">
+    <div class="row px-3">
+        <div class="col-lg-3 bg-white py-2 shadow border rounded stickysidebar">
+          <div class="card-body border-0">
+            <h2 class="card-title">Quick Links</h2>
+            <ul class="side_nav my-3">
+            <li><%= link("KYC Verification", to: "/kycselect")%></li>
+            <li><%= link("Contract Address verification", to: "/#")%></li>
+            <li><%= link("Token Update", to: "/tokenupdate")%></li>
+            <li><%= link("Audit Contract", to: "/auditContract")%></li>
+            </ul>
+            </div>
+            <div class="card-body border-0">
+              <div class="card-title">Watch List & Notes</div>
+              <ul class="side_nav my-3">
+              <li><%= link("Watch List", to: "/#")%></li>
+              <li><%= link("Private Name Tag", to: "/#")%></li>
+              <li><%= link("txn Private Notes", to: "/#")%></li>
+              </ul>
+          </div>
+        </div>
 
-    <h1 class="text-center"> KYC</h1>
-    <div class="border-top py-1 width100 mx-auto"></div>
-    <p class="text-center sub-text">Choose The Method You Want To Proceed</p>
+        <div class="col-lg-9 py-2">
+            <h1> Choose KYC Method</h1>
+            <hr class="hor_line">
 
-    <div class="row kyc_div d-flex justify-content-center mt-5" id="top">
-        <div class="col-xl-4 col-md-6 col-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex justify-content-center">
-                        <img src="images/autokyc.png" class="width100">
-                    </div>
-                    <div class="text-center">
-                        <h2 class="font-weight-bold">Auto KYC</h2>
-                        <p>Save time by auto KYC procedure in seconds</p>
-                        <%= link("Auto Kyc", to: "/autokyc",  class: "btn btn-primary text-white btn-block set-tab")%>
+            <div class="row kyc_div" id="top">
+                <div class="col-md-12 mb-3">
+                    <h4>KYC means Know Your Customer and sometimes Know Your Client. KYC or KYC check is the mandatory process of identifying and verifying the client's identity when opening an account and periodically over time. In other words, banks must make sure that their clients are genuinely who they claim to be.</h4>
+                </div>
+
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <img src="images/autokyc.png" class="width100">
+                            </div>
+                            <div class="text-center">
+                                <h2 class="font-weight-bold">Auto KYC</h2>
+                                <p>Save time by auto KYC procedure in seconds</p>
+                                <%= link("Auto Kyc", to: "/autokyc",  class: "btn btn-primary text-white btn-block set-tab")%>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="col-xl-4 col-md-6 col-12">
-            <div class="card">
-                <div class="card-body">
-                    <div class="d-flex justify-content-center">
-                        <img src="images/manualkyc.png" class="width100">
-                    </div>
-                    <div class="text-center">
-                        <h2 class="font-weight-bold">Manual KYC</h2>
-                        <p>Analyze and process submitted documents manually</p>
-                        <%= link("Manual Kyc", to: "/manualkycselect",   class:  "btn btn-primary text-white btn-block set-tab")%>
+                <div class="col-xl-6 col-md-6 col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-center">
+                                <img src="images/manualkyc.png" class="width100">
+                            </div>
+                            <div class="text-center">
+                                <h2 class="font-weight-bold">Manual KYC</h2>
+                                <p>Analyze and process submitted documents manually</p>
+                                <%= link("Manual Kyc", to: "/manualkycselect",   class:  "btn btn-primary text-white btn-block set-tab")%>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
