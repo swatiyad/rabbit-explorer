@@ -16,7 +16,7 @@
               padding: 2rem;">
             <div class="tile-transactions text-dark">
               <span class="mr-2 text-dark font-weight-bold"><%= gettext("%{count} Transactions", count: Enum.count(@block.transactions)) %></span>
-              <i class="text-nowrap text-dark d-sm-none" data-from-now="<%= @block.timestamp %>"> </i>
+              <i class="text-nowrap text-dark" data-from-now="<%= @block.timestamp %>"> </i>
             </div>
             <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
               <div class="sub-text text-truncate">
@@ -37,7 +37,4 @@
           </div>
         </div>
       </div>
-
-
-
 </div>

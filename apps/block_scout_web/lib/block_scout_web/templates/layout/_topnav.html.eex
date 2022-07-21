@@ -17,10 +17,7 @@
     <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
 
       <ul class="navbar-nav">
-      <div class="nav-link topnav-nav-link">
 
-       <span><%= link("Login", to: "/login", class: "")%></span>
-       </div>
         <%= if Application.get_env(:block_scout_web, BlockScoutWeb.WebRouter)[:enabled] do %>
           <li class="nav-item dropdown">
             <a class="nav-link topnav-nav-link dropdown-toggle" href="#" id="navbarBlocksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -123,14 +120,16 @@
 
     <%= render BlockScoutWeb.SmartContractView, "_connect_container.html" %>
 
-    <div class="button ml-3 bg-success text-white" id="wallet_connect" onclick="waller()" >
-    Connect wallet
+    <div class="btn ml-3 btn-teal text-white" id="wallet_connect" onclick="waller()" >
+    Connect Wallet
     </div>
 
     <script>
+
     function waller() {
       var set= document.getElementById("wallet_connect")
-      set.innerHTML="Conected";
+      document.getElementById('connectedDiv').style.display = "block";
+      document.getElementById('wallet_connect').style.display = "none";
       if (typeof window.ethereum !== 'undefined') {
         ethereum.request({ method: 'eth_requestAccounts' });
       }

@@ -1,4 +1,4 @@
-<footer class="footer"style="background:url(/images/geometic-bg-black.jpg); color:#dee2e6 !important;">
+<footer class="footer">
   <div class="footer-body container">
     <!-- Logo -->
 
@@ -6,33 +6,33 @@
     <% col_size = if Enum.empty?(other_explorers), do: 4, else: 2 %>
 
     <div class="row justify-content-between">
-      <div class="col-xs-12 col-lg-6">
-      <div class="row">
+      <div class="col-xs-12 col-lg-8">
+        <div class="row">
       <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-        <h3>INRx Ecosystem</h3>
+        <h2>INRx Ecosystem</h3>
         <ul>
-          <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("INRx Network") %></a></li>
-          <li><a href="https://github.com/blockscout/blockscout" rel="noreferrer" class="footer-link"><%= gettext("Calculas Wallet") %></a></li>
-          <li><a href="http://discord.gg/gnosischain" rel="noreferrer" class="footer-link"><%= gettext("Black Pepper") %></a></li>
-          <li><a href="https://forum.poa.network/c/blockscout" rel="noreferrer" class="footer-link"><%= gettext("Warmhole Spall") %></a></li>
+          <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("INRx Network") %></a></li>
+          <li><a href="https://github.com/blockscout/blockscout" rel="noreferrer" class="footer-link text-white"><%= gettext("Calculas Wallet") %></a></li>
+          <li><a href="http://discord.gg/gnosischain" rel="noreferrer" class="footer-link text-white"><%= gettext("Black Pepper") %></a></li>
+          <li><a href="https://forum.poa.network/c/blockscout" rel="noreferrer" class="footer-link text-white"><%= gettext("Warmhole Spall") %></a></li>
         </ul>
       </div>
       <% main_nets = main_nets(other_networks()) %>
 
       <%= unless Enum.empty?(main_nets) do %>
         <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-          <h3><%= gettext("Developers") %></h3>
+          <h2><%= gettext("Developers") %></h2>
           <ul>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Github") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Xide Work") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Documentation") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Developer Hub") %></a></li>
+            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Github") %></a></li>
+            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Xide Work") %></a></li>
+            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Documentation") %></a></li>
+            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Developer Hub") %></a></li>
             <%= if System.get_env("COIN_NAME") && System.get_env("NETWORK_PATH") && System.get_env("SUBNETWORK") && System.get_env("JSON_RPC") && System.get_env("CHAIN_ID") do %>
-            <li><a class="footer-link js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;"><%= gettext("Add") <> " #{System.get_env("SUBNETWORK")}" %></a></li>
+            <li><a class="footer-link text-white text-white js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;"><%= gettext("Add") <> " #{System.get_env("SUBNETWORK")}" %></a></li>
           <% end %>
                  <%= if Application.get_env(:block_scout_web, BlockScoutWeb.ApiRouter)[:reading_enabled] || Application.get_env(:block_scout_web, :api_url) do %>
           <li class="nav-item dropdown">
-            <a href="#" role="button" id="navbarAPIsDropdown" class=" footer-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a href="#" role="button" id="navbarAPIsDropdown" class=" footer-link text-white topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <%# <span class="nav-link-icon">
                 <%= render BlockScoutWeb.IconsView, "_api_icon.html" %
               </span> %>
@@ -66,12 +66,12 @@
 
       <%= unless Enum.empty?(test_nets) do %>
         <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-          <h3><%= gettext("About Us") %></h3>
+          <h2><%= gettext("About Us") %></h2>
           <ul>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Team Info") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Support Center") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Privacy Policy") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Terms of Service") %></a></li>
+            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Team Info") %></a></li>
+            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Support Center") %></a></li>
+            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Privacy Policy") %></a></li>
+            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Terms of Service") %></a></li>
           </ul>
         </div>
       <% end %>

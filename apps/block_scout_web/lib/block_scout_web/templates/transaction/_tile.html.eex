@@ -12,7 +12,6 @@
                 <td>
                 <div class="text-truncate d-flex text-success width100">
                   <%= render "_link.html", transaction_hash: @transaction.hash, data_test: "address_hash_link" %>
-
                 </div>
                 </td>
 
@@ -62,6 +61,14 @@
 
                 <td>
                     <div class="text-truncate d-flex width100 ">
+
+                      <%# <%= if error_in_internal_tx do %>
+                        <%# <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html", text: gettext("Error in internal transactions"), additional_classes: ["color-inherit"] %>
+                      <%# end %>
+                      <span class="tile-label font-weight-normal" data-test="transaction_type">
+                        <%# <%= transaction_display_type(@transaction) %>
+                        <img class="mr-2 media_icon" src="images/smart contract_Ana.svg" style="width:18px;">
+                      </span>
                         <span class="text-truncate">
                             <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
                         </span>
@@ -74,22 +81,16 @@
                             <span class="tile-title">
                               <%= value(@transaction, include_label: false) %> <%= gettext "Ether" %>
                             </span>
-                            <span class="ml-0 ml-md-1 text-nowrap">
-                              <%= formatted_fee(@transaction, denomination: :ether, include_label: false) %> <%= gettext "TX Fee" %>
-                            </span>
                         </span>
                     </div>
                 </td>
 
                   <td>
-                    <div class="text-truncate d-flex width100">
+                    <div class="text-truncate d-flex">
                         <span>
                         <div>
-                            <%= if error_in_internal_tx do %>
-                              <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html", text: gettext("Error in internal transactions"), additional_classes: ["color-inherit"] %>
-                            <% end %>
-                            <span class="tile-label font-weight-normal" data-test="transaction_type">
-                              <%= transaction_display_type(@transaction) %>
+                             <span class="ml-0 ml-md-1 text-nowrap">
+                              <%= formatted_fee(@transaction, denomination: :ether, include_label: false) %>
                             </span>
                         </div>
                         </span>
@@ -98,7 +99,7 @@
 
                 <td>
                     <div class="">
-                        <span class=" tile-status-label ml-2 ml-md-0 " data-test="transaction_status">
+                        <span class="tile-status-label ml-2 ml-md-0 " data-test="transaction_status">
                           <%# <%= if status_class(@transaction) == "tile-status--pending" do %>
                             <%# <div class="loading-spinner-small">
                               <span class="loading-spinner-block-1"></span>

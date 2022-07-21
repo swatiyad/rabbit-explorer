@@ -2,14 +2,14 @@
 #export MIX_ENV=prod
 export ETHEREUM_JSONRPC_VARIANT=parity
 export ETHEREUM_JSONRPC_HTTP_URL=https://rabbit.analog-rpc.com/
-#export ETHEREUM_JSONRPC_WS_URL=ws://rabbit.analog-rpc.com/ws
-export DATABASE_URL=postgres://silica:silica_9616@43.204.10.231:5432/blockscout
+export ETHEREUM_JSONRPC_WS_URL=ws://rabbit.analog-rpc.com/ws
+export DATABASE_URL=postgres://silica:silica_9616@43.204.10.231:5432/blockscout?ssl=false
 export ETHEREUM_JSONRPC_TRACE_URL=https://rabbit.analog-rpc.com/
 export NETWORK=Rabbit
 export SUBNETWORK="Rabbit Network"
-export LOGO=/images/analogscan_logo.png
-export LOGO_FOOTER=/images/analogscan_logo.png
-#export ETHEREUM_JSONRPC_TRANSPORT=http
+export LOGO=/images/analog.png
+export LOGO_FOOTER=/images/analog.png
+export ETHEREUM_JSONRPC_TRANSPORT=http
 export NETWORK_PATH=/
 export API_PATH=/
 export BLOCKSCOUT_HOST=rabbit.analogscan.com

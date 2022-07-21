@@ -1,19 +1,24 @@
-<%# <div class="container-fluid">
-<div  class="background-style-setter text-white" >
-<div class="container head-setter py-5">
- ACCOUNT OVERVIEW<div><b class="">Home -</b> KYC FORM
- </div>
-</div>
-</div> %>
 
 <div class="container">
-  <div class="card">
-    <div class="card-body">
-      <span><%= link("Kyc Verify", to: "/kycselect")%></span>
-      <a href="#" class="text-dark"> VERFIED CONTRACT ADDRESS</a>
-      <span><%= link("Token Update", to: "/tokenupdate")%></span>
-      <span><%= link("auditContract", to: "/auditContract")%></span>
-    <div>
-  <div>
-
+  <div class="row px-3 mb-5">
+    <div class="col-lg-6 d-flex justify-content-center m-auto bg-white py-2 shadow border rounded">
+      <div class="card-body border-0">
+        <h2 class="card-title">Quick Links</h2>
+        <ul class="side_nav my-3">
+        <li><%= link("KYC Verification", to: "/kycselect")%></li>
+        <li><%= link("Contract Address verification", to: "/#")%></li>
+        <li><%= link("Token Update", to: "/tokenupdate")%></li>
+        <li><%= link("Audit Contract", to: "/auditContract")%></li>
+        </ul>
+        </div>
+        <div class="card-body border-0">
+          <div class="card-title">Watch List & Notes</div>
+          <ul class="side_nav my-3">
+          <li><%= link("Watch List", to: "/#")%></li>
+          <li><%= link("Private Name Tag", to: "/#")%></li>
+          <li><%= link("txn Private Notes", to: "/#")%></li>
+          </ul>
+      </div>
+    </div>
+  </div>
 </div>
