@@ -7,8 +7,8 @@
           <div class="media border-bottom mb-4 pb-4">
               <img class="mr-3 media_icon" src="images/analog_icon.svg"  style="width:50px;">
               <div class="media-body">
-                <span class="dashboard-banner-network-stats-label">
-                 Total Price
+                <span class="dashboard-banner-network-stats-label font-weight-bold">
+                 Analog Price
                 </span>
                 <span class="dashboard-banner-network-stats-value fs-14">
                $1,474.30 @ 0.06687 BTC (+8.81%)
@@ -19,7 +19,7 @@
           <div class="media  mb-3 pb-3">
             <img class="mr-3 media_icon" src="images/market-cap.svg" style="width:50px;">
             <div class="media-body" >
-              <span class="dashboard-banner-network-stats-label" >
+              <span class="dashboard-banner-network-stats-label font-weight-bold" >
                 Market Cap
               </span>
               <span class="dashboard-banner-network-stats-value" data-selector="transaction-count">
@@ -33,7 +33,7 @@
           <div class="media border-bottom mb-4 pb-4">
           <img class="mr-3 media_icon" src="images/total-transaction.svg" style="width:50px;">
             <div class="media-body" >
-              <span class="dashboard-banner-network-stats-label" >
+              <span class="dashboard-banner-network-stats-label font-weight-bold">
                 <%= gettext "Total transactions" %>
               </span>
               <span class="dashboard-banner-network-stats-value" data-selector="transaction-count">
