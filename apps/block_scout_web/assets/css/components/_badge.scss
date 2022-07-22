@@ -1,5 +1,4 @@
 $badge-success-color: #15bba6 !default;
-$badge-teal-color: #20c997 !default;
 $badge-success-background-color: rgba($badge-success-color, 0.1) !default;
 $badge-danger-color: #ed9966 !default;
 $badge-danger-background-color: rgba($badge-danger-color, 0.1) !default;
@@ -43,8 +42,5 @@ $badge-neutral-background-color: rgba($secondary, .1) !default;
     background-color: $badge-neutral-background-color;
     color: $badge-neutral-color;
   }
-  &.badge-teal {
-    background-color: $bbadge-teal-color;
-    color: $badge-neutral-color;
-  }
+ 
 }
