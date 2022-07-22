@@ -59,7 +59,7 @@
           </div>
 
           <div class="media mb-3 pb-3">
-            <img class="mr-3 media_icon" src="images/identity.svg" style="width:50px;">
+            <img class="mr-3 media_icon" src="images/adhar-front.png" style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label">
                 Total Identities
