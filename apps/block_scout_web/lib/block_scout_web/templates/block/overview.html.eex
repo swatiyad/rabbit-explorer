@@ -5,7 +5,7 @@
 <section class="">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
   <div class="row mb-2">
-    <div class="col-md-6">
+    <div class="col-md-6">  
       <h1 class="mb-2" data-test="detail_type">
         <%= gettext("%{block_type} Details", block_type: block_type(@block)) %>
       </h1>
