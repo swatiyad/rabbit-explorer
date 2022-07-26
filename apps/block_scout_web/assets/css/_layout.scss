@@ -1,5 +1,14 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
+.font-32 {
+  font-size: 32px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+
 .layout-container {
   display: flex;
   flex-direction: column;
@@ -159,19 +168,35 @@ width: 150px;
     box-shadow: none;
   }
 
-  .fixed-layout {
+   .fixed-layout {
     table-layout: unset
   }
 
-  .width100 {
-    width: unset;
-  }
+   .width100 {
+     width: 50px;
+   }
 
-  .width150 {
-    width: unset;
+   .width150 {
+     width: 50px;
 
+   }
+}
+
+@media screen and (min-device-width: 290px) and (max-device-width: 768px) {
+  .fixed-layout {
+    table-layout: unset!important
+}
+}
+
+
+@media (min-width: 576px) and (max-width: 1200px){
+.container {
+    padding-left: 45px;
+    padding-right: 45px;
+    max-width: 100%;
   }
 }
+
 
 
 ul.side_nav {
@@ -245,41 +270,45 @@ ul.side_nav {
 }
 
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1098px) {
+@media only screen and ( min-device-width: 768px) and ( max-device-width: 1098px) {
 .deep-shadow {
     box-shadow: none;
   }
 
-  .fixed-layout {
-    table-layout: unset
+  // .fixed-layout {
+  //   table-layout: unset
+  // }
+
+   .width100 {
+     width: 50px;
   }
 
-  .width100 {
-    width: unset;
+   .width150 {
+    width: 50px;
+
   }
 
-  .width150 {
-    width: unset;
-
+  .font-25 {
+    font-size: 22px;
   }
 
 }
-@media only screen and (min-device-width: 960px) and (max-device-width: 1024px) {
+@media only screen and ( min-device-width: 769px) and ( max-device-width: 980px) {
   .deep-shadow{
-   box-shadow: none;
+    box-shadow: none;
   } 
 
-.fixed-layout {
-  table-layout:unset
+   .fixed-layout {
+     table-layout:unset;
   }
 
-  .width100 {
-    width: unset;
-  }
+   .width100 {
+     width: 50px;
+   }
 
-  .width150 {
-    width: unset;
+   .width150 {
+     width: 50px;
 
-  }
+   }
 }
 

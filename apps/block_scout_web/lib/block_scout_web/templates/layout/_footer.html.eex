@@ -1,4 +1,5 @@
-<footer class="footer">
+<footer class="footer" style="background-image: url(./images/footer_bg.png);background-repeat:no-repeat;
+background-size:cover; background-position:center">
   <div class="footer-body container">
     <!-- Logo -->
 
@@ -9,12 +10,14 @@
       <div class="col-xs-12 col-lg-8">
         <div class="row">
       <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-        <h2>INRx Ecosystem</h3>
+        <h2> Ecosystem</h3>
         <ul>
           <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("INRx Network") %></a></li>
-          <li><a href="https://github.com/blockscout/blockscout" rel="noreferrer" class="footer-link text-white"><%= gettext("Calculas Wallet") %></a></li>
-          <li><a href="http://discord.gg/gnosischain" rel="noreferrer" class="footer-link text-white"><%= gettext("Black Pepper") %></a></li>
-          <li><a href="https://forum.poa.network/c/blockscout" rel="noreferrer" class="footer-link text-white"><%= gettext("Warmhole Spall") %></a></li>
+          <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("INRX Scan") %></a></li>
+          <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("Analog Inceptive") %></a></li>
+          <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("Paper Wallet") %></a></li>
+          <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("Calculas Dex") %></a></li>
+          <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("Meraj Bridge") %></a></li>
         </ul>
       </div>
       <% main_nets = main_nets(other_networks()) %>
@@ -66,12 +69,11 @@
 
       <%= unless Enum.empty?(test_nets) do %>
         <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-          <h2><%= gettext("About Us") %></h2>
+          <h2><%= gettext("Foundation") %></h2>
           <ul>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Team Info") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Support Center") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Privacy Policy") %></a></li>
-            <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("Terms of Service") %></a></li>
+             <li><a href="#" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("INRx Foundation") %></a></li>
+            <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("Analog Foundation") %></a></li>
+            <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("DEO Foundation") %></a></li>
           </ul>
         </div>
       <% end %>
@@ -92,7 +94,7 @@
       </div>
     </div>
 
-        <p class="footer-info-text"><%= gettext("Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks.") %></p>
+        <p class="footer-info-text"><%= gettext("Analog Scan is a decentralised platform for smart contracts that also includes an analytics platform and a block explorer.") %></p>
         <div class="footer-social-icons">
           <a href="https://github.com/blockscout/blockscout" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
             <div class="footer-social-icon-container fontawesome-icon github"></div>

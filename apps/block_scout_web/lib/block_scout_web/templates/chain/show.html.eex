@@ -7,10 +7,10 @@
           <div class="media border-bottom mb-4 pb-4">
               <img class="mr-3 media_icon" src="images/analog_icon.svg"  style="width:50px;">
               <div class="media-body">
-                <span class="dashboard-banner-network-stats-label font-weight-bold">
+                <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
                  Analog Price
                 </span>
-                <span class="dashboard-banner-network-stats-value fs-14">
+                <span class="dashboard-banner-network-stats-value fs-14 text-truncate text-wrap">
                $1,474.30 @ 0.06687 BTC (+8.81%)
                 </span>
               </div>
@@ -19,8 +19,8 @@
           <div class="media  mb-3 pb-3">
             <img class="mr-3 media_icon" src="images/market-cap.svg" style="width:50px;">
             <div class="media-body" >
-              <span class="dashboard-banner-network-stats-label font-weight-bold" >
-                Market Cap
+              <span class="dashboard-banner-network-stats-label font-weight-bold  text-uppercase">
+                Global Market Cap
               </span>
               <span class="dashboard-banner-network-stats-value" data-selector="transaction-count">
              112,25 USD
@@ -31,10 +31,10 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="media border-bottom mb-4 pb-4">
-          <img class="mr-3 media_icon" src="images/total-transaction.svg" style="width:50px;">
+          <img class="mr-3 media_icon" src="images/transaction.svg" style="width:50px;">
             <div class="media-body" >
-              <span class="dashboard-banner-network-stats-label font-weight-bold">
-                <%= gettext "Total transactions" %>
+              <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
+               Transaction
               </span>
               <span class="dashboard-banner-network-stats-value" data-selector="transaction-count">
                 <%= BlockScoutWeb.Cldr.Number.to_string!(@transaction_estimated_count, format: "#,###") %>
@@ -59,9 +59,9 @@
           </div>
 
           <div class="media mb-3 pb-3">
-            <img class="mr-3 media_icon" src="images/adhar-front.png" style="width:50px;">
+            <img class="mr-3 media_icon" src="images/adhar-front.svg" style="width:50px;">
             <div class="media-body">
-              <span class="dashboard-banner-network-stats-label">
+              <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
                 Total Identities
               </span>
               <span class="dashboard-banner-network-stats-value" data-selector="address-count">
@@ -189,7 +189,7 @@
   <div class="card card-chain-transactions border shadow">
     <div class="card-body table-responsive table-hover p-0">
    <div class="">
-        <table class="table mb-0 fixed-layout" style="width: 100%;">
+        <table class="table mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
                   <th scope="col">Hash</th>
