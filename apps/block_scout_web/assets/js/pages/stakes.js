@@ -61,7 +61,7 @@ export const initialState = {
 }
 
 // 100 - id of xDai network, 101 - id of xDai test network
-export const allowedNetworkIds = [100, 101]
+export const allowedNetworkIds = [1807]
 
 export function reducer (state = initialState, action) {
   switch (action.type) {

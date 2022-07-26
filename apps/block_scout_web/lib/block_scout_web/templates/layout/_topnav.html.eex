@@ -118,7 +118,12 @@
       </svg>
     </button>
 
+
     <%= render BlockScoutWeb.SmartContractView, "_connect_container.html" %>
+
+
+
+
 
     <div class="btn ml-3 btn-teal text-white" id="wallet_connect" onclick="waller()" >
     Connect Wallet
