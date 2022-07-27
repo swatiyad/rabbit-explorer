@@ -8,6 +8,10 @@
   font-size: 24px;
 }
 
+.width160 {
+  width: 160px;
+}
+
 
 .layout-container {
   display: flex;
@@ -47,7 +51,7 @@
 }
 
 .table-head {
-  background-color:#b4e9d5
+  background-color:#f6f8fb;
 }
 .dark-theme-applied .table-head {
   background-color:#3f426c;
@@ -180,12 +184,29 @@ width: 150px;
      width: 50px;
 
    }
+   .border-bottm-sm {
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .pb-sm {   
+    padding-bottom: 15px;
+  }
+
+  .mb-sm {
+    margin-bottom: 15px;
+  }
+   
 }
 
 @media screen and (min-device-width: 290px) and (max-device-width: 768px) {
   .fixed-layout {
     table-layout: unset!important
 }
+
+.border-bottm-sm {
+  border-bottom: 1px solid #dee2e6;
+}
+
 }
 
 
@@ -195,6 +216,7 @@ width: 150px;
     padding-right: 45px;
     max-width: 100%;
   }
+   
 }
 
 
@@ -265,8 +287,8 @@ ul.side_nav {
 
 .btn-teal {
   color: #fff;
-  background-color: #20c997;
-  border-color: #20c997;
+  background-color: #42C670;
+  border-color: #42C670;
 }
 
 
@@ -290,7 +312,7 @@ ul.side_nav {
 
   .font-25 {
     font-size: 22px;
-  }
+  }   
 
 }
 @media only screen and ( min-device-width: 769px) and ( max-device-width: 980px) {
@@ -309,6 +331,6 @@ ul.side_nav {
    .width150 {
      width: 50px;
 
-   }
+   }       
 }
 

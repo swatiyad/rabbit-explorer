@@ -10,13 +10,13 @@
                 <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
                  Analog Price
                 </span>
-                <span class="dashboard-banner-network-stats-value fs-14 text-truncate text-wrap">
+                <span class="dashboard-banner-network-stats-value fs-14 text-truncate width160">
                $1,474.30 @ 0.06687 BTC (+8.81%)
                 </span>
               </div>
 
           </div>
-          <div class="media  mb-3 pb-3">
+          <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
             <img class="mr-3 media_icon" src="images/market-cap.svg" style="width:50px;">
             <div class="media-body" >
               <span class="dashboard-banner-network-stats-label font-weight-bold  text-uppercase">
@@ -31,7 +31,7 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="media border-bottom mb-4 pb-4">
-          <img class="mr-3 media_icon" src="images/transaction.svg" style="width:50px;">
+          <img class="mr-3 media_icon" src="images/transaction.svg" style="width:50px;height: 42px;">
             <div class="media-body" >
               <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
                Transaction
@@ -58,14 +58,14 @@
               </div>
           </div>
 
-          <div class="media mb-3 pb-3">
+          <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
             <img class="mr-3 media_icon" src="images/adhar-front.svg" style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
                 Total Identities
               </span>
               <span class="dashboard-banner-network-stats-value" data-selector="address-count">
-               11,5252 USD
+               11,5252
               </span>
             </div>
 
@@ -196,7 +196,7 @@
                   <th scope="col">Block</th>
                   <th scope="col">Age</th>
                   <th scope="col">Method</th>
-                  <th scope="col">From</th>
+                  <th scope="col">From <i class="fas fa-arrow-right text-success"></i></th>
                   <th scope="col">To</th>
                   <th scope="col">Amount</th>
                   <th scope="col">Txn Fee</th>

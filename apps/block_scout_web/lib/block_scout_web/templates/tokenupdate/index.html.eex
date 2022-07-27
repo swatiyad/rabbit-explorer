@@ -1,6 +1,6 @@
 <div class="container">
       <div class="row px-3">
-        <div class="col-lg-3 bg-white py-2 shadow border rounded stickysidebar">
+        <div class="col-lg-3 bg-white py-2 shadow border rounded stickysidebar mb-5">
           <div class="card-body border-0">
             <h2 class="card-title">Quick Links</h2>
             <ul class="side_nav my-3">

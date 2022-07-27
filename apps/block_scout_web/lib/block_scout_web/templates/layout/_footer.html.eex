@@ -15,7 +15,7 @@ background-size:cover; background-position:center">
           <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("INRx Network") %></a></li>
           <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("INRX Scan") %></a></li>
           <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("Analog Inceptive") %></a></li>
-          <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("Paper Wallet") %></a></li>
+          <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("Pepper Wallet") %></a></li>
           <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("Calculas Dex") %></a></li>
           <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("Meraj Bridge") %></a></li>
         </ul>
