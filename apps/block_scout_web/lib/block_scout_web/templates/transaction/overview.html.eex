@@ -71,7 +71,7 @@
               <%= gettext "Transaction Hash" %>
             </dt>
             <dd class="col-sm-9 col-lg-10" style="word-break: break-all;">
-              <span class="transaction-details-address sub-text" data-test="transaction_detail_hash"><%= @transaction %> </span>
+              <span class="transaction-details-address" data-test="transaction_detail_hash"><%= @transaction %> </span>
               <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                   additional_classes: ["btn-copy-icon-small", "btn-copy-icon-custom", "btn-copy-icon-no-borders"],
                   clipboard_text: @transaction,
