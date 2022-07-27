@@ -29,7 +29,7 @@
           <%= gettext "There are no pending transactions." %>
         </span>
       </div>
-      <div class="table-responsive table-hover">
+      <div class="table-responsive able-hover">
         <table class="table mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
@@ -37,7 +37,7 @@
                   <th scope="col">Block Status</th>
                   <th scope="col">Age</th>
                   <th scope="col">Method</th>
-                  <th scope="col">From <i class="fas fa-arrow-right text-success"></i> </th>
+                  <th scope="col">From </th>
                   <th scope="col">To</th>
                   <th scope="col">Amount</th>
                   <th scope="col">Transaction</th>

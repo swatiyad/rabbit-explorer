@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row px-3 mb-5">
     <div class="col-lg-6 d-flex justify-content-center m-auto bg-white py-2 shadow border rounded">
-      <div class="card-body border-0">
+      <div class="card-body border-0 px-2">
         <h2 class="card-title">Quick Links</h2>
         <ul class="side_nav my-3">
         <li><%= link("KYC Verification", to: "/kycselect")%></li>
@@ -11,7 +11,7 @@
         <li><%= link("Audit Contract", to: "/auditContract")%></li>
         </ul>
         </div>
-        <div class="card-body border-0">
+        <div class="card-body border-0 px-2">
           <div class="card-title">Watch List & Notes</div>
           <ul class="side_nav my-3">
           <li><%= link("Watch List", to: "/#")%></li>

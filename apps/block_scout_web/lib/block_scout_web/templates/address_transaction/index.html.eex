@@ -51,7 +51,7 @@
                       <th scope="col">Age</th>
                       <th scope="col">Method</th>
                       <th scope="col">From</th>
-                      <th scope="col">To</th>
+                      <th class="wideRow" scope="col">To</th>
                       <th scope="col">Amount</th>
                       <th scope="col">Transaction</th>
                       <th scope="col">Status</th>

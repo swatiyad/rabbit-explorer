@@ -1,9 +1,9 @@
 
 <div class="container pt-2">
   <div class="card border shadow rounded">
-    <div class="card-body py-5">
+    <div class="card-body py-3">
       <div class="row">
-        <div class="col-sm-12 col-md-6 col-lg-4 border-right">
+        <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm1">
           <div class="media border-bottom mb-4 pb-4">
               <img class="mr-3 media_icon" src="images/analog_icon.svg"  style="width:50px;">
               <div class="media-body">
@@ -29,7 +29,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm2">
           <div class="media border-bottom mb-4 pb-4">
           <img class="mr-3 media_icon" src="images/transaction.svg" style="width:50px;height: 42px;">
             <div class="media-body" >
@@ -186,21 +186,21 @@
 
 <%= link(gettext("View All Transactions"), to: transaction_path(BlockScoutWeb.Endpoint, :index), class: "float-right ") %>
 <h1 class="mb-2"><%= gettext "Transactions" %></h1>
-  <div class="card card-chain-transactions border shadow">
-    <div class="card-body table-responsive table-hover p-0">
+  <div class="card card-chain-transactions border shadow" style="overflow:auto">
+    <div class="card-body table-hover p-0">
    <div class="">
         <table class="table mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
-                  <th scope="col">Hash</th>
-                  <th scope="col">Block</th>
-                  <th scope="col">Age</th>
-                  <th scope="col">Method</th>
-                  <th scope="col">From <i class="fas fa-arrow-right text-success"></i></th>
-                  <th scope="col">To</th>
-                  <th scope="col">Amount</th>
-                  <th scope="col">Txn Fee</th>
-                  <th scope="col">Status</th>
+                  <th class="screenRow">Hash</th>
+                  <th class="screenRow">Block</th>
+                  <th class="screenRow">Age</th>
+                  <th class="screenRow">Method</th>
+                  <th class="screenRow">From</th>
+                  <th class="screenRow">To</th>
+                  <th class="screenRow">Amount</th>
+                  <th class="screenRow">Txn Fee</th>
+                  <th class="screenRow">Status</th>
                 </tr>
               </thead>
         </table>

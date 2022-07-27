@@ -1,6 +1,17 @@
-<footer class="footer" style="background-image: url(./images/footer_bg.png);background-repeat:no-repeat;
-background-size:cover; background-position:center">
+
+<style>
+.footer {
+  background: url(./images/background_img.png)!important;
+  background-repeat:repeat;
+}
+
+</style>
+<footer class="footer">
   <div class="footer-body container">
+  <div style="background-image: url(./images/map_bg.png);background-repeat:no-repeat;
+background-size:contain; background-position:center">
+
+  <div>
     <!-- Logo -->
 
     <% other_explorers = other_explorers() %>

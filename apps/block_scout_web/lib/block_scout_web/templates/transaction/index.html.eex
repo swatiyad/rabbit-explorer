@@ -48,14 +48,14 @@
                       <th scope="col">Block</th>
                       <th scope="col">Age</th>
                       <th scope="col">Method</th>
-                      <th scope="col">From <i class="fas fa-arrow-right text-success"></i></th>
+                      <th scope="col">From </th>
                       <th scope="col">To</th>
                       <th scope="col">Amount</th>
                       <th scope="col">Transaction</th>
                       <th scope="col">Status</th>
                     </tr>
                   </thead>
-            </table>
+                </table>
          </div>
 
       <div data-selector="transactions-list" data-items>
@@ -73,7 +73,7 @@
 <style>
 @media screen and (min-device-width: 290px) and (max-device-width: 768px){
 .table{
-     width:426% !important;
+     width:426% ;
     }
  }
 </style>
