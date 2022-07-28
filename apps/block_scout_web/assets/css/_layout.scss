@@ -223,6 +223,9 @@ width: 150px;
   }
 
   .mt-sm {
+    margin-top: 15px;
+  }
+  .mt-sm-45 {
     margin-top: 45px;
   }
 
@@ -260,6 +263,9 @@ width: 150px;
 .mt-sm {
   margin-top: 15px;
 }
+.mt-sm-45 {
+  margin-top: 45px;
+}
 
 .border-right-sm1,
 .border-right-sm2 {
@@ -291,6 +297,13 @@ table td.wideRow, table th.wideRow {
 
 }
 
+.text-truncate-mobile {
+  width: 65%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
 }
 
 
