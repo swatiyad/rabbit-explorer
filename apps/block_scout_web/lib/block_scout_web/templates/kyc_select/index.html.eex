@@ -1,6 +1,6 @@
 <div class="container min_page_height">
     <div class="row px-3">
-        <div class="col-lg-3 bg-white py-2 shadow border rounded stickysidebar mb-5">
+        <div class="col-lg-3 col-sm-12 col-md-4 bg-white py-2 shadow border rounded stickysidebar mb-5 last_in_mobile">
           <div class="card-body border-0 px-2">
             <h2 class="card-title">Quick Links</h2>
             <ul class="side_nav my-3">
@@ -20,7 +20,7 @@
           </div>
         </div>
 
-        <div class="col-lg-9 py-2">
+        <div class="col-lg-9 col-sm-12 col-md-8 py-2">
             <h1> Choose KYC Method</h1>
             <hr class="hor_line">
 

@@ -210,7 +210,7 @@ $card-tab-icon-color-active: #fff !default;
   color: #333;
   cursor: pointer;
   display: flex;
-  font-size: 16.5px;
+  font-size: 14.5px;
   font-weight: normal;
   height: 50px;
   padding: 0 25px;
@@ -220,7 +220,7 @@ $card-tab-icon-color-active: #fff !default;
   &:hover {
     // background-color: rgba($card-tab-active, .15);
     background-color: #fff;
-    border-bpttom: 4px solid $card-tab-active ;
+    border-bottom: 4px solid $card-tab-active ;
     color: $card-tab-active;
     text-decoration: none;
   }

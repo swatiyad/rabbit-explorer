@@ -38,7 +38,7 @@
 
               </div>
               <!-- buttons -->
-              <div class="">
+              <div class="col-md-12">
                 <span class="overview-title-buttons">
                   <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                           id: "tx-raw-input",

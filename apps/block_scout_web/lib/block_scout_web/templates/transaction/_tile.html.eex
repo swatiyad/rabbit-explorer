@@ -9,7 +9,7 @@
         <table class="table mb-0 fixed-layout">
             <tbody class="table-group-divider">
               <tr>
-                <td class="screenRow">
+                <td class="wideRow">
                 <div class="text-truncate d-flex text-success width100">
                   <%= render "_link.html", transaction_hash: @transaction.hash, data_test: "address_hash_link" %>
                 </div>
@@ -61,7 +61,7 @@
 
                 </td>
 
-                <td class="wideRow">
+                <td class="screenRow">
                     <div class="text-truncate d-flex width120 text-success">
 
                       <%# <%= if error_in_internal_tx do %>
@@ -70,7 +70,7 @@
                        <span class="fas fa-arrow-right text-success d-inline-flex align-items-center"></span>
                       <span class="tile-label font-weight-normal" data-test="transaction_type">
                         <%# <%= transaction_display_type(@transaction) %>
-                        <img class="mr-1 ml-3 media_icon" src="images/smart contract_Ana.svg" style="width:15px;">
+                        <img class="mr-1 ml-3 media_icon" src="/images/smart contract_Ana.svg" style="width:15px;">
                       </span>
                         <span class="text-truncate">
                             <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>

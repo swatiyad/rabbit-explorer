@@ -184,15 +184,15 @@
   <%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
 
 
-<%= link(gettext("View All Transactions"), to: transaction_path(BlockScoutWeb.Endpoint, :index), class: "float-right ") %>
+<%= link(gettext("View All Transactions"), to: transaction_path(BlockScoutWeb.Endpoint, :index), class: "float-right pt-2") %>
 <h1 class="mb-2"><%= gettext "Transactions" %></h1>
-  <div class="card card-chain-transactions border shadow" style="overflow:auto">
+  <div class="card card-chain-transactions border shadow overflow-auto">
     <div class="card-body table-hover p-0">
    <div class="">
         <table class="table mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
-                  <th class="screenRow">Hash</th>
+                  <th class="wideRow">Hash</th>
                   <th class="screenRow">Block</th>
                   <th class="screenRow">Age</th>
                   <th class="screenRow">Method</th>

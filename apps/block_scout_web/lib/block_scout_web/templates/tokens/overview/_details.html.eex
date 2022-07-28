@@ -41,7 +41,7 @@
           <% end %>
         </div>
         <!-- buttons -->
-        <div class="col-md-6 overview-title-buttons token d-flex justify-content-end">
+        <div class="col-md-6 col-sm-6 overview-title-buttons token d-flex justify-content-end">
           <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
               additional_classes: ["overview-title-item"],
               clipboard_text: Address.checksum(@token.contract_address_hash),

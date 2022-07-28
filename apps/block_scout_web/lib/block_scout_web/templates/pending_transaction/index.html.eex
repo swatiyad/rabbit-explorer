@@ -13,7 +13,7 @@
       </div>
   </div>
   <div class="card">
-    <div class="card-body" data-async-listing="<%= @current_path %>">
+    <div class="card-body overflow-auto" data-async-listing="<%= @current_path %>">
 
       <div data-selector="channel-batching-message" style="display: none;">
         <div data-selector="reload-button" class="alert alert-info">
@@ -29,19 +29,19 @@
           <%= gettext "There are no pending transactions." %>
         </span>
       </div>
-      <div class="table-responsive able-hover">
+      <div class="table-hover">
         <table class="table mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
-                  <th scope="col">Hash</th>
-                  <th scope="col">Block Status</th>
-                  <th scope="col">Age</th>
-                  <th scope="col">Method</th>
-                  <th scope="col">From </th>
-                  <th scope="col">To</th>
-                  <th scope="col">Amount</th>
-                  <th scope="col">Transaction</th>
-                  <th scope="col">Status</th>
+                  <th class="wideRow">Hash</th>
+                  <th class="screenRow">Block Status</th>
+                  <th class="screenRow">Age</th>
+                  <th class="screenRow">Method</th>
+                  <th class="screenRow">From </th>
+                  <th class="screenRow">To</th>
+                  <th class="screenRow">Amount</th>
+                  <th class="screenRow">Transaction</th>
+                  <th class="screenRow">Status</th>
                 </tr>
               </thead>
         </table>
@@ -50,9 +50,13 @@
         <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
       </div>
 
-      <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+
 
     </div>
+  </div>
+
+  <div class="col-md-12 py-2">
+    <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
   </div>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/pending-transactions.js") %>"></script>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/token-transfers-toggle.js") %>"></script>

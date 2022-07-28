@@ -1,5 +1,8 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
+.overflow-auto {
+  overflow: auto;
+}
 .font-32 {
   font-size: 32px;
 }
@@ -30,18 +33,12 @@
 }
 
 
-table td.wideRow, table th.wideRow{
-  width: 150px;
-  }
-
-
-
 
 .layout-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-    // background: url(https://tronscan.io/static/media/body_bg.0b5e1c3d.png);
+  // background: url(https://tronscan.io/static/media/body_bg.0b5e1c3d.png);
   // background-size: cover;
   // background-repeat: no-repeat;
   background-color: #f5f5f5;
@@ -225,9 +222,21 @@ width: 150px;
     margin-bottom: 15px;
   }
 
-  table td.screenRow, table th.screenRow{
+  .mt-sm {
+    margin-top: 45px;
+  }
+
+  table td.screenRow, table th.screenRow {
     width: 150px;
-    }
+  }
+
+  table td.wideRow, table th.wideRow {
+    width: 235px;
+  }
+
+  .wideRow .width100 {
+      width: 170px;
+  }    
    
 }
 
@@ -248,15 +257,39 @@ width: 150px;
   margin-bottom: 15px;
 }
 
+.mt-sm {
+  margin-top: 15px;
+}
+
 .border-right-sm1,
 .border-right-sm2 {
   border-right:0!important;
 }
 
-table td.screenRow, table th.screenRow{
+table td.screenRow, table th.screenRow {
   width: 150px;
-  }
- 
+}
+
+table td.wideRow, table th.wideRow {
+  width: 235px;
+}
+.wideRow .width100 {
+  width: 170px;
+}
+
+.last_in_mobile {
+  order: 2;
+}
+
+.first_in_mobile {
+  order: 1;
+}
+
+.stickysidebar {
+  height: fit-content;
+  position: unset;
+
+}
 
 }
 
@@ -284,7 +317,14 @@ table td.screenRow, table th.screenRow{
   table th.screenRow {
     width: 150px;
     }
-   
+
+  table td.wideRow, table th.wideRow{
+    width: 235px;
+    }
+  .wideRow .width100 {
+    width: 170px;
+  }    
+       
 }
 
 
@@ -381,10 +421,6 @@ ul.side_nav {
     font-size: 22px;
   } 
   
-  
-
-  
-  
 
 }
 @media only screen and ( min-device-width: 769px) and ( max-device-width: 980px) {
@@ -408,9 +444,15 @@ ul.side_nav {
     border-right: 0!important
 
    }
+
+   .stickysidebar {
+    position: unset;
+    height: fit-content;
+  }
+}
    
    
    
          
-}
+
 
