@@ -38,17 +38,15 @@
                   <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Xide Work") %></a></li>
                   <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Documentation") %></a></li>
                   <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Developer Hub") %></a></li>
-                  <%= if System.get_env("COIN_NAME") && System.get_env("NETWORK_PATH") && System.get_env("SUBNETWORK") && System.get_env("JSON_RPC") && System.get_env("CHAIN_ID") do %>
-                  <li><a class="footer-link text-white text-white js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;"><%= gettext("Add") <> " #{System.get_env("SUBNETWORK")}" %></a></li>
-                <% end %>
-                      <%= if Application.get_env(:block_scout_web, BlockScoutWeb.ApiRouter)[:reading_enabled] || Application.get_env(:block_scout_web, :api_url) do %>
-                <li class="nav-item dropdown">
-                  <a href="#" role="button" id="navbarAPIsDropdown" class=" footer-link text-white topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <!-- <%= if Application.get_env(:block_scout_web, BlockScoutWeb.ApiRouter)[:reading_enabled] || Application.get_env(:block_scout_web, :api_url) do %>
+               <li>
+                  <a href="#" class="footer-link text-white">
                     <%# <span class="nav-link-icon">
                       <%= render BlockScoutWeb.IconsView, "_api_icon.html" %
                     </span> %>
                     <%= gettext("APIs") %>
                   </a>
+                  </li>
                   <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
                     <%= link(
                           gettext("GraphQL"),
@@ -67,7 +65,7 @@
                         ) %>
                   </div>
                 </li>
-                <% end %>
+                <% end %>-->
 
                 </ul>
               </div>
@@ -85,8 +83,8 @@
                 </ul>
               </div>
             <% end %>
+          </div>
         </div>
-      </div>
 
         <div class="col-xs-12 col-lg-3">
           <div class="row footer-logo-row">
@@ -114,6 +112,30 @@
             </a>
           </div>
         </div>
+      </div>
+      <hr/>
+      <div class="row d-flex justify-content-between">
+
+        <div class="col-md-6">
+          <!-- Dark mode changer -->
+          <button class="dark-mode-changer btn btn-dark" id="dark-mode-changer">
+            <i class="fas fa-moon"></i> Change Theme
+          </button>
+          <span class="ml-2">|</span>
+
+           <a href="#" class="footer-link text-white">
+            <i class="fas fa-laptop-code text-danger" ></i><%= gettext("APIs") %>
+          </a>
+          <span class="ml-2">|</span>
+
+          <%= if System.get_env("COIN_NAME") && System.get_env("NETWORK_PATH") && System.get_env("SUBNETWORK") && System.get_env("JSON_RPC") && System.get_env("CHAIN_ID") do %>
+            <a class="footer-link text-white text-white js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;"><%= gettext("Add") <> " #{System.get_env("SUBNETWORK")}" %> Analog Blockchain Explorer</a>
+          <% end %>
+        </div>
+        <div class="col-md-6 text-lg-right">
+          &copy; copyright Rabbit Testnet - Analog Blockchain Explorer
+        </div>
+      </div>
     </div>
   </div>
 </footer>

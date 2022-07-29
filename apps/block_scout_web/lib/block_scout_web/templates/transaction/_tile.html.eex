@@ -69,7 +69,7 @@
 
                       <span class="tile-label font-weight-normal" data-test="transaction_type">
                         <%# <%= transaction_display_type(@transaction) %>
-                        <img class="mr-1 media_icon" src="/images/smart contract_Ana.svg" style="width:13px;">
+                          <img class="mr-1 media_icon" src="/images/smart contract_Ana.svg" style="width:13px;">
                       </span>
                         <span class="text-truncate">
                             <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
@@ -96,18 +96,18 @@
                 </td>
 
                 <td class="screenRow">
-                    <div class="">
-                        <span class="tile-status-label ml-md-0 " data-test="transaction_status">
-                          <%# <%= if status_class(@transaction) == "tile-status--pending" do %>
-                            <%# <div class="loading-spinner-small">
-                              <span class="loading-spinner-block-1"></span>
-                              <span class="loading-spinner-block-2"></span>
-                            </div> %>
 
-                            <%# <% end %>
-                            <span class="<%= if status_class(@transaction) == "tile-status--success" do %>text-success<% end %><%= if status_class(@transaction) == "tile-status--pending" do %>text-warning<% end %>"><%= formatted_result(status) %></span>
-                        </span>
-                    </div>
+                    <span class="tile-status-label ml-md-0 " data-test="transaction_status">
+                      <%# <%= if status_class(@transaction) == "tile-status--pending" do %>
+                        <%# <div class="loading-spinner-small">
+                          <span class="loading-spinner-block-1"></span>
+                          <span class="loading-spinner-block-2"></span>
+                        </div> %>
+
+                        <%# <% end %>
+                        <span class="<%= if status_class(@transaction) == "tile-status--success" do %>text-success<% end %><%= if status_class(@transaction) == "tile-status--pending" do %>text-warning<% end %>"><%= formatted_result(status) %></span>
+                    </span>
+
                 </td>
               </tr>
             </tbody>
