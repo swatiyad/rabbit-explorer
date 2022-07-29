@@ -25,15 +25,15 @@
 
                 <td class="screenRow">
                 <div class="">
-                <span class="mr-2 mr-md-0 order-2" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></span>
+                <span class="mr-md-0 order-2" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></span>
                 <%= if from_or_to_address?(@transaction, assigns[:current_address]) do %>
-                  <span class="mr-2 mr-md-0 order-0 order-md-3">
+                  <span class="mr-md-0 order-0 order-md-3">
                     <%= if @transaction.from_address_hash == assigns[:current_address].hash do %>
-                      <span data-test="transaction_type" class="badge badge-danger tile-badge">
+                      <span data-test="transaction_type" class="badge badge-danger tile-badge p-0">
                         <%= gettext "OUT" %>
                       </span>
                     <% else %>
-                      <span data-test="transaction_type" class="badge badge-success tile-badge">
+                      <span data-test="transaction_type" class="badge badge-success tile-badge p-0">
                         <%= gettext "IN" %>
                       </span>
                     <% end %>
@@ -42,23 +42,22 @@
                 </div>
                 </td>
                 <td class="screenRow">
-                <div class="">
+                <div class="text-truncate width100">
                 <span>
                 <% method_name = Transaction.get_method_name(@transaction) %>
                   <%= if method_name do %>
-                    <%= render BlockScoutWeb.FormView, "_tag.html", text: method_name, additional_classes: ["method", "ml-1"] %>
+                    <%= render BlockScoutWeb.FormView, "_tag.html", text: method_name, additional_classes: ["method", "ml-0"]  %>
                   <% end %>
                 </span>
                 </div></td>
 
                 <td class="screenRow">
-                    <div class="text-truncate width100 text-success">
-                        <span>
-                              <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:from, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
-                        </span>
-
+                    <div class="text-truncate text-success">
+                        <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:from, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
                     </div>
-
+                </td>
+                <td class="" style="width:36px">
+                  <span class="fas fa-arrow-right text-success d-inline-flex align-items-center"></span>
                 </td>
 
                 <td class="screenRow">
@@ -67,10 +66,10 @@
                       <%# <%= if error_in_internal_tx do %>
                         <%# <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html", text: gettext("Error in internal transactions"), additional_classes: ["color-inherit"] %>
                       <%# end %>
-                       <span class="fas fa-arrow-right text-success d-inline-flex align-items-center"></span>
+
                       <span class="tile-label font-weight-normal" data-test="transaction_type">
                         <%# <%= transaction_display_type(@transaction) %>
-                        <img class="mr-1 ml-3 media_icon" src="/images/smart contract_Ana.svg" style="width:15px;">
+                        <img class="mr-1 media_icon" src="/images/smart contract_Ana.svg" style="width:13px;">
                       </span>
                         <span class="text-truncate">
                             <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>
@@ -88,16 +87,12 @@
                     </div>
                 </td>
 
-                  <td class="screenRow">
-                    <div class="text-truncate d-flex">
-                        <span>
-                        <div>
-                             <span class="ml-0 ml-md-1 text-nowrap">
-                              <%= formatted_fee(@transaction, denomination: :ether, include_label: false) %>
-                            </span>
-                        </div>
-                        </span>
-                    </div>
+                <td class="screenRow">
+                  <div class="text-truncate width100">
+                        <span class="text-nowrap sub-text">
+                        <%= formatted_fee(@transaction, denomination: :ether, include_label: false) %>
+                      </span>
+                  </div>
                 </td>
 
                 <td class="screenRow">

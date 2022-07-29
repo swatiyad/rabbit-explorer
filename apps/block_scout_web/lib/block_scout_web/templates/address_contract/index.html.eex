@@ -84,7 +84,6 @@
               <dd class="col-md-4"><%= target_contract.inserted_at %></dd>
             <% end %>
           </dl>
-        <hr class="mt-5 border-0"/>
         <%= if smart_contract_verified && target_contract.constructor_arguments do %>
           <section>
             <div class="d-flex justify-content-between align-items-baseline">

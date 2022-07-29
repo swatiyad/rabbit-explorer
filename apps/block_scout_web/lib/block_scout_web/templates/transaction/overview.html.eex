@@ -71,7 +71,7 @@
               <%= gettext "Transaction Hash" %>
             </dt>
             <dd class="col-sm-9 col-lg-10">
-              <span class="transaction-details-address" data-test="transaction_detail_hash text-truncate-mobile "><%= @transaction %> </span>
+              <span class="transaction-details-address text-truncate-mobile" data-test="transaction_detail_hash"><%= @transaction %> </span>
               <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                   additional_classes: ["btn-copy-icon-small", "btn-copy-icon-custom", "btn-copy-icon-no-borders"],
                   clipboard_text: @transaction,
@@ -184,7 +184,7 @@
               </dd>
             </dl>
           <% end %>
-          <hr class="mt-5 border-0"/>
+
           <!-- From -->
           <dl class="row">
             <dt class="col-sm-3 col-lg-2 font-weight-bold">
@@ -214,17 +214,18 @@
               <%= if BlockScoutWeb.AddressView.contract?(to_address) && !created_address_hash do %>
                 <%= gettext "Interacted With (To)" %>
               <% else %>
-                <span class="text-truncate-mobile"><%= gettext "To" %></span>
+                <%= gettext "To" %>
               <% end %>
             </dt>
             <dd class="col-sm-9 col-lg-10">
               <%= cond do %>
                 <% created_address_hash -> %>
                   [<%= gettext("Contract") %>&nbsp;
-                  <%= link(
+                  <span class="text-truncate-mobile"><%= link(
                     recipient_address_hash,
                     to: address_path(@conn, :show, recipient_address_hash)
                   ) %>
+                  </span>
                   &nbsp;<%= gettext("created") %>]
                   <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                     additional_classes: ["btn-copy-icon-small", "btn-copy-icon-custom", "btn-copy-icon-no-borders"],
@@ -232,10 +233,10 @@
                     aria_label: gettext("Copy To Address"),
                     title: gettext("Copy To Address") %>
                 <% recipient_address_hash -> %>
-                  <%= link(
+                  <span class="text-truncate-mobile"><%= link(
                     recipient_address_hash,
                     to: address_path(@conn, :show, recipient_address_hash)
-                  ) %>
+                  ) %></span>
                   <%= render BlockScoutWeb.CommonComponentsView, "_btn_copy.html",
                     additional_classes: ["btn-copy-icon-small", "btn-copy-icon-custom", "btn-copy-icon-no-borders"],
                     clipboard_text: recipient_address_hash,
@@ -330,7 +331,7 @@
             <% end %>
             </dd>
           </dl>
-          <hr class="mt-5 border-0"/>
+
           <!-- Transaction Fee -->
           <dl class="row">
             <dt class="col-sm-3 col-lg-2 font-weight-bold">
@@ -365,7 +366,7 @@
               <dd class="col-sm-9 col-lg-10"> <%= type %> </dd>
             </dl>
           <% end %>
-          <hr class="mt-5 border-0"/>
+
           <!-- Gas Limit -->
           <dl class="row">
             <dt class="col-sm-3 col-lg-2 font-weight-bold">

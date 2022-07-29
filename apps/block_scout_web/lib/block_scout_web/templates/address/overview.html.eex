@@ -95,7 +95,7 @@
                             <%= link(
                               (if name, do: name <> " | " <> implementation_address, else: implementation_address),
                               to: address_path(@conn, :show, implementation_address),
-                              class: "contract-address"
+                              class: "contract-address text-truncate-mobile"
                             )
                             %>
                           </dd>
