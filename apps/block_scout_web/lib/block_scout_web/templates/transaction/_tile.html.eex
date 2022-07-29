@@ -97,7 +97,7 @@
 
                 <td class="screenRow">
                     <div class="">
-                        <span class="tile-status-label ml-2 ml-md-0 " data-test="transaction_status">
+                        <span class="tile-status-label ml-md-0 " data-test="transaction_status">
                           <%# <%= if status_class(@transaction) == "tile-status--pending" do %>
                             <%# <div class="loading-spinner-small">
                               <span class="loading-spinner-block-1"></span>
