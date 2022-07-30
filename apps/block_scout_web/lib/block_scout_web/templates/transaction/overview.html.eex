@@ -82,7 +82,7 @@
           <!-- Verify in other explorers -->
           <!-- <%= render BlockScoutWeb.AddressView, "_verify_other_explorers.html", hash: hash(@transaction), type: "tx" %> -->
           <!-- Result -->
-          <!--<dl class="row">
+          <dl class="row">
             <dt class="col-sm-3 col-lg-2 font-weight-bold">
               <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
               text: gettext("Current transaction state: Success, Failed (Error), or Pending (In Process)") %>
@@ -92,7 +92,7 @@
               <% formatted_result = BlockScoutWeb.TransactionView.formatted_result(status) %>
               <span class="mr-4" data-transaction-status="<%= formatted_result %>"><%= render BlockScoutWeb.CommonComponentsView, "_status_icon.html", status: status %><%= formatted_result %></span>
             </dd>
-          </dl>-->
+          </dl>
           <!-- Status -->
           <dl class="row">
             <dt class="col-sm-3 col-lg-2 font-weight-bold">
@@ -107,7 +107,7 @@
                 <span data-transaction-status="<%= formatted_status %>">
                   <%= if status == :pending do %>
                     <%= render BlockScoutWeb.FormView, "_tag.html", text: formatted_status, additional_classes: ["large"] %></span>
-                  <% else %>
+                     <% else %>
                     <%= render BlockScoutWeb.FormView, "_tag.html", text: formatted_status, additional_classes: ["success", "large"] %></span>
                   <% end %>
 

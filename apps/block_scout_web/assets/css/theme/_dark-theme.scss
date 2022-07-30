@@ -1,9 +1,9 @@
-$body-dark: #1c1d31; // body background
-$dark-bg: #22223a; // hero shade
-$dark-light-bg: #282945; // pills bg shade
-$dark-light: #313355; // tile light top share
-$labels-dark: #8a8dba; // header nav, labels
-$dark-stakes-banned-background: #3e314c;
+$body-dark: #242424; // body background
+$dark-bg: #242424; // hero shade
+$dark-light-bg: #2A2A2A; // pills bg shade
+$dark-light: #000; // tile light top share
+$labels-dark: #fff; // header nav, labels
+$dark-stakes-banned-background: #222222;
 
 // Switcher
 // .dark-mode-changer {
@@ -181,10 +181,10 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.tile, .tile-code {
-		border-top-color: $dark-light;
-		border-bottom-color: $dark-light;
-		border-right-color: $dark-light;
-		background-color: $dark-light;
+		border-top-color: $dark-light-bg;
+		border-bottom-color: $dark-light-bg;
+		border-right-color: $dark-light-bg;
+		background-color: $dark-light-bg;
 		color: $labels-dark;
 		&:not([class^="tile tile-type"]) {
 			border-left-color: $dark-light;
@@ -200,7 +200,7 @@ $dark-stakes-banned-background: #3e314c;
 		}
 	}
 	.tile-bottom-contents {
-		background-color: $dark-light;
+		background-color: $dark-light-bg;
 	}
 	a.tile-title {
 		color: #fff !important;
@@ -295,10 +295,10 @@ $dark-stakes-banned-background: #3e314c;
 
 	// dropdown
 	.dropdown-menu {
-		background-color: $dark-light;
-		border-left-color: $dark-light;
-		border-right-color: $dark-light;
-		border-bottom-color: $dark-light;
+		background-color: $dark-light-bg;
+		border-left-color: $dark-light-bg;
+		border-right-color: $dark-light-bg;
+		border-bottom-color: $dark-light-bg;
 	}
 
 	.dropdown-item {
@@ -357,7 +357,7 @@ $dark-stakes-banned-background: #3e314c;
 	}
 
 	.table th, .table td {
-		border-top-color: darken($labels-dark, 30);
+		border-top-color: $dark-light;
 	}
 	hr {
 		border-top-color: darken($labels-dark, 30);
@@ -518,7 +518,7 @@ $dark-stakes-banned-background: #3e314c;
 		color: $labels-dark;
 	}
 	.border-bottom {
-		border-bottom-color: darken($labels-dark, 30) !important;
+		border-bottom-color: darken($dark-bg, 30) !important;
 	}
 
 	// coin balance history chart
@@ -793,10 +793,10 @@ $dark-stakes-banned-background: #3e314c;
 		color: #fff !important;
 	}
 	.table-bordered, .table-bordered td, .table-bordered th {
-		border-color: darken($labels-dark, 30);
+		border-color: $dark-bg;
 	}
 	.dark-theme-applied .table td, .dark-theme-applied .table th, .dark-theme-applied hr {
-		border-top-color: darken($labels-dark, 30);
+		border-top-color: $dark-bg;
 	}
 	.btn-copy-ico svg path {
 		fill: #fff;
@@ -1130,14 +1130,14 @@ $dark-stakes-banned-background: #3e314c;
 }
 
 .dark-theme-applied .dropdown-item {
-	background-color: $dark-light !important;
+	background-color: $dark-light-bg !important;
 	color: #fff !important;
 }
 
 .dark-theme-applied .dropdown-item.active:not(.header), .dark-theme-applied .dropdown-item:not(.header):hover, .dark-theme-applied .dropdown-item:not(.header):focus {
     background-image: none;
     width: 100%;
-    background-color: #3f426c !important;
+    background-color: #2A2A2A !important;
 }
 
 @media (max-width: 991.98px) {
@@ -1146,7 +1146,7 @@ $dark-stakes-banned-background: #3e314c;
 	.dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:focus {
 		background-image: none;
 		width: 100%;
-		background-color: #35335d !important;
+		background-color: #242424 !important;
 		color: white;
 		border: none;
 	}

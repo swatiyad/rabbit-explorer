@@ -32,13 +32,13 @@
                 <div class="col-xl-6 col-md-6 col-12">
                     <div class="card">
                         <div class="card-body">
-                            <div class="d-flex justify-content-center">
+                            <div class="d-flex justify-content-center media_icon">
                                 <img src="images/autokyc.png" class="width100">
                             </div>
                             <div class="text-center">
                                 <h2 class="font-weight-bold">Auto KYC</h2>
                                 <p>Save time by auto KYC procedure in seconds</p>
-                                <%= link("Auto Kyc", to: "/autokyc",  class: "btn btn-primary text-white btn-block set-tab")%>
+                                <%= link("Auto Kyc", to: "/autokyc",  class: "btn btn-success text-white btn-block set-tab")%>
                             </div>
                         </div>
                     </div>
@@ -46,13 +46,13 @@
                 <div class="col-xl-6 col-md-6 col-12">
                     <div class="card">
                         <div class="card-body">
-                            <div class="d-flex justify-content-center">
+                            <div class="d-flex justify-content-center media_icon">
                                 <img src="images/manualkyc.png" class="width100">
                             </div>
                             <div class="text-center">
                                 <h2 class="font-weight-bold">Manual KYC</h2>
                                 <p>Analyze and process submitted documents manually</p>
-                                <%= link("Manual Kyc", to: "/manualkycselect",   class:  "btn btn-primary text-white btn-block set-tab")%>
+                                <%= link("Manual Kyc", to: "/manualkycselect",   class:  "btn btn-success text-white btn-block set-tab")%>
                             </div>
                         </div>
                     </div>

@@ -87,12 +87,12 @@
         const search = document.getElementById("main-search-autocomplete")
         const searchMobile = document.getElementById("main-search-autocomplete-mobile")
             if (search && search.style) {
-          search.style.backgroundColor = "#22223a";
-              search.style.borderColor = "#22223a";
+          search.style.backgroundColor = "#242424";
+              search.style.borderColor = "#242424";
         }
         if (searchMobile && searchMobile.style) {
-          searchMobile.style.backgroundColor = "#22223a";
-          searchMobile.style.borderColor = "#22223a";
+          searchMobile.style.backgroundColor = "#242424";
+          searchMobile.style.borderColor = "#242424";
         }
       }
     </script>
@@ -231,8 +231,11 @@
         </div>
       <% end %>
       <%= render BlockScoutWeb.LayoutView, "_topnav.html", assigns %>
+
       <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide"] %>
-<%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
+      <%#= render BlockScoutWeb.LayoutView, "_currency_cards.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide"] %>
+      <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
+
 
       <main class=" bgimg">
         <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>

@@ -75,29 +75,32 @@
   background-color:#f6f8fb;
 }
 .dark-theme-applied .table-head {
-  background-color:#3f426c;
+  background-color:#353434;
 }
 .dark-theme-applied .border {
-    border: 1px solid #6c757d !important;
+    border: 1px solid #202020 !important;
 }
 .dark-theme-applied .shadow {
-  box-shadow: 2px 1px 5px #355a83 !important;
+  box-shadow: 2px 1px 5px #242426 !important;
 
 }
 .dark-theme-applied .table thead th {  
-  border-bottom: 2px solid #6c757d;
+  border-bottom: 1px solid #202020!important;
 }
 
 .dark-theme-applied .card-header {
-  background: #3f426c;
-  border-bottom: 1px solid #5b77b9;
+  background: #323232;
+  border-bottom: 1px solid #202020;
+}
+.dark-theme-applied ul.side_nav li a {
+  color: #fff!important;
 }
 .dark-theme-applied .table {  
-  color: #9eb0c3;
+  color: #fff;
 }
 .dark-theme-applied .layout-container {
-  background-color: #1C1D31;
-  color: #9eb0c3;
+  background-color: #242424;
+  color: #fff;
 }
 .dark-theme-applied .text-muted {
   color: #5b77b9;
@@ -106,12 +109,15 @@
   background-color: #3f426c;
 }
 .dark-theme-applied .card-tab.active {
-  background-color: #7e50d0;
+  background-color: #33A042;
   color: #fff;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-
+.dark-theme-applied .border-right-sm1,
+.dark-theme-applied .border-right-sm2 {
+  border-right: 1px solid #717678;
+}
 .dark-theme-applied .chart_box {
   background: #313355;
   border: 1px solid #84efc7;
@@ -123,34 +129,64 @@
   color: #888888;
 }
 .dark-theme-applied .white-bg {
-  background-color: #313355;
+  background-color: #2a2a2a;
 }
 .white-bg {
   background-color: #fff;
 }
+.dark-theme-applied .tile-transactions {
+  color: #fff;
+}
 .dark-theme-applied .tile-bottom-contents {
-  background-color:#313355;
+  background-color:#2A2A2A;
 }
 dl:last-child {
   margin-bottom: 0;
   border-bottom: none;
 }
 
+.dark-theme-applied .text-teal {
+  color:#42c670!important;
+}
+.dark-theme-applied .border-top {
+  border-top: 1px solid #242424!important;
+}
 .dark-theme-applied .bg-light {
-  background-color: #313355 !important;
+  background-color: #2a2a2a !important;
 }
 .dark-theme-applied dl {
-  border-bottom: 1px dashed #3f426c;
+  border-bottom: 1px solid #242424;
 }
+.footer-bottom {
+  background-color: #56c77d;
+}
+
+.dark-theme-applied .footer-bottom {
+  background-color: #242424;
+}
+.dark-theme-applied .text-secondary {
+  color: #fff;
+}
+.dark-theme-applied .card-chain-blocks .bg-white {
+  background-color: #242424 !important;
+
+}
+.dark-theme-applied .bg-white {
+  background-color: #2a2a2a!important
+}
+
 .deep-shadow {
   box-shadow: -10px -10px 0px 0px #eee;
 
 }
+.dark-theme-applied .sub-text {
+  color:#fff
+}
 .dark-theme-applied .shadow{
-  box-shadow: 2px 1px 5px #313355!important
+  box-shadow: 2px 1px 5px #2a2a2a!important
 }
 .dark-theme-applied .deep-shadow{
-  box-shadow: -10px -10px 0px 0px #313355!important; 
+  box-shadow: -10px -10px 0px 0px #242424!important; 
 }
 .truncate_hash {
   width: 70px;

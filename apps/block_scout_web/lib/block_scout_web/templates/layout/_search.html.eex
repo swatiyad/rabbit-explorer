@@ -1,24 +1,24 @@
 <!-- Search navbar -->
 
-<div class="container search-form d-lg-flex d-inline-block pt-3 mb-3 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
-	<div class="input-group" title='<%= gettext("Search by address, token symbol name, transaction hash, or block number") %>'>
-		<div class="form-control form-control-lg search-control me auto <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>" style="border-color:#71D492">
-			<input
-				id="<%= @id %>"
-				class="main-search-autocomplete"
-				data-test="search_input"
-				data-chain-id="<%= System.get_env("CHAIN_ID") %>"
-				data-display-token-icons="<%= System.get_env("DISPLAY_TOKEN_ICONS") %>"
-				type="text"
-				tabindex="1"
-				style="height:30px"
-			>
-		</div>
+	<div class="container search-form d-lg-flex d-inline-block pt-3 mb-3 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
+		<div class="input-group" title='<%= gettext("Search by address, token symbol name, transaction hash, or block number") %>'>
+			<div class="form-control form-control-lg search-control me auto px-0 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>" style="border-color:#71D492">
+				<input
+					id="<%= @id %>"
+					class="main-search-autocomplete mx-2"
+					data-test="search_input"
+					data-chain-id="<%= System.get_env("CHAIN_ID") %>"
+					data-display-token-icons="<%= System.get_env("DISPLAY_TOKEN_ICONS") %>"
+					type="text"
+					tabindex="1"
+					style="height:30px"
+				>
+			</div>
 
-		<div class="input-group-append">
-			<button class="btn btn-teal">
-				<i class="fas fa-search"></i>
-			</button>
+			<div class="input-group-append">
+				<button class="btn btn-teal">
+					<i class="fas fa-search"></i>
+				</button>
+			</div>
 		</div>
 	</div>
-</div>
