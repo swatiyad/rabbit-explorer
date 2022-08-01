@@ -121,19 +121,19 @@
   background-color:#353434;
 }
 .dark-theme-applied .border {
-    border: 1px solid #202020 !important;
+    border: 1px solid #3e3e3e !important;
 }
 .dark-theme-applied .shadow {
   box-shadow: 2px 1px 5px #242426 !important;
 
 }
 .dark-theme-applied .table thead th {  
-  border-bottom: 1px solid #202020!important;
+  border-bottom: 1px solid #3e3e3e!important;
 }
 
 .dark-theme-applied .card-header {
   background: #323232;
-  border-bottom: 1px solid #202020;
+  border-bottom: 1px solid #484848!important;
 }
 .dark-theme-applied ul.side_nav li a {
   color: #fff!important;
@@ -149,7 +149,7 @@
   color: #5b77b9;
 }
 .dark-theme-applied .card-tabs {
-  background-color: #3f426c;
+  background-color: #242424;
 }
 .dark-theme-applied .card-tab.active {
   background-color: #33A042;
@@ -192,13 +192,13 @@ dl:last-child {
   color:#42c670!important;
 }
 .dark-theme-applied .border-top {
-  border-top: 1px solid #242424!important;
+  border-top: 1px solid #3e3e3e!important;
 }
 .dark-theme-applied .bg-light {
   background-color: #2a2a2a !important;
 }
 .dark-theme-applied dl {
-  border-bottom: 1px solid #242424;
+  border-bottom: 1px solid #3e3e3e;
 }
 .footer-bottom {
   background-color: #34A255;
@@ -212,6 +212,7 @@ dl:last-child {
 
 .dark-theme-applied .footer-bottom {
   background-color: #323131;
+  border-top: 1px solid #3c3a3a;
 }
 .dark-theme-applied .text-secondary {
   color: #fff;

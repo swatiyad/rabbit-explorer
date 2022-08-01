@@ -1,9 +1,10 @@
 $body-dark: #242424; // body background
 $dark-bg: #242424; // hero shade
 $dark-light-bg: #2A2A2A; // pills bg shade
-$dark-light: #000; // tile light top share
+$dark-light: #383838; // tile light top share
 $labels-dark: #fff; // header nav, labels
 $dark-stakes-banned-background: #222222;
+$light-dark:#3c3a3a;
 
 // Switcher
 // .dark-mode-changer {
@@ -181,10 +182,10 @@ $dark-stakes-banned-background: #222222;
 	}
 
 	.tile, .tile-code {
-		border-top-color: $dark-light-bg;
-		border-bottom-color: $dark-light-bg;
-		border-right-color: $dark-light-bg;
-		background-color: $dark-light-bg;
+		border-top-color: $dark-light;
+		border-bottom-color: $dark-light;
+		border-right-color: $dark-light;
+		background-color: $dark-light!important;
 		color: $labels-dark;
 		&:not([class^="tile tile-type"]) {
 			border-left-color: $dark-light;
@@ -793,10 +794,10 @@ $dark-stakes-banned-background: #222222;
 		color: #fff !important;
 	}
 	.table-bordered, .table-bordered td, .table-bordered th {
-		border-color: $dark-bg;
+		border-color: $light-dark;
 	}
 	.dark-theme-applied .table td, .dark-theme-applied .table th, .dark-theme-applied hr {
-		border-top-color: $dark-bg;
+		border-top-color: $light-dark;
 	}
 	.btn-copy-ico svg path {
 		fill: #fff;

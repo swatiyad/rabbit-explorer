@@ -3,7 +3,7 @@
 <% dark_forest_addresses_list = dark_forest_addresses_list_0_4 ++ dark_forest_addresses_list_0_5 %>
 <% current_address = "0x" <> Base.encode16(@address.hash.bytes, case: :lower) %>
 <div class="card-tabs js-card-tabs px-2" style="width: max-content; border-radius: 5px; margin: 10px;
-    height: 50px; font-size: 20px; align-items: center; display: flex; background-color: #fff !important;">
+    height: 50px; font-size: 20px; align-items: center; display: flex;">
   <%= if contract?(@address) do %>
     <%= link(
         to: AccessHelpers.get_path(@conn, :address_contract_path, :index, @address.hash),
