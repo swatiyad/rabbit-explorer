@@ -408,14 +408,7 @@ left: 100%;
   border: 0;
 }
 
-.media {
-  display: flex;
-  align-items: flex-start;
-}
 
-.media-body {
-  flex: 1;
-}
 
 @media screen and (min-device-width: 290px) and (max-device-width: 768px){
 .table{
