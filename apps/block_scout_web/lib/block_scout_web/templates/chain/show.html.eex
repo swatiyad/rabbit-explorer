@@ -1,6 +1,6 @@
 
 <div class="container pt-2">
-  <div class="card border shadow rounded">
+  <div class="card border shadow rounded mb-3">
     <div class="card-body py-3">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm1">
@@ -113,9 +113,13 @@
     </div>
   </div>
 </div>
+
+<div class="advertisement_placement mx-auto">
+  <img src="images/rabbit-testnet-728x90.gif"/>
+</div>
 <section class="container px-0" >
-                  <%= link(gettext("View More Blocks"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "float-right mt-2") %>
-      <h1><%= gettext "Blocks" %></h1>
+  <%= link(gettext("View More Blocks"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "float-right mt-2") %>
+  <h1><%= gettext "Blocks" %></h1>
   <div class="card-chain-blocks js-ad-dependant-mb-3 mb-4">
     <div class="" style="position: relative;transition: transform .6s ease; z-index: 2;">
           <div class="block-bg-animate-wrap" style="position: absolute;top: calc(50% - 0.5rem); width: 92%; left:4%; height: 1rem; top:40%; ">

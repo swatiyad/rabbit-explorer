@@ -1,5 +1,40 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
+.advertisement_placement {
+  height: 100px;
+  display: table;
+  margin: 0 auto;
+}
+.lable_mw{
+  min-width: 89px;
+
+}
+.currency_tile .small {
+  font-size: 10px;;
+}
+
+.currency_tile .one {   
+  background-color: #7ed6dd;
+  color:#fff  
+}
+
+.currency_tile .two {
+  background-color: #51CAE7;
+  color:#fff  
+}
+
+
+.currency_tile .three {
+  background-color: #318AC8;
+  color:#fff ;
+}
+
+
+.currency_tile .four {
+  background-color: #2D5B99;
+  color:#fff  
+  
+}
 .overflow-auto {
   overflow: auto;
 }
@@ -158,11 +193,17 @@ dl:last-child {
   border-bottom: 1px solid #242424;
 }
 .footer-bottom {
-  background-color: #56c77d;
+  background-color: #34A255;
+}
+.footer-bottom .footer-social-icons {
+  position: relative;
+  top: 20%;
+  float:right;
+  line-height: 36px;
 }
 
 .dark-theme-applied .footer-bottom {
-  background-color: #242424;
+  background-color: #323131;
 }
 .dark-theme-applied .text-secondary {
   color: #fff;

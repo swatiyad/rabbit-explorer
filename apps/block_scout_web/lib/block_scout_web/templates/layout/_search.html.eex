@@ -1,6 +1,7 @@
 <!-- Search navbar -->
 
-	<div class="container search-form d-lg-flex d-inline-block pt-3 mb-3 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
+<div class="col-md-6">
+	<div class="search-form d-lg-flex d-inline-block pt-3 mb-3 w-100 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
 		<div class="input-group" title='<%= gettext("Search by address, token symbol name, transaction hash, or block number") %>'>
 			<div class="form-control form-control-lg search-control me auto px-0 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>" style="border-color:#71D492">
 				<input
@@ -22,3 +23,4 @@
 			</div>
 		</div>
 	</div>
+</div>
