@@ -123,6 +123,13 @@
 .table-head {
   background-color:#f6f8fb;
 }
+.dark-theme-applied .one,
+.dark-theme-applied .two,
+.dark-theme-applied .three,
+.dark-theme-applied .four {
+  background-color: #2a2a2a;
+  color:#fff;
+}
 .dark-theme-applied .table-head {
   background-color:#353434;
 }
@@ -564,7 +571,7 @@ ul.side_nav {
   .footer-social-icons {
     float: left!important;
     top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
   .footer-bottom {
     padding: 12px 0;

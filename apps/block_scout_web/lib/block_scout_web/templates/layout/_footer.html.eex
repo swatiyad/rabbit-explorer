@@ -95,23 +95,22 @@
         </div>
       </div>
       <div class="row footer-bottom text-white">
-      <div class="col-md-6 mb-sm">
+      <div class="col-md-6 col-8 mb-sm">
         <!-- Dark mode changer -->
         <button class="dark-mode-changer btn-sm btn btn-dark" id="dark-mode-changer" data-toggle="tooltip" data-title="Day/Night Mode" data-original-title="" title="">
           <i class="fas fa-moon"></i>
         </button>
-        <span class="ml-2"></span>
+        <span class="ml"></span>
 
-          <a href="#" class="footer-link text-white">
-          <i class="fas fa-laptop-code text-danger" ></i> <%= gettext("APIs") %>
-        </a>
-        <span class="ml-2">|</span>
+
 
         <%= if System.get_env("COIN_NAME") && System.get_env("NETWORK_PATH") && System.get_env("SUBNETWORK") && System.get_env("JSON_RPC") && System.get_env("CHAIN_ID") do %>
-          <a class="footer-link text-white text-white js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;"><%= gettext("Add") <> " #{System.get_env("SUBNETWORK")}" %>  Explorer</a>
+          <a class="footer-link text-white text-white js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;">
+          <!--<%= gettext("Add") <> " #{System.get_env("SUBNETWORK")}" %>  Network</a> -->
+          Add Rabbit Network </a>
         <% end %>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 col-4">
         <%# <span><i class="fas fa-copyright"></i>  copyright Rabbit Testnet - Analog Blockchain Explorer</span> %>
         <div class="footer-social-icons">
             <a href="https://github.com/blockscout/blockscout" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
