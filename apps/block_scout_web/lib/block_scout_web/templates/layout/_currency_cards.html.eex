@@ -1,4 +1,53 @@
-<div class="col-md-6 mt-3">
+<div class="col-md-6 d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none">
+    <div class="row currency_tile mx-0">
+    <div class="w-25">
+        <div class="media border rounded px-2 py-1 one">
+          <div class="media-left icon_img">
+            <i class="fas fa-bitcoin-sign"></i>
+          </div>
+          <div class="media-body">
+            <h5 class="p-0 m-0">BUSD</h5>
+            <p class="small p-0 m-0">up to £500</p>
+          </div>
+        </div>
+    </div>
+    <div class="w-25">
+     <div class="media border rounded px-2 py-1 two">
+          <div class="media-left icon_img">
+            <i class="fas fa-dollar"></i>
+          </div>
+          <div class="media-body">
+            <h5 class="p-0 m-0">INRx</h5>
+            <p class="small p-0 m-0">up to £500</p>
+          </div>
+        </div>
+    </div>
+    <div class="w-25">
+     <div class="media border rounded px-2 py-1 three">
+          <div class="media-left icon_img">
+            <i class="fas fa-indian-rupee"></i>
+          </div>
+          <div class="media-body">
+            <h5 class="p-0 m-0">Calculas</h5>
+            <p class="small p-0 m-0">up to £500</p>
+          </div>
+        </div>
+    </div>
+    <div class="w-25">
+     <div class="media border rounded px-2 py-1 four">
+          <div class="media-left icon_img">
+            <i class="fas fa-tenge-sign"></i>
+          </div>
+          <div class="media-body">
+            <h5 class="p-0 m-0">Tokens</h5>
+            <p class="small p-0 m-0">up to £500</p>
+          </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="col-md-6 d-none d-md-none d-lg-inline d-xl-inline">
     <div class="row currency_tile">
     <div class="col-lg-3 col-sm-3 col-md-6">
         <div class="media border rounded px-2 py-1 mb-sm mt-sm one">

@@ -108,10 +108,10 @@
         <span class="ml-2">|</span>
 
         <%= if System.get_env("COIN_NAME") && System.get_env("NETWORK_PATH") && System.get_env("SUBNETWORK") && System.get_env("JSON_RPC") && System.get_env("CHAIN_ID") do %>
-          <a class="footer-link text-white text-white js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;"><%= gettext("Add") <> " #{System.get_env("SUBNETWORK")}" %> Analog Blockchain Explorer</a>
+          <a class="footer-link text-white text-white js-btn-add-chain-to-mm btn-add-chain-to-mm in-footer" style="cursor: pointer;"><%= gettext("Add") <> " #{System.get_env("SUBNETWORK")}" %>  Explorer</a>
         <% end %>
       </div>
-      <div class="col-md-6 text-lg-right float-right">
+      <div class="col-md-6">
         <%# <span><i class="fas fa-copyright"></i>  copyright Rabbit Testnet - Analog Blockchain Explorer</span> %>
         <div class="footer-social-icons">
             <a href="https://github.com/blockscout/blockscout" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>

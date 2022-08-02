@@ -1,5 +1,10 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
 .media {
   display: flex;
   align-items: flex-start;
@@ -20,6 +25,7 @@
 .currency_tile .small {
   font-size: 10px;;
 }
+
 
 .currency_tile .one {   
   background-color: #7ed6dd;
@@ -548,6 +554,17 @@ ul.side_nav {
     position: unset;
     height: fit-content;
   }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 576px) {
+
+  .currency_tile .icon_img {
+    padding-right:3px;
+  }
+  .footer-social-icons {
+    float: left!important;
+  }
+  
 }
    
    

@@ -232,7 +232,7 @@
       <% end %>
       <%= render BlockScoutWeb.LayoutView, "_topnav.html", assigns %>
       <div class="container">
-        <div class="row">
+        <div class="row my-3">
         <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-show"] %>
         <%= render BlockScoutWeb.LayoutView, "_currency_cards.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide"] %>
         <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>

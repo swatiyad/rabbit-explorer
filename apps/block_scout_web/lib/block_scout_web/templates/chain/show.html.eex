@@ -115,7 +115,7 @@
 </div>
 
 <div class="advertisement_placement mx-auto">
-  <img src="images/rabbit-testnet-728x90.gif"/>
+  <img class="img-responsive" src="images/rabbit-testnet-728x90.gif"/>
 </div>
 <section class="container px-0" >
   <%= link(gettext("View More Blocks"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "float-right mt-2") %>
