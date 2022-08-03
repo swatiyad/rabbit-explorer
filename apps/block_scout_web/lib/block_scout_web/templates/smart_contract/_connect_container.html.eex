@@ -12,7 +12,7 @@
     Wallet Connected
   </a>
 
-  <div class="dropdown-menu">
+  <div class="dropdown-menu custom_dropdown">
     <%= link("KYC Verification", to: "/kycselect" , class: "dropdown-item")%>
     <%= link("Contract Address verification", to: "/#",class: "dropdown-item")%>
     <%= link("Token Update", to: "/tokenupdate",class: "dropdown-item")%>

@@ -1,5 +1,10 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
+.mobile_arrow {
+  position: absolute;
+  right: 0;
+}
+
 .currency_tile .icon_img {
   width:26px;
 }
@@ -147,6 +152,9 @@
 
 .dark-theme-applied .currency_tile .media-img  {
   filter: brightness(0) invert(1)
+}
+.dark-theme-applied .currency_tile .white-bg {
+  background-color: #484747;
 }
 
 .dark-theme-applied .one,
@@ -619,10 +627,31 @@ ul.side_nav {
   .footer-bottom {
     padding: 12px 0;
   }
-  
+ 
   
 }
    
+
+@media only screen and (min-device-width: 240px) and (max-device-width: 992px) {
+
+  .dropdown-toggle::after {
+    visibility: hidden;
+  }
+
+  .width_full {
+    width: 100%;
+  }
+
+  .dropdown-menu.custom_dropdown.show{
+    display: contents;   
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+}
    
    
          

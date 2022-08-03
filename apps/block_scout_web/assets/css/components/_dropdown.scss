@@ -6,10 +6,11 @@ $dropdown-menu-item-hover-background: rgba($secondary, 0.1) !default;
 .dropdown-menu {
   border-bottom: 1px solid #e2e5ec;
   border-left: 1px solid #e2e5ec;
-  border-radius: 0 0 2px 2px !important;
+  border-radius: 1px solid #e2e5ec;
   border-right: 1px solid #e2e5ec;
   border-top: none;
-  box-shadow: $box-shadow;
+  background:#f7f7f7;
+  //box-shadow: $box-shadow;
   padding: 0;
   width: 100%;
 
