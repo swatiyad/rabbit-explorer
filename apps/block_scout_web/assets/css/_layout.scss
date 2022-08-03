@@ -1,6 +1,8 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
-
+.card-border {
+  border: 1px solid #dee2e6 ;
+}
 .img-responsive {
   width: 100%;
   height: auto;
@@ -223,6 +225,9 @@ dl:last-child {
   line-height: 36px;
 }
 
+.dark-theme-applied .card-border {
+  border: 1px solid #242424 !important;
+}
 .dark-theme-applied .footer-bottom {
   background-color: #323131;
   border-top: 1px solid #3c3a3a;
@@ -576,9 +581,7 @@ ul.side_nav {
   .footer-bottom {
     padding: 12px 0;
   }
-  .dark-theme-applied .media .border {
-    border: 1px solid #242424 !important;
-  }
+  
   
 }
    

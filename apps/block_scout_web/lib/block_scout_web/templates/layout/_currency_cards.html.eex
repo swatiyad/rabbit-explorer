@@ -1,7 +1,7 @@
 <div class="col-md-6 d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none">
     <div class="row currency_tile mx-0">
     <div class="w-25">
-        <div class="media border rounded px-2 py-1 one">
+        <div class="media card-border rounded px-2 py-1 one">
           <div class="media-left icon_img">
             <i class="fas fa-bitcoin-sign"></i>
           </div>
@@ -12,7 +12,7 @@
         </div>
     </div>
     <div class="w-25">
-     <div class="media border rounded px-2 py-1 two">
+     <div class="media card-border rounded px-2 py-1 two">
           <div class="media-left icon_img">
             <i class="fas fa-dollar"></i>
           </div>
@@ -23,7 +23,7 @@
         </div>
     </div>
     <div class="w-25">
-     <div class="media border rounded px-2 py-1 three">
+     <div class="media card-border rounded px-2 py-1 three">
           <div class="media-left icon_img">
             <i class="fas fa-indian-rupee"></i>
           </div>
@@ -34,7 +34,7 @@
         </div>
     </div>
     <div class="w-25">
-     <div class="media border rounded px-2 py-1 four">
+     <div class="media card-border rounded px-2 py-1 four">
           <div class="media-left icon_img">
             <i class="fas fa-tenge-sign"></i>
           </div>

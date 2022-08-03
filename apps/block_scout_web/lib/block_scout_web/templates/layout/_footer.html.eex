@@ -1,6 +1,6 @@
 <footer class="footer pb-0">
   <div style="background-image: url(/images/globe_polygon.png);background-repeat:no-repeat;background-size:contain; background-position:bottom right">
-    <div class="col-md-12">
+    <div class="container">
           <!-- Logo -->
       <% other_explorers = other_explorers() %>
       <% col_size = if Enum.empty?(other_explorers), do: 4, else: 2 %>
@@ -94,7 +94,11 @@
 
         </div>
       </div>
-      <div class="row footer-bottom text-white">
+
+    </div>
+  </div>
+   <div class="col-md-12">
+    <div class="row footer-bottom text-white">
       <div class="col-md-6 col-8 mb-sm">
         <!-- Dark mode changer -->
         <button class="dark-mode-changer btn-sm btn btn-dark" id="dark-mode-changer" data-toggle="tooltip" data-title="Day/Night Mode" data-original-title="" title="">
@@ -125,6 +129,5 @@
         </div>
       </div>
     </div>
-    </div>
-  </div>
+   </div>
 </footer>

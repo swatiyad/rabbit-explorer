@@ -14,7 +14,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse mx-5" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse mr-4" id="navbarSupportedContent">
 
       <ul class="navbar-nav">
 
@@ -120,7 +120,7 @@
 
 
 
-    <div class="btn ml-3 btn-teal text-white" id="wallet_connect" onclick="waller()" >
+    <div class="btn ml-lg-3 ml-sm-3 ml-md-3 ml-xs-0 btn-teal text-white" id="wallet_connect" onclick="waller()" >
     Connect Wallet
     </div>
 
