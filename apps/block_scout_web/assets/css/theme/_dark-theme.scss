@@ -75,7 +75,8 @@ $light-dark:#3c3a3a;
 		}
 	}
 	.navbar.navbar-primary .navbar-toggler .navbar-toggler-icon {
-		filter: invert(1);
+		//filter: invert(1);
+		filter: brightness(0) invert(1);
 	}
 
 	// footer
