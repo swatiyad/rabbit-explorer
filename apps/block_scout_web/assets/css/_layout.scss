@@ -3,6 +3,10 @@
 .currency_tile .icon_img {
   width:26px;
 }
+.dark-theme-applied .currency_tile .icon_img {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
 
 .currency_tile .media {
     height:50px;
