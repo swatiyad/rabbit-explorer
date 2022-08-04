@@ -18,7 +18,7 @@
               flex-grow: 1
               padding: 2rem;">
             <div class="tile-transactions text-dark">
-              <span class="mr-2 text-dark font-weight-bold"><%= gettext("Txns : %{count} ", count: Enum.count(@block.transactions)) %></span>
+              <span class="mr-2 text-dark font-weight-bold font16"><%= gettext("Txns : %{count} ", count: Enum.count(@block.transactions)) %></span>
             </div>
             <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
               <div class="sub-text text-truncate">
