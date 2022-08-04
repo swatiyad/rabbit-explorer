@@ -4,7 +4,7 @@ $dark-light-bg: #2A2A2A; // pills bg shade
 $dark-light: #383838; // tile light top share
 $labels-dark: #fff; // header nav, labels
 $dark-stakes-banned-background: #222222;
-$light-dark:#3c3a3a;
+$light-dark:#383838;
 
 // Switcher
 // .dark-mode-changer {
@@ -297,7 +297,7 @@ $light-dark:#3c3a3a;
 
 	// dropdown
 	.dropdown-menu {
-		background-color: $dark-light-bg;
+		background-color: $light-dark;
 		border-left-color: $dark-light-bg;
 		border-right-color: $dark-light-bg;
 		border-bottom-color: $dark-light-bg;
