@@ -7,7 +7,7 @@
           </div>
           <div class="media-body">
             <h5 class="p-0 m-0">INRx</h5>
-            <p class="small p-0 m-0 text-truncate text-truncate">up to £500s sss</p>
+            <p class="small p-0 m-0 text-truncate">£500s 4242</p>
           </div>
         </div>
     </div>
@@ -18,7 +18,8 @@
           </div>
           <div class="media-body">
             <h5 class="p-0 m-0">USDT</h5>
-            <p class="small p-0 m-0 text-truncate text-truncate">£500,0000</p>
+            <p class="small p-0 m-0 text-truncate">£500,0000</p>
+
           </div>
         </div>
     </div>
@@ -29,7 +30,8 @@
           </div>
           <div class="media-body">
             <h5 class="p-0 m-0">Calculas</h5>
-            <p class="small p-0 m-0 text-truncate text-truncate">up to £502342342342342340</p>
+            <p class="small p-0 m-0 text-truncate">£50234 234234 2342340</p>
+
           </div>
         </div>
     </div>
@@ -40,7 +42,7 @@
           </div>
           <div class="media-body">
             <h5 class="p-0 m-0">Pepper</h5>
-            <p class="small p-0 m-0 text-truncate text-truncate">up to £500</p>
+            <p class="small p-0 m-0 text-truncate">£500 5645 435</p>
           </div>
         </div>
     </div>
@@ -50,48 +52,84 @@
 <div class="col-sm-12 col-md-12 col-lg-6 d-none d-md-inline d-lg-inline d-xl-inline">
   <div class="row currency_tile">
     <div class="col-lg-3 col-sm-3 col-md-3">
-        <div class="media border rounded px-2 py-1 mb-sm mt-sm white-bg shadow">
-          <div class="media-left media-img">
+        <div class="tile_card white-bg border rounded shadow">
+          <div class="tile_left media-img">
             <img src="/images/inrx.png"/>
           </div>
-          <div class="media-body">
+          <div class="tile_right">
+            <a href="#"><i class="fas fa-eye view_btn text-success"></i></a>
             <h5 class="p-0 m-0">INRx</h5>
-            <p class="small p-0 m-0 text-truncate">up to £50sdsdsd0</p>
+
+          </div>
+          <div class="col-md-12 px-0" style="clear:both">
+            <div class="tile_details text-center text-truncate">
+              <span class="font-weight-bold ">M:</span> <span class="sub-text">50k </span>
+              <span class="font-weight-bold">T:</span> <span class="sub-text">23</span>
+              <span class="font-weight-bold">H:</span> <span class="sub-text">52</span>
+              <span class="font-weight-bold">P:</span> <span class="sub-text">362</span>
+            </div>
           </div>
         </div>
     </div>
     <div class="col-lg-3 col-sm-3 col-md-3">
-     <div class="media border rounded px-2 py-1 mb-sm mt-sm white-bg shadow">
-          <div class="media-left media-img">
-            <img src="/images/tether.png"/>
-          </div>
-          <div class="media-body">
-            <h5 class="p-0 m-0">USDT</h5>
-            <p class="small p-0 m-0 text-truncate">up to £sdsdsd500</p>
+      <div class=" tile_card white-bg border rounded shadow">
+        <div class="tile_left media-img">
+          <img src="/images/tether.png"/>
+        </div>
+        <div class="tile_right">
+          <a href="#"><i class="fas fa-eye view_btn text-success"></i></a>
+          <h5 class="p-0 m-0">USDT</h5>
+
+        </div>
+        <div class="col-md-12 px-0" style="clear:both">
+          <div class="tile_details text-center text-truncate">
+            <span class="font-weight-bold ">M:</span> <span class="sub-text">50k </span>
+            <span class="font-weight-bold">T:</span> <span class="sub-text">23</span>
+            <span class="font-weight-bold">H:</span> <span class="sub-text">52</span>
+            <span class="font-weight-bold">P:</span> <span class="sub-text">362</span>
           </div>
         </div>
+      </div>
     </div>
     <div class="col-lg-3 col-sm-3 col-md-3">
-     <div class="media border rounded px-2 py-1 mb-sm mt-sm white-bg shadow">
-          <div class="media-left media-img">
-            <img src="/images/calculas.png"/>
-          </div>
-          <div class="media-body">
-            <h5 class="p-0 m-0">Calculas</h5>
-            <p class="small p-0 m-0 text-truncate">up to £s50sdsdsdsdfdfsdfdfsdf000</p>
+      <div class="tile_card white-bg border rounded shadow border rounded shadow">
+        <div class="tile_left media-img">
+          <img src="/images/calculas.png"/>
+        </div>
+        <div class="tile_right">
+          <a href="#"><span class="fas fa-eye view_btn text-success"></span></a>
+          <h5 class="p-0 m-0">Calculas</h5>
+
+        </div>
+        <div class="col-md-12 px-0" style="clear:both">
+          <div class="tile_details text-center text-truncate">
+            <span class="font-weight-bold ">M:</span> <span class="sub-text">50k </span>
+            <span class="font-weight-bold">T:</span> <span class="sub-text">23</span>
+            <span class="font-weight-bold">H:</span> <span class="sub-text">52</span>
+            <span class="font-weight-bold">P:</span> <span class="sub-text">362</span>
           </div>
         </div>
+      </div>
     </div>
      <div class="col-lg-3 col-sm-3 col-md-3">
-     <div class="media border rounded px-2 py-1 mb-sm mt-sm white-bg shadow">
-          <div class="media-left media-img">
-            <img src="/images/pepper.png"/>
-          </div>
-          <div class="media-body">
-            <h5 class="p-0 m-0">Pepper</h5>
-            <p class="small p-0 m-0 text-truncate">up to £500</p>
-          </div>
+      <div class="tile_card border rounded white-bg shadow">
+        <div class="tile_left media-img">
+          <img src="/images/pepper.png"/>
         </div>
+        <div class="tile_right">
+        <a href="#"><span class="fas fa-eye view_btn text-success"></span></a>
+          <h5 class="p-0 m-0">Pepper</h5>
+
+        </div>
+          <div class="col-md-12 px-0" style="clear:both">
+            <div class="tile_details text-center text-truncate">
+              <span class="font-weight-bold ">M:</span> <span class="sub-text">50k </span>
+              <span class="font-weight-bold">T:</span> <span class="sub-text">23</span>
+              <span class="font-weight-bold">H:</span> <span class="sub-text">52</span>
+              <span class="font-weight-bold">P:</span> <span class="sub-text">362</span>
+            </div>
+          </div>
+      </div>
     </div>
   </div>
 </div>
