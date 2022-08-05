@@ -149,7 +149,7 @@
   filter: brightness(0) invert(1)
 }
 .dark-theme-applied .currency_tile .white-bg {
-  background-color: #484747;
+  background-color: #363636;
 }
 .font16 {
   font-size: 16px;
@@ -701,7 +701,6 @@ ul.side_nav {
    } 
    .border-right-sm2 {
     border-right: 0!important
-
    }
 
    .stickysidebar {
@@ -863,6 +862,17 @@ ul.side_nav {
     padding:0;
     margin:0
   }
+  .digi_time {
+    font-family: unset;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0;
+    color: #42c670;
+    background-color: #fff;
+    border:0;
+    font-size: 12px;
+  }
+
 
 }
 @media only screen and (min-device-width: 992px) {
