@@ -119,9 +119,9 @@
                 <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
               </a>
               <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
-              <a class="dropdown-item " href="#">Top Log20 Token</a>
+              <a class="dropdown-item " href="#">Top Log 20 Token</a>
               <a class="dropdown-item " href="#">Log 20 Txns</a>
-              <a class="dropdown-item " href="#">Top Log 721 Txns</a>
+              <a class="dropdown-item " href="#">Top Log 721 Token</a>
               <a class="dropdown-item " href="#">Log 721 Txns</a>
                 <!--<%= link(
                       gettext("All"),
@@ -136,6 +136,19 @@
               </div>
             </li>
         <% end %>
+         <li class="nav-item dropdown">
+              <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                <%= gettext("More") %>
+                <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
+              </a>
+                <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
+              <a class="dropdown-item " href="#">Coming soon</a>
+              <a class="dropdown-item " href="#">Coming soon</a>
+              <a class="dropdown-item " href="#">Coming soon</a>
+              <a class="dropdown-item " href="#">Coming soon</a>
+              </div>
+            </li>
         <% end %>
       </ul>
 

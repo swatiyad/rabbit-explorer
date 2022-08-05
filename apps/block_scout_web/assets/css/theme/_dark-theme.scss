@@ -1151,28 +1151,29 @@ $light-dark:#383838;
 		background-color: #242424 !important;
 		color: white;
 		border: none;
+		padding: 5px;
 	}
-	.dark-theme-applied .dropdown-item:hover:before {
-		content: "|";
-		height: 50px;
-		width: 50%;
-		opacity: 1;
-		background: none;
-		right: 17%;
-		color: $dark-primary;
-		position: relative;
-	}
-	.dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:hover:before
-	{
-		content: "|";
-		height: 50px;
-		width: 50%;
-		opacity: 1;
-		background: none;
-		left: 24%;
-		top: 14%;
-		color: $dark-primary;
-	}
+	// .dark-theme-applied .dropdown-item:hover:before {
+	// 	content: "|";
+	// 	height: 50px;
+	// 	width: 50%;
+	// 	opacity: 1;
+	// 	background: none;
+	// 	right: 17%;
+	// 	color: $dark-primary;
+	// 	position: relative;
+	// }
+	// .dark-theme-applied .navbar.navbar-primary .navbar-nav .nav-link:hover:before
+	// {
+	// 	content: "|";
+	// 	height: 50px;
+	// 	width: 50%;
+	// 	opacity: 1;
+	// 	background: none;
+	// 	left: 24%;
+	// 	top: 14%;
+	// 	color: $dark-primary;
+	// }
 }
 .dark-theme-applied .confirmations-label:after {
     border-left: .9rem solid $dark-light-bg;

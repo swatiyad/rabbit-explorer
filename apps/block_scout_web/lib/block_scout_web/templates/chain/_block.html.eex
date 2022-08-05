@@ -1,5 +1,5 @@
 <div class="col-lg-3 col-md-6 col-sm-12 fade-up-blocks-chain" data-selector="chain-block" data-block-number="<%= @block.number %>" >
-  <div class="p-3 mb-2 border rounded white-bg deep-shadow">
+  <div class="p-3 mb-2 border rounded white-bg">
         <div class="n-p d-flex flex-column">
           <div class="d-flex justify-content-between">
             <%= link(
