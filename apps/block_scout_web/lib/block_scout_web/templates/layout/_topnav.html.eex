@@ -1,6 +1,8 @@
 <% staking_enabled_in_menu = Application.get_env(:block_scout_web, BlockScoutWeb.Chain)[:staking_enabled_in_menu] %>
 <% apps_menu = Application.get_env(:block_scout_web, :apps_menu) %>
-<nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom shadow py-0" data-selector="navbar" id="top-navbar">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4/web3.min.js" integrity="sha512-oMd9Re3VgJcXuZJn9DN6X7S7JUc7xLYZ2UyZ85Mm/xzaW3lwBr4fV2zjuu/n5jY/Of/2JOx35CTa6zvQNxb31Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom bg-light shadow py-0" data-selector="navbar" id="top-navbar">
   <div class="container-fluid navbar-container">
     <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
       <%= if logo() do %>
@@ -15,18 +17,16 @@
     </button>
 
     <div class="collapse navbar-collapse mr-4" id="navbarSupportedContent">
-
-      <ul class="navbar-nav width_full">
-
+       <ul class="navbar-nav width_full ml-auto">
         <%= if Application.get_env(:block_scout_web, BlockScoutWeb.WebRouter)[:enabled] do %>
           <li class="nav-item dropdown">
             <a class="nav-link topnav-nav-link dropdown-toggle" href="#" id="navbarBlocksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-              <%= gettext("Blockchain") %>
+              <%= gettext("Blockschain") %>
               <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarBlocksDropdown">
-              <a class="dropdown-item " href="/blocks">Node</a>
+             <a class="dropdown-item " href="/blocks">Node</a>
 
               <a class="dropdown-item " href="/transaction">Transaction</a>
 
@@ -60,19 +60,19 @@
             </a>
             <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
               <%= link(
-                gettext("Validated"),
-                class: "dropdown-item #{tab_status("txs", @conn.request_path)}",
-                to: transaction_path(@conn, :index)
-              ) %>
+                    gettext("Validated"),
+                    class: "dropdown-item #{tab_status("txs", @conn.request_path)}",
+                    to: transaction_path(@conn, :index)
+                  ) %>
               <!--<% json_rpc_named_arguments = Application.fetch_env!(:indexer, :json_rpc_named_arguments)%>
               <% variant = Keyword.fetch!(json_rpc_named_arguments, :variant) %>
               <%= if variant !== EthereumJSONRPC.Besu do %>
                 <%= link(
-                  gettext("Pending"),
-                  class: "dropdown-item #{tab_status("pending-transactions", @conn.request_path)}",
-                  "data-test": "pending_transactions_link",
-                  to: pending_transaction_path(@conn, :index)
-                ) %>
+                      gettext("Pending"),
+                      class: "dropdown-item #{tab_status("pending-transactions", @conn.request_path)}",
+                      "data-test": "pending_transactions_link",
+                      to: pending_transaction_path(@conn, :index)
+                    ) %>
               <% end %>-->
               <a class="dropdown-item " href="#">Validator Leaderboard</a>
               <a class="dropdown-item " href="#">Validated Txns</a>
@@ -135,41 +135,134 @@
                     ) %>-->
               </div>
             </li>
-        <% end %>
-         <li class="nav-item dropdown">
-              <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <% end %>
+          <li class="nav-item dropdown">
+            <a href="#" role="button" id="navbarTokensDropdown" class="nav-link topnav-nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-                <%= gettext("More") %>
-                <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
-              </a>
-                <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
+              <%= gettext("More") %>
+              <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
+            </a>
+              <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
               <a class="dropdown-item " href="#">Coming soon</a>
               <a class="dropdown-item " href="#">Coming soon</a>
               <a class="dropdown-item " href="#">Coming soon</a>
               <a class="dropdown-item " href="#">Coming soon</a>
-              </div>
-            </li>
+            </div>
+          </li>
         <% end %>
+
+        <div class="btn btn-success truncate_custom" id="wallet_connect"> Wallet Connected  </div>
+        <div class="dropdown mb-sm mt-sm" id="checklist">
+          <a class="btn btn-success custom_btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none">User Details</span>
+            <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none text-secondary"></span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="right: 0;left: auto;">
+            <%= link("KYC Verification", to: "/kycselect" , class: "dropdown-item")%>
+            <%= link("Contract Address verification", to: "/#",class: "dropdown-item")%>
+            <%= link("Token Update", to: "/tokenupdate",class: "dropdown-item")%>
+            <%= link("Audit Contract", to: "/auditContract",class: "dropdown-item")%>
+            <%= link("Watch List", to: "/#",class: "dropdown-item")%>
+            <%= link("Private Name Tag", to: "/#",class: "dropdown-item")%>
+            <%= link("txn Private Notes", to: "/#",class: "dropdown-item")%>
+          </div>
+        </div>
       </ul>
-
-
-
-    <%= render BlockScoutWeb.SmartContractView, "_connect_container.html" %>
-    <div class="btn ml-lg-3 ml-sm-3 ml-md-3 ml-xs-0 btn-teal text-white" id="wallet_connect" onclick="waller()" >
-      Connect Wallet
     </div>
-
-    <script>
-
-    function waller() {
-      var set= document.getElementById("wallet_connect")
-      document.getElementById('connectedDiv').style.display = "block";
-      document.getElementById('wallet_connect').style.display = "none";
-      if (typeof window.ethereum !== 'undefined') {
-        ethereum.request({ method: 'eth_requestAccounts' });
-      }
-    }
-    </script>
-    </div>
-  </div>
+ </div>
 </nav>
+
+
+<style>
+  .hideCont{
+  display:none;
+  }
+
+
+</style>
+
+
+
+
+<script>
+
+  var checkAccount = "Connect Wallet";
+  window.addEventListener("load", async()=>{
+  checkAccount = await ethereum.request({ method: 'eth_accounts' });
+  if(checkAccount.length==0){
+    document.getElementById("wallet_connect").innerHTML="Connect Wallet";
+
+  } else{
+    document.getElementById("wallet_connect").innerHTML=checkAccount[0];
+  }
+  })
+  document.querySelector("#wallet_connect").addEventListener("click", async ()=>{
+  var provider = 'https://rabbit.analoge-rpc.com';
+  var web3Provider = new Web3.providers.HttpProvider(provider);
+  var web3 = new Web3(web3Provider);
+
+  setRpc();
+
+  await window.ethereum.enable();
+  const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+  document.getElementById("wallet_connect").innerHTML=accounts;
+    window.ethereum.on('accountsChanged', function (accounts) {
+        // Time to reload your interface with accounts[0]!
+
+      });
+  });
+
+  window.addEventListener("load", ()=>{
+
+  setInterval( async function(){
+
+  checkAccount = await ethereum.request({ method: 'eth_accounts' });
+  document.getElementById("checklist").style.display="block";
+
+  if(checkAccount.length==0){
+    document.getElementById("wallet_connect").innerHTML="Connect Wallet";
+    document.getElementById("checklist").style.display="none";
+  }
+
+  },1000)
+
+  })
+  async function setRpc(){
+
+        try {
+          await web3.currentProvider.request({
+            method: "wallet_switchEthereumChain",
+            params: [{ chainId:"0x70f" }], //mainnet
+            // params: [{ chainId: "0x61" }], //testnet
+          });
+          resolve(web3);
+        } catch (error) {
+          if (error.code===4902) {
+            try {
+              await web3.currentProvider.request({
+                method: "wallet_addEthereumChain",
+                params: [
+                  {
+                    chainId:"0x70f",
+                    chainName: "Analog Network",
+                    rpcUrls: ["https://rabbit.analog-rpc.com"],
+                    nativeCurrency: {
+                      name: "Analog",
+                      symbol: "ANA",
+                      decimals: 18,
+                    },
+                    blockExplorerUrls: ["https://rabbit.analogscan.com/"],
+                  },
+                ],
+              });
+            } catch (error) {
+              alert(error.message);
+            }
+            reject(error);
+          }
+        }
+
+    }
+
+
+</script>
