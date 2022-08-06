@@ -53,7 +53,7 @@
                       <th class="screenRow">To</th>
                       <th class="screenRow">Amount</th>
                       <th class="screenRow">Txn Fee</th>
-                      <th class="screenRow">Status</th>
+                      <%# <th class="screenRow">Status</th> %>
                     </tr>
                   </thead>
                 </table>

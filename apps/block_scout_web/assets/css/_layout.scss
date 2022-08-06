@@ -17,9 +17,10 @@
   position: relative;
   top: 3px;
 }
-.btn-more:hover,
+a.btn-more:hover,
+a.btn-more:active,
 .btn-more:active,
-.btn-more:visited{
+a.btn-more:visited {
   color:#21eb4f;
   text-decoration:none
 }

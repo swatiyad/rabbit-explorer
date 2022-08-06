@@ -95,7 +95,7 @@
                   </div>
                 </td>
 
-                <td class="screenRow">
+               <!-- <td class="screenRow">
 
                     <span class="tile-status-label ml-md-0 " data-test="transaction_status">
                       <%# <%= if status_class(@transaction) == "tile-status--pending" do %>
@@ -108,7 +108,7 @@
                         <span class="<%= if status_class(@transaction) == "tile-status--success" do %>text-success<% end %><%= if status_class(@transaction) == "tile-status--pending" do %>text-warning<% end %>"><%= formatted_result(status) %></span>
                     </span>
 
-                </td>
+                </td>-->
               </tr>
             </tbody>
         </table>
