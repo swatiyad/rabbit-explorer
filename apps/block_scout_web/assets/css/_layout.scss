@@ -17,7 +17,9 @@
   position: relative;
   top: 3px;
 }
-.btn-more:hover {
+.btn-more:hover,
+.btn-more:active,
+.btn-more:visited{
   color:#21eb4f;
   text-decoration:none
 }
@@ -398,6 +400,10 @@ dl:last-child {
   width: 70px;
   display: inline-block!important;
 }
+.width50 {
+  width:50px
+}
+
 .width100 {
   width: 100px;
 }

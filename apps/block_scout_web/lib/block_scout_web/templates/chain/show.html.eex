@@ -11,7 +11,7 @@
   position: relative;
   width: 2rem;
   height: 2rem;
-  background:url("/images/block-bg-slider.svg") no-repeat;
+  background:url(/images/block-bg-slider.svg) no-repeat;
   animation-name: slider-move;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -22,6 +22,35 @@
   background: linear-gradient(0deg, rgb(47 45 45) 0%, rgb(81 80 80) 48%, rgb(21 21 21) 100%);
   border: 1px solid #343a40;
   box-shadow: 1px 0px 4px #343a40;
+}
+
+.block-cards {
+  width: calc(25% - 1.1rem);
+  /*margin-right:32px;*/
+  padding: 1.15rem  1.15rem 0 1.15rem;;
+}
+
+.block-cards:nth-child(4){
+  margin-right:0;
+}
+.block-container {
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1;
+}
+.block-bg-animate-wrap {
+  position: absolute;
+  top: calc(50% - 0.5rem);
+  width: 86%;
+  left:4%;
+  height: 2rem;
+  top:40%;
+}
+
+@media screen and (min-device-width: 290px) and (max-device-width: 1024px) {
+  .block-bg-animate-wrap {
+  width: 140%!important;
+}
 }
 </style>
 <div class="container pt-2">
@@ -147,14 +176,19 @@
     <h1 class="pt-1"><%= gettext "Blocks" %></h1>
     <%= link(gettext(" More"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "btn-more") %>
   </div>
-  <div class="card-chain-blocks js-ad-dependant-mb-3 mb-4">
-    <div class="" style="position: relative;transition: transform .6s ease; z-index: 2;">
-      <div class="block-bg-animate-wrap" style="position: absolute;top: calc(50% - 0.5rem); width: 92%; left:4%; height: 2rem; top:32%; ">
+  <div class="card-chain-blocks js-ad-dependant-mb-3 mb-4 overflow-auto">
+    <div class="" style="position: relative;
+    display: flex;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+    z-index: 2;">
+      <div class="block-bg-animate-wrap">
         <div class="animate-wrap ">
           <div class="slider-move animate-moving-object"></div>
         </div>
       </div>
-      <div class="row" data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>" >
+      <div class="block-container" data-selector="chain-block-list" data-url="<%= chain_blocks_path(@conn, :chain_blocks) %>" >
             <button data-selector="error-message" class="alert alert-danger col-12 text-left" style="display: none;">
               <span class="alert-link">
                 <%= gettext "Something went wrong, click to reload." %>
