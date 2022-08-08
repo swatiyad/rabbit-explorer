@@ -259,9 +259,9 @@
               <thead>
                 <tr class="table-head">
                   <th class="wideRow">Hash</th>
+                  <th class="screenRow">Method</th>
                   <th class="screenRow">Block</th>
                   <th class="screenRow">Age</th>
-                  <th class="screenRow">Method</th>
                   <th class="screenRow">From</th>
                   <th class="" style="width:36px"></th>
                   <th class="screenRow">To</th>
