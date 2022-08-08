@@ -20,9 +20,11 @@
 a.btn-more:hover,
 a.btn-more:active,
 .btn-more:active,
-a.btn-more:visited {
+.btn-more:focus,
+a.btn-more:visited,
+a.btn-more:focus {
   color:#21eb4f;
-  text-decoration:none
+  text-decoration:none;
 }
 
 .clearfix {
@@ -382,8 +384,11 @@ dl:last-child {
   width: 100px;
 }
 .width150 {
-width: 150px;
+  width: 150px;
 
+}
+.width135{
+  width: 135px;
 }
 .width110 {
   width: 110px;
@@ -401,6 +406,14 @@ width: 150px;
 }
 .min_page_height {
   min-height: 65vh;
+}
+
+.table thead th {
+  vertical-align: baseline!important;
+  border-bottom: none!important;
+}
+.table td {
+  vertical-align: baseline!important;
 }
 
 
@@ -461,7 +474,10 @@ width: 150px;
 
   .wideRow .width100 {
       width: 170px;
-  }    
+  }
+  .wideRow .width135 {
+    width: 170px;
+}   
    
 }
 
@@ -714,7 +730,7 @@ ul.side_nav {
 }
 
 
-@media only screen and (min-device-width: 240px) and (max-device-width: 991px) {
+@media only screen and (min-device-width: 240px) and (max-device-width: 992px) {
   .animate-wrap,
   .animate-moving-object {
     display: none;

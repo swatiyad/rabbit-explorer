@@ -40,13 +40,13 @@
         </div>
       </div>
 
-      <div class="card-body overflow-auto" data-async-listing="<%= @current_path %>">
+      <div class="card-body overflow-auto p-0" data-async-listing="<%= @current_path %>">
         <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer transactions") %>
           <div class="">
             <table class="table fixed-layout table-hover">
                   <thead>
                     <tr class="table-head">
-                      <th class="wideRow">Hash</th>
+                      <th class="wideRow">Txn Hash</th>
                       <th class="screenRow">Method</th>
                       <th class="screenRow">Block</th>
                       <th class="screenRow">Age</th>

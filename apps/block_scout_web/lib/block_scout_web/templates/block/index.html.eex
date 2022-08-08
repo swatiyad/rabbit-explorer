@@ -13,7 +13,7 @@
       </div>
   </div>
   <div class="card">
-    <div class="card-body overflow-auto" data-async-listing="<%= @current_path %>">
+    <div class="card-body overflow-auto p-0" data-async-listing="<%= @current_path %>">
       <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer blocks") %>
 
            <div class="">
@@ -22,12 +22,13 @@
                     <tr class="table-head">
                       <th class="screenRow">Block</th>
                       <th class="screenRow">Age</th>
+                      <th class="screenRow">Txns</th>
                       <th class="screenRow">Validator</th>
-                      <th class="screenRow">Transactions</th>
+                      <th class="screenRow">Gas Used</th>
+                      <th class="screenRow">Gas Limit</th>
                       <th class="screenRow">Taral Priority Fees</th>
                       <th class="screenRow">Taral Burnt Fees</th>
-                      <th class="screenRow">Gas Limit</th>
-                      <th class="screenRow">Gas Used</th>
+
                       <%# <th scope="col">Status</th> %>
                     </tr>
                   </thead>

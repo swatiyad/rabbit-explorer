@@ -13,7 +13,7 @@
       </div>
   </div>
   <div class="card">
-    <div class="card-body overflow-auto" data-async-listing="<%= @current_path %>">
+    <div class="card-body overflow-auto p-0" data-async-listing="<%= @current_path %>">
 
       <div data-selector="channel-batching-message" style="display: none;">
         <div data-selector="reload-button" class="alert alert-info">
@@ -33,7 +33,7 @@
         <table class="table mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
-                  <th class="wideRow">Hash</th>
+                  <th class="wideRow">Txn Hash</th>
                   <th class="screenRow">Method</th>
                   <th class="screenRow">Block Status</th>
                   <th class="screenRow">Age</th>

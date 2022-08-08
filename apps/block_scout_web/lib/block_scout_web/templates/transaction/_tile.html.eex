@@ -9,7 +9,7 @@
         <tbody class="table-group-divider">
           <tr>
             <td class="wideRow">
-              <div class="text-truncate d-flex text-success width100">
+              <div class="text-truncate d-flex text-success width135">
                 <%= render "_link.html", transaction_hash: @transaction.hash, data_test: "address_hash_link" %>
               </div>
             </td>

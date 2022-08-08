@@ -9,6 +9,7 @@
 }
 .animate-moving-object {
   position: relative;
+  top: -1px;
   width: 2rem;
   height: 1.5rem;
   background:url(/images/block-bg-slider.svg) no-repeat;
@@ -49,7 +50,7 @@
 
 @media screen and (min-device-width: 290px) and (max-device-width: 1024px) {
   .block-bg-animate-wrap {
-  width: 140%!important;
+  width: 100%!important;
 }
 }
 </style>
@@ -258,7 +259,7 @@
         <table class="table mb-0 fixed-layout">
               <thead>
                 <tr class="table-head">
-                  <th class="wideRow">Hash</th>
+                  <th class="wideRow">Txn Hash</th>
                   <th class="screenRow">Method</th>
                   <th class="screenRow">Block</th>
                   <th class="screenRow">Age</th>
@@ -316,14 +317,15 @@ left: 100%;
 .table th,
 .table td {
   padding: 0.75rem;
-  vertical-align: top;
-  border-top: 1px solid #eceeef;
+  vertical-align: baseline;
+  border-top: 1px solid #eceeef!important;
 }
 
-.table thead th {
-  vertical-align: bottom;
+/*.table thead th {
+  vertical-align: baseline;
   border-bottom: 1px solid #eceeef;
-}
+
+*/
 
 .table tbody + tbody {
   border-top: 2px solid #eceeef;
