@@ -10,7 +10,7 @@
 .animate-moving-object {
   position: relative;
   width: 2rem;
-  height: 2rem;
+  height: 1.5rem;
   background:url(/images/block-bg-slider.svg) no-repeat;
   animation-name: slider-move;
   animation-duration: 5s;
@@ -43,7 +43,7 @@
   top: calc(50% - 0.5rem);
   width: 86%;
   left:4%;
-  height: 2rem;
+  height: 1.5rem;
   top:40%;
 }
 
