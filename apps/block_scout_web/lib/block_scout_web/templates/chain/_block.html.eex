@@ -24,7 +24,7 @@
         </div>
         <div class="d-flex justify-content-between align-items-center">
           <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
-            <div class="text-truncate width100">
+            <div class="text-truncate width110">
               <span class="font-weight-bold"><%= gettext "Miner" %></span>
               <%= render BlockScoutWeb.AddressView,
                 "_link.html",

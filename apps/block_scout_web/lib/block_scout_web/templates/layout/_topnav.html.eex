@@ -151,7 +151,7 @@
           </li>
         <% end %>
 
-        <div class="btn btn-success truncate_custom" id="wallet_connect"> Wallet Connected  </div>
+        <div class="btn btn-success truncate_custom" id="wallet_connect"> Connect Wallet  </div>
         <div class="dropdown mb-sm mt-sm" id="checklist">
           <a class="btn btn-success custom_btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none">User Details</span>
@@ -194,6 +194,7 @@
 
   } else{
     document.getElementById("wallet_connect").innerHTML=checkAccount[0];
+    setRpc()
   }
   })
   document.querySelector("#wallet_connect").addEventListener("click", async ()=>{

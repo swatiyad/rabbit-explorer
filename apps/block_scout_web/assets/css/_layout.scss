@@ -1,5 +1,9 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
+.token_box .dropdown-toggle::after {
+  position: absolute;
+  right: 3rem;
+}
 
 .btn-more {
   color: #42C670;
@@ -401,6 +405,9 @@ dl:last-child {
   filter: brightness(0) invert(1);
 }
 
+.dark-theme-applied .pagination-container .pagination .page-link path {
+  fill: #fff9f9;
+}
 .fixed-layout {
   table-layout:fixed
 }

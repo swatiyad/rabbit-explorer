@@ -15,7 +15,7 @@
             </td>
 
             <td class="screenRow">
-              <div class="text-truncate width100">
+              <div class="text-truncate width110">
               <span>
               <% method_name = Transaction.get_method_name(@transaction) %>
                 <%= if method_name do %>

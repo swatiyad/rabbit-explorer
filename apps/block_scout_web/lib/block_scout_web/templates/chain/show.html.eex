@@ -26,12 +26,14 @@
 }
 
 .block-cards {
-  width: calc(25% - 1.1rem);
+
   /*margin-right:32px;*/
-  padding: 1.15rem  1.15rem 0 1.15rem;;
+  width: calc(25% - 1.1rem);
+  /*width: 330px;*/
+  padding: 1.15rem  1.15rem 0 1.15rem;
 }
 
-.block-cards:nth-child(4){
+.block-cards:nth-child(4) {
   margin-right:0;
 }
 .block-container {
@@ -53,6 +55,20 @@
   width: 100%!important;
 }
 }
+
+@media screen and (min-device-width: 290px) and (max-device-width: 991px) {
+
+.block-cards {
+  width:290px;
+  margin-right:15px;
+}
+}
+
+.dark-theme-applied .dark-theme-applied .pagination-container .pagination a.page-link > svg {
+ -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1)
+}
+
 </style>
 <div class="container pt-2">
   <div class="card border shadow rounded mb-3">
