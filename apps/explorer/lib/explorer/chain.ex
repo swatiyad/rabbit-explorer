@@ -7253,8 +7253,8 @@ defmodule Explorer.Chain do
         "99" ->
           "poa"
 
-        "100" ->
-          "xdai"
+        "1807" ->
+          "ANA"
 
         _ ->
           nil

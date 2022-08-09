@@ -7,8 +7,8 @@ function getTokenIconUrl (chainID, addressHash) {
     case '99':
       chainName = 'poa'
       break
-    case '100':
-      chainName = 'xdai'
+    case '1807':
+      chainName = 'ANA'
       break
     default:
       chainName = null

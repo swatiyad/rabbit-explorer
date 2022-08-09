@@ -141,6 +141,8 @@ $dark-primary-alternate: $dark-primary;
 		&:hover:not(.active) {
 			background-color: rgba($dark-primary, .15);
 			color: $dark-primary;
+			border-top-left-radius: 10px;
+    		border-top-right-radius: 10px;
 		}
 		&.active {
 			background-color: $dark-primary-alternate;
