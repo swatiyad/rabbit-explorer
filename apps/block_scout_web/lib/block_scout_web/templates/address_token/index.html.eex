@@ -17,13 +17,10 @@
           <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
         </div>
 
-        <div class="stakes-table-container">
-            <table style="width: 100%;">
+        <div class="stakes-table-container card border-top-0">
+            <table class="table mb-0" style="width: 100%;">
                 <thead>
                     <tr>
-                        <th class="stakes-table-th">
-                            <div class="stakes-table-th-content">&nbsp;</div>
-                        </th>
                         <th class="stakes-table-th">
                             <div>&nbsp;</div>
                         </th>

@@ -16,7 +16,28 @@
 
         <%= if !assigns[:token] do %>
         <div class="clearfix">
-          <h2 class="card-title float-left mb-2"><%= gettext "Token Transfers" %></h2>
+          <h5 class="font-weight-normal text-gray float-left my-2"> Latest
+            <span class="" data-test="address_transfer_count">
+              <%= if @conn.request_path |> String.contains?("/token-transfers") do %>
+                <a href="#transfers" class="" data-selector="transfer-count">
+                  <%= if @address.token_transfers_count do %>
+                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %>
+                  <% else %>
+                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transfers...") %>
+                  <% end %>
+                </a>
+              <% else %>
+                <a href="<%= AccessHelpers.get_path(@conn, :address_token_transfers_path, :index, @address.hash)%>#transfers" class="" data-selector="transfer-count">
+                  <%= if @address.token_transfers_count do %>
+                    <%= Number.Delimit.number_to_delimited(@address.token_transfers_count, precision: 0) %>
+                  <% else %>
+                    <%= render BlockScoutWeb.CommonComponentsView, "_loading_spinner.html", loading_text: gettext("Fetching transfers...") %>
+                  <% end %>
+                </a>
+              <% end %>
+            </span>
+            <%= gettext("Token Transfers")%>
+         </h5>
           <div class="top-pagination-outer-container float-right">
             <!--<div class="dropdown u-push-sm">
               <button data-test="filter_dropdown" class="btn-dropdown-line dropdown-toggle" type="button"

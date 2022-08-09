@@ -216,6 +216,7 @@ $card-tab-icon-color-active: #fff !default;
   padding: 0 25px;
   text-align: center;
   transition: $transition-cont;
+  border-bottom: 4px solid transparent;
 
   &:hover {
     // background-color: rgba($card-tab-active, .15);

@@ -229,8 +229,8 @@ $c-dark-text-color: #8a8dba;
 
 	.btn-wallet-icon {
 		background-color: transparent !important;
-		border-color: $c-primary !important;
-		color: $c-primary !important;
+		border-color: $border !important;
+		color: $text2 !important;
 	
 		&:hover {
 		  background-color: rgba(125, 34, 68, 0.4) !important;

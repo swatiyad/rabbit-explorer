@@ -23,16 +23,16 @@
                 </td>
 
                 <td class="screenRow">
-                  <div class="">
-                    <span class="mr-md-0 order-2" in-tile data-from-now="<%= @internal_transaction.transaction.block.timestamp %>"></span>
+                  <div class="d-flex">
+                    <div class="mr-md-0 order-2 text-truncate width100" in-tile data-from-now="<%= @internal_transaction.transaction.block.timestamp %>"></div>
                         <%= if assigns[:current_address] do %>
-                          <span class="mr-md-0 order-0 order-md-3">
+                          <div class="mr-md-0 order-0 order-md-3">
                             <%= if assigns[:current_address].hash == @internal_transaction.from_address_hash do %>
-                              <span class="badge badge-danger tile-badge p-0"><%= gettext "OUT" %></span>
+                              <span class="badge badge-warning tile-badge"><%= gettext "OUT" %></span>
                             <% else %>
-                              <span class="badge badge-success tile-badge p-0"><%= gettext "IN" %></span>
+                              <span class="badge badge-success tile-badge"><%= gettext "IN" %></span>
                             <% end %>
-                          </span>
+                          </div>
                       <% end %>
                   </div>
                 </td>

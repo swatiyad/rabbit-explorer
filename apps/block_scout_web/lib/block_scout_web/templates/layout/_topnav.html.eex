@@ -213,21 +213,28 @@
       });
   });
 
-  window.addEventListener("load", ()=>{
+window.addEventListener("load", ()=>{
 
-  setInterval( async function(){
+setInterval( async function(){
 
-  checkAccount = await ethereum.request({ method: 'eth_accounts' });
-  document.getElementById("checklist").style.display="block";
+checkAccount = await ethereum.request({ method: 'eth_accounts' });
+const currentChainId = await window.ethereum.request({
+      method: 'eth_chainId',
+    });
 
-  if(checkAccount.length==0){
+if(checkAccount.length==0 || currentChainId != "0x70f"){
     document.getElementById("wallet_connect").innerHTML="Connect Wallet";
     document.getElementById("checklist").style.display="none";
-  }
 
-  },1000)
+} else {
+    document.getElementById("wallet_connect").innerHTML=checkAccount
+    document.getElementById("checklist").style.display="block";
+}
 
-  })
+},1000)
+
+ })
+
   async function setRpc(){
 
         try {

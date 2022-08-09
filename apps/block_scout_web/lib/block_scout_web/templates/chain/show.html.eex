@@ -337,6 +337,11 @@ left: 100%;
   border-top: 1px solid #eceeef!important;
 }
 
+.dark-theme-applied .table th,
+.dark-theme-applied .table td {
+  border-top: 1px solid #404040!important;
+}
+
 /*.table thead th {
   vertical-align: baseline;
   border-bottom: 1px solid #eceeef;

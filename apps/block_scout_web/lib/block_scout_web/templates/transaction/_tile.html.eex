@@ -15,11 +15,11 @@
             </td>
 
             <td class="screenRow">
-              <div class="text-truncate width110">
+              <div class="">
               <span>
               <% method_name = Transaction.get_method_name(@transaction) %>
                 <%= if method_name do %>
-                  <%= render BlockScoutWeb.FormView, "_tag.html", text: method_name, additional_classes: ["method", "ml-0 lable_mw"]  %>
+                  <%= render BlockScoutWeb.FormView, "_tag.html", text: method_name, additional_classes: ["method", "ml-0 lable_mw text-truncate width92 d-block"]  %>
                 <% end %>
               </span>
               </div>
@@ -34,20 +34,20 @@
             </td>
 
             <td class="screenRow">
-              <div class="">
-                <span class="mr-md-0 order-2" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></span>
+              <div class="d-flex">
+                <div class="mr-md-0 order-2 text-truncate width100" in-tile data-from-now="<%= block_timestamp(@transaction) %>"></div>
                 <%= if from_or_to_address?(@transaction, assigns[:current_address]) do %>
-                  <span class="mr-md-0 order-0 order-md-3">
+                  <div class="mr-md-0 order-0 order-md-3">
                     <%= if @transaction.from_address_hash == assigns[:current_address].hash do %>
-                      <span data-test="transaction_type" class="badge badge-danger tile-badge p-0">
+                      <span data-test="transaction_type" class="badge badge-warning tile-badge">
                         <%= gettext "OUT" %>
                       </span>
                     <% else %>
-                      <span data-test="transaction_type" class="badge badge-success tile-badge p-0">
+                      <span data-test="transaction_type" class="badge badge-success tile-badge">
                         <%= gettext "IN" %>
                       </span>
                     <% end %>
-                  </span>
+                  </div>
                 <% end %>
               </div>
             </td>

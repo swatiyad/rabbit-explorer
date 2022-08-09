@@ -1,5 +1,11 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
+.bg-light-blue {
+  background-color: #f6feff;
+}
+.text-gray {
+  color: #666;
+}
 .token_box .dropdown-toggle::after {
   position: absolute;
   right: 3rem;
@@ -29,6 +35,9 @@ a.btn-more:visited,
 a.btn-more:focus {
   color:#21eb4f;
   text-decoration:none;
+}
+a.card-tab:focus{
+  text-decoration: none;
 }
 
 .clearfix {
@@ -252,6 +261,11 @@ a.btn-more:focus {
   color:#fff;
 }
 
+.dark-theme-applied svg {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
 .dark-theme-applied .table-head {
   background-color:#353434;
 }
@@ -262,7 +276,7 @@ a.btn-more:focus {
   box-shadow: 2px 1px 5px #242426 !important;
 
 }
-.dark-theme-applied .table thead th {  
+.dark-theme-applied .table thead th {
   border-bottom: 1px solid #3e3e3e!important;
 }
 
@@ -363,6 +377,9 @@ dl:last-child {
   background-color: #2a2a2a!important
 }
 
+.dark-theme-applied .bg-light-blue {
+  background-color: #242424;
+}
 .deep-shadow {
   box-shadow: -10px -10px 0px 0px #eee;
 
@@ -383,7 +400,9 @@ dl:last-child {
 .width50 {
   width:50px
 }
-
+.width92 {
+  width: 92px;
+}
 .width100 {
   width: 100px;
 }
@@ -419,7 +438,8 @@ dl:last-child {
   vertical-align: baseline!important;
   border-bottom: none!important;
 }
-.table td {
+.table td,
+td.stakes-td {
   vertical-align: baseline!important;
 }
 

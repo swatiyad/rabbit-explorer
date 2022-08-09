@@ -137,7 +137,7 @@
                           <%= render BlockScoutWeb.AddressView, "_balance_dropdown.html", conn: @conn, address: @address %>
                         </dd>
                       </dl>
-                      <!-- Transaction count -->
+                      <!-- Transaction count
                       <dl class="row address-transactions-count-item">
                         <dt class="col-sm-4 col-md-4 col-lg-4 text-muted">
                           <span class="d-none d-sm-inline-block"><%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
@@ -163,8 +163,8 @@
                             </a>
                           <% end %>
                         </dd>
-                      </dl>
-                      <!-- Transfers count -->
+                      </dl>-->
+                      <!-- Transfers count
                       <dl class="row address-transfers-count-item">
                         <dt class="col-sm-4 col-md-4 col-lg-4 text-muted">
                           <span class="d-none d-sm-inline-block"><%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
@@ -190,7 +190,7 @@
                             </a>
                           <% end %>
                         </dd>
-                      </dl>
+                      </dl> -->
                     </div>
                   </div>
               </div>
@@ -199,7 +199,7 @@
               <div class="col-md-6 mt-sm">
                 <div class="card">
                   <div class="card-header">
-                    <%= gettext "Information"%>
+                    <%= gettext "More Info"%>
                   </div>
                   <div class="card-body">
                     <% address_name = primary_name(@address) %>
@@ -281,7 +281,7 @@
                         </dl>
                       <% end %>
 
-                      <!-- Gas used -->
+                      <!-- Gas used
                         <dl class="row address-gas-used-item">
                           <dt class="col-sm-4 col-md-4 col-lg-4 text-muted">
                             <span class="d-none d-sm-inline-block"><%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
@@ -297,8 +297,8 @@
                               <% end %>
                             </span>
                           </dd>
-                        </dl>
-                        <!-- Last balance update -->
+                        </dl>-->
+                        <!-- Last balance update
                         <%= if @address.fetched_coin_balance_block_number do %>
                           <dl class="row">
                             <dt class="col-sm-4 col-md-4 col-lg-4 text-muted">
@@ -314,7 +314,7 @@
                               ) %>
                             </dd>
                           </dl>
-                        <% end %>
+                        <% end %>-->
                         <div data-last-balance-update="<%= @address.fetched_coin_balance_block_number %>"></div>
                         <!-- Blocks Validated -->
                         <dl class="row address-validation-count-item" style="display: none;">

@@ -336,7 +336,7 @@ $light-dark:#383838;
 	}
 
 	.stakes-td {
-		border-bottom-color: darken($labels-dark, 30);
+		border-bottom-color: $dark-light;
 	}
 
 	.stakes-tr-banned {
@@ -520,7 +520,7 @@ $light-dark:#383838;
 		color: $labels-dark;
 	}
 	.border-bottom {
-		border-bottom-color: darken($dark-bg, 30) !important;
+		border-bottom-color: $dark-light !important;
 	}
 
 	// coin balance history chart

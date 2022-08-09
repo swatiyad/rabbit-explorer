@@ -1,6 +1,7 @@
 <div data-token-type="<%= @type %>">
-  <h6 class="dropdown-header" style="margin-left: 5px;">
-    <%= @type %> (<span data-number-of-tokens-by-type="<%= @type %>"><%= Enum.count(@token_balances)%></span>)
+  <h6 class="bs-label my-2 py-2 px-4 d-flex font-weight-bold">
+  Log 20 Token
+    <!--<%= @type %> (<span data-number-of-tokens-by-type="<%= @type %>"><%= Enum.count(@token_balances)%></span>)-->
   </h6>
 
   <%= for {token_balance, bridged_token, token} <- sort_by_usd_value_and_name(@token_balances) do %>
@@ -18,7 +19,7 @@
       %>
       <%= link(
             to: path,
-            class: "dropdown-item"
+            class: "dropdown-item pl-2"
           ) do %>
         <div class="row dropdown-row wh-sp">
           <%= if System.get_env("DISPLAY_TOKEN_ICONS") === "true" do %>
