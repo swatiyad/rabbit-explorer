@@ -1,4 +1,36 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
+#scrollupbtn {
+  display: inline-block;
+  background-color: #333;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  text-align: center;
+  /* border-radius: 4px; */
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  transition: background-color .3s, opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#scrollupbtn i {
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#scrollupbtn:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#scrollupbtn:active {
+  background-color: #555;
+}
+#scrollupbtn.show {
+  opacity: 1;
+  visibility: visible;
+}
 
 .bg-light-blue {
   background-color: #f6feff;
@@ -70,7 +102,7 @@ a.card-tab:focus{
   display: table;
   margin: 0 auto;
 }
-.lable_mw{
+.lable_mw {
   min-width: 89px;
 
 }
@@ -402,6 +434,9 @@ dl:last-child {
 .truncate_hash {
   width: 70px;
   display: inline-block!important;
+}
+.width44 {
+  width: 44px;
 }
 .width50 {
   width:50px

@@ -168,7 +168,7 @@
     background: #42C670;
     border-radius: 5px;
     color: white;
-    width: 10%;
+    /*width: 10%;*/
     cursor: pointer;
 }
 .btnclass:hover{

@@ -9,7 +9,7 @@
       <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
       <div class="col-md-12 clearfix py-3">
         <h5 class="float-left mb-2 font-weight-normal text-gray"  data-test="address_transaction_count">
-            Latest 50 from a total of
+            Latest from a total of
             <%= if @conn.request_path |> String.contains?("/transactions") do %>
             <a href="#txs" class="" data-selector="transaction-count">
               <%= if @address.transactions_count do %>

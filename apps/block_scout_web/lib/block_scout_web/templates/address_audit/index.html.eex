@@ -9,8 +9,8 @@
       <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
       <div class="card-body" data-async-listing="<%= @current_path %>">
         <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer transactions") %>
-        <div class="clearfix">
-          <h2 class="card-title float-left mb-2"><%= gettext "Transactions" %></h2>
+        <div class="clearfix p-2">
+          <h2 class="card-title float-left mb-2"><%= gettext "Audit" %></h2>
           <div class="top-pagination-outer-container float-right">
             <!--<div class="dropdown u-push-sm">
               <button data-test="filter_dropdown" class="btn-dropdown-line dropdown-toggle" type="button"

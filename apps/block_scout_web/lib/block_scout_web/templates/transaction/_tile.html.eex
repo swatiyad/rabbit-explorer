@@ -39,11 +39,11 @@
                 <%= if from_or_to_address?(@transaction, assigns[:current_address]) do %>
                   <div class="mr-md-0 order-0 order-md-3">
                     <%= if @transaction.from_address_hash == assigns[:current_address].hash do %>
-                      <span data-test="transaction_type" class="badge badge-warning tile-badge">
+                      <span data-test="transaction_type" class="badge badge-warning tile-badge width44">
                         <%= gettext "OUT" %>
                       </span>
                     <% else %>
-                      <span data-test="transaction_type" class="badge badge-success tile-badge">
+                      <span data-test="transaction_type" class="badge badge-success tile-badge width44">
                         <%= gettext "IN" %>
                       </span>
                     <% end %>

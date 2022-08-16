@@ -18,7 +18,7 @@
         </div>
 
         <div class="stakes-table-container card border-top-0">
-            <table class="table mb-0" style="width: 100%;">
+            <table class="table table-hover mb-0" style="width: 100%;">
                 <thead>
                     <tr>
                         <th class="stakes-table-th">
