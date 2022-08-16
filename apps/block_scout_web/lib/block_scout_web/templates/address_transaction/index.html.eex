@@ -29,7 +29,7 @@
           <% end %>
            <%= gettext("transactions") %>
         </h5>
-        <div class="top-pagination-outer-container float-right">
+        <div class="top-pagination-outer-container float-right"  data-async-listing="<%= @current_path %>">
           <!--<div class="dropdown u-push-sm">
             <button data-test="filter_dropdown" class="btn-dropdown-line dropdown-toggle" type="button"
               id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

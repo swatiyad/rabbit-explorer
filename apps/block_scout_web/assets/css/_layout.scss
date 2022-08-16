@@ -5,8 +5,7 @@
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  text-align: center;
-  /* border-radius: 4px; */
+  text-align: center;  
   position: fixed;
   bottom: 40px;
   right: 10px;
@@ -108,9 +107,6 @@ a.card-tab:focus{
 }
 
 .digi_time {
-  /*font-family: 'Digital-7 Mono';
-  font-family: 'Orbitron', sans-serif;
-  letter-spacing: 1px; */
   padding: 3px 3px 3px 5px;
   font-size: 11px;
   background: #42c670;
@@ -144,11 +140,8 @@ a.card-tab:focus{
     width: 144px;
     margin: 0;
 }
-
-
 .currency_tile h5 {
-  font-size: 12px;
-  // line-height:15px;
+  font-size: 12px;  
 }
 .currency_tile .sub-text {font-size:11px}
 .currency_tile .tile_left img,
@@ -158,6 +151,10 @@ a.card-tab:focus{
 
 .currency_tile .media .icon_img img {
   width:17px;
+}
+
+.dark-theme-applied .dashboard-banner-chart canvas {
+  filter: brightness(0) invert(1) !important;
 }
 
 .dark-theme-applied .bs-label {
@@ -253,14 +250,10 @@ a.card-tab:focus{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  // background: url(https://tronscan.io/static/media/body_bg.0b5e1c3d.png);
-  // background-size: cover;
-  // background-repeat: no-repeat;
   background-color: #f5f5f5;
 
   main {
-    flex-grow: 1;
-    // background-color: #fbfafc;
+    flex-grow: 1;    
   }
 }
 
@@ -657,9 +650,6 @@ ul.side_nav {
   padding: 0;
   list-style: none;
   overflow: hidden;
-  // -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-  // -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
-  // box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 .side_nav li a {  
@@ -727,13 +717,6 @@ ul.side_nav {
     box-shadow: none;
   }
 
-  // .fixed-layout {
-  //   table-layout: unset
-  // }
-
-  //  .width100 {
-  //    width: 50px;
-  // }
 
    .width150 {
     width: 100px;
@@ -751,14 +734,7 @@ ul.side_nav {
     box-shadow: none;
   } 
 
-  //  .fixed-layout {
-  //    table-layout:unset;
-  // }
-
-  //  .width100 {
-  //    width: 50px;
-  //  }
-
+  
    .width150 {
      width: 100px;
 
@@ -805,7 +781,21 @@ ul.side_nav {
 }
 
 @media only screen and (min-device-width: 240px) and (max-device-width: 992px) {
-  .animate-wrap,
+.mobile_btn {
+  background: transparent;
+  color: #666;
+  padding: 0 0 !important;
+  margin-top: 10px;
+}
+.mobile_btn.btn-success:not(:disabled):not(.disabled):active, .mobile_btn.btn-success:not(:disabled):not(.disabled).active, .show > .mobile_btn.btn-success.dropdown-toggle,
+.mobile_btn.btn-success:not(:disabled):not(.disabled):active:focus, .mobile_btn.btn-success:focus, .mobile_btn.btn-success.focus, .mobile_btn.btn-success:not(:disabled):not(.disabled).active:focus, .show > .mobile_btn.btn-success.dropdown-toggle:focus {
+  color: #666;
+  background-color: transparent;
+  border-color: transparent;
+  box-shadow:none!important;
+}
+
+.animate-wrap,
   .animate-moving-object {
     display: none;
   } 
@@ -814,7 +804,6 @@ ul.side_nav {
     visibility: hidden;
   }
   
-
   .dropdown-menu.custom_dropdown.show{
     display: contents;   
     position: absolute;
@@ -830,12 +819,10 @@ ul.side_nav {
     white-space: nowrap;
     width: 365px;
 }
-
   
   .custom_btn .dropdown-toggle::after {
     color:#fff;
-  }
-  
+  }  
 
 }
 
