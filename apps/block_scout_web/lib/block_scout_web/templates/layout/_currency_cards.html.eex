@@ -54,7 +54,7 @@
     <div class="col-lg-3 col-sm-3 col-md-3 sm_padding">
         <div class="tile_card white-bg border rounded shadow">
           <div class="tile_left media-img">
-            <img src="/images/inrx.png"/>
+            <img src="/images/inrx.png" width="20" height="20"/>
           </div>
           <div class="tile_right">
             <a href="#"><i class="fas fa-eye view_btn text-success"></i></a>
@@ -75,7 +75,7 @@
     <div class="col-lg-3 col-sm-3 col-md-3 sm_padding">
       <div class=" tile_card white-bg border rounded shadow">
         <div class="tile_left media-img">
-          <img src="/images/tether.png"/>
+          <img src="/images/tether.png" width="20" height="20"/>
         </div>
         <div class="tile_right">
           <a href="#"><i class="fas fa-eye view_btn text-success"></i></a>
@@ -95,7 +95,7 @@
     <div class="col-lg-3 col-sm-3 col-md-3 sm_padding">
       <div class="tile_card white-bg border rounded shadow border rounded shadow">
         <div class="tile_left media-img">
-          <img src="/images/calculas.png"/>
+          <img src="/images/calculas.png" width="20" height="20"/>
         </div>
         <div class="tile_right">
           <a href="#"><span class="fas fa-eye view_btn text-success"></span></a>
@@ -116,7 +116,7 @@
      <div class="col-lg-3 col-sm-3 col-md-3 sm_padding">
       <div class="tile_card border rounded white-bg shadow">
         <div class="tile_left media-img">
-          <img src="/images/pepper.png"/>
+          <img src="/images/pepper.png" width="20" height="20"/>
         </div>
         <div class="tile_right">
         <a href="#"><span class="fas fa-eye view_btn text-success"></span></a>
