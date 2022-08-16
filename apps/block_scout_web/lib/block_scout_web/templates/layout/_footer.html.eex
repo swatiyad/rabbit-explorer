@@ -1,5 +1,5 @@
 <footer class="footer pb-0">
-  <div style="background-image: url(/images/globe_polygon.png);background-repeat:no-repeat;background-size:contain; background-position:bottom right">
+  <div style="background-image: url(/images/globe_polygon.webp);background-repeat:no-repeat;background-size:contain; background-position:bottom right">
     <div class="container">
           <!-- Logo -->
       <% other_explorers = other_explorers() %>

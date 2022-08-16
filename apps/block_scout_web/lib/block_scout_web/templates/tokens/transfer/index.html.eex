@@ -38,7 +38,7 @@
           <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
         </div>
 
-        <div data-empty-response-message class="tile tile-muted text-center" style="display: none;">
+        <div data-empty-response-message class="tile tile-muted text-center m-3" style="display: none;">
           <span data-selector="empty-transactions-list">
             <%= gettext "There are no transfers for this Token." %>
           </span>

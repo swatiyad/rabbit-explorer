@@ -76,7 +76,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm1">
           <div class="media border-bottom mb-4 pb-4">
-              <img class="mr-3 media_icon" src="images/analog_icon.svg"  style="width:50px;">
+              <img class="mr-3 media_icon" src="images/analog_icon.svg" width="50" height="40"  style="width:50px;">
               <div class="media-body">
                 <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
                  Analog Price
@@ -88,7 +88,7 @@
 
           </div>
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
-            <img class="mr-3 media_icon" src="images/market-cap.svg" style="width:50px;">
+            <img class="mr-3 media_icon" src="images/market-cap.svg" width="50" height="40" style="width:50px;">
             <div class="media-body" >
               <span class="dashboard-banner-network-stats-label font-weight-bold  text-uppercase">
                 Global Market Cap
@@ -102,7 +102,7 @@
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm2">
           <div class="media border-bottom mb-4 pb-4">
-          <img class="mr-3 media_icon" src="images/transaction.svg" style="width:50px;height: 42px;">
+          <img class="mr-3 media_icon" src="images/transaction.svg" width="50" height="42"  style="width:50px;height: 42px;">
             <div class="media-body" >
               <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
                Transaction
@@ -130,7 +130,7 @@
           </div>
 
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
-            <img class="mr-3 media_icon" src="images/adhar-front.svg" style="width:50px;">
+            <img class="mr-3 media_icon" src="images/adhar-front.svg" width="50" height="40" style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
                 Total Identities
@@ -186,7 +186,7 @@
 </div>
 
 <div class="advertisement_placement mx-auto">
-  <img class="img-responsive" src="images/rabbit-testnet-728x90.gif"/>
+  <img class="img-responsive" width= "728" height="90" src="images/rabbit-testnet-728x90.gif"/>
 </div>
 <section class="container px-0" >
   <div class="d-flex justify-content-between">

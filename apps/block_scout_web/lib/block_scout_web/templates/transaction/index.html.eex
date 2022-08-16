@@ -34,7 +34,7 @@
       </button>
 
       <div data-empty-response-message style="display: none;">
-        <div class="tile tile-muted text-center">
+        <div class="tile tile-muted text-center m-3">
           <span data-selector="empty-internal-transactions-list">
             <%= gettext "There are no transactions." %>
           </span>

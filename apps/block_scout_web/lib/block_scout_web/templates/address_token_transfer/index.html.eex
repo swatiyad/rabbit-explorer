@@ -10,7 +10,7 @@
 
         <%= if assigns[:token] do %>
         <h2 class="card-title">
-          <span class="text-muted"><%= gettext "Tokens" %></span> / <%= token_name(@token) %>
+          <span class=""><%= gettext "Tokens" %></span> / <%= token_name(@token) %>
         </h2>
         <% end %>
 
@@ -70,7 +70,7 @@
         </div>
         <% end %>
 
-        <div data-empty-response-message class="tile tile-muted text-center" style="display: none;">
+        <div data-empty-response-message class="tile tile-muted text-center m-3" style="display: none;">
           <span><%= gettext "There are no token transfers for this address." %></span>
         </div>
 

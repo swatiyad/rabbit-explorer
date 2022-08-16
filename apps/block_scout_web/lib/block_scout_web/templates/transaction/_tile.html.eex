@@ -19,7 +19,7 @@
               <span>
               <% method_name = Transaction.get_method_name(@transaction) %>
                 <%= if method_name do %>
-                  <%= render BlockScoutWeb.FormView, "_tag.html", text: method_name, additional_classes: ["method", "ml-0 lable_mw text-truncate width92 d-block"]  %>
+                  <%= render BlockScoutWeb.FormView, "_tag.html", text: method_name, additional_classes: ["method", "ml-0 lable_mw text-truncate text-center width92 d-block"]  %>
                 <% end %>
               </span>
               </div>
@@ -69,7 +69,7 @@
 
                   <span class="tile-label font-weight-normal" data-test="transaction_type">
                     <%# <%= transaction_display_type(@transaction) %>
-                      <img class="mr-1 media_icon" src="/images/smart contract_Ana.svg" style="width:13px;">
+                      <img class="mr-1 media_icon" src="/images/smart contract_Ana.svg" width="13" height="15" style="width:13px;">
                   </span>
                     <span class="text-truncate">
                         <%= @transaction |> BlockScoutWeb.AddressView.address_partial_selector(:to, assigns[:current_address]) |> BlockScoutWeb.RenderHelpers.render_partial() %>

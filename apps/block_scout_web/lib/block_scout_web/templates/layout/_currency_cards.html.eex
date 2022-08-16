@@ -3,7 +3,7 @@
     <div class="w-25">
         <div class="media card-border rounded px-2 py-1 white-bg shadow-sm">
           <div class="media-left icon_img">
-            <img src="/images/inrx.png"/>
+            <img src="/images/inrx.png" width="20" height="20"/>
           </div>
           <div class="media-body">
             <h5 class="p-0 m-0">INRx</h5>
@@ -14,7 +14,7 @@
     <div class="w-25">
      <div class="media card-border rounded px-2 py-1 white-bg shadow-sm">
           <div class="media-left icon_img">
-            <img src="/images/tether.png"/>
+            <img src="/images/tether.png" width="20" height="20"/>
           </div>
           <div class="media-body">
             <h5 class="p-0 m-0">USDT</h5>
@@ -26,7 +26,7 @@
     <div class="w-25">
      <div class="media card-border rounded px-2 py-1 white-bg shadow-sm">
           <div class="media-left icon_img">
-            <img src="/images/calculas.png"/>
+            <img src="/images/calculas.png" width="20" height="20"/>
           </div>
           <div class="media-body">
             <h5 class="p-0 m-0">Calculas</h5>
@@ -38,7 +38,7 @@
     <div class="w-25">
      <div class="media card-border rounded px-2 py-1 white-bg shadow-sm">
           <div class="media-left icon_img">
-            <img src="/images/pepper.png"/>
+            <img src="/images/pepper.png" width="20" height="20"/>
           </div>
           <div class="media-body">
             <h5 class="p-0 m-0">Pepper</h5>
