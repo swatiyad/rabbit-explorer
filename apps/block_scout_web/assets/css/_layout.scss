@@ -798,6 +798,12 @@ ul.side_nav {
 }
 
 
+@media only screen and (min-device-width: 240px) and (max-device-width: 991px) {
+.width_full {
+  width: 100%;
+  }
+}
+
 @media only screen and (min-device-width: 240px) and (max-device-width: 992px) {
   .animate-wrap,
   .animate-moving-object {
@@ -807,10 +813,7 @@ ul.side_nav {
   .dropdown-toggle::after {
     visibility: hidden;
   }
-
-  .width_full {
-    width: 100%;
-  }
+  
 
   .dropdown-menu.custom_dropdown.show{
     display: contents;   
