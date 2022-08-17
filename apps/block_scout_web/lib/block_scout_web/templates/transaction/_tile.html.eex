@@ -12,10 +12,7 @@
              <div>
               <span class="tile-status-label ml-md-0 " data-test="transaction_status">
                 <%= if status_class(@transaction) == "tile-status--pending" do %>
-                  <div class="loading-spinner-small">
-                    <span class="loading-spinner-block-1"></span>
-                    <span class="loading-spinner-block-2"></span>
-                  </div>
+                  <div class="loader-spinner"> </div>
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--success" do %>
