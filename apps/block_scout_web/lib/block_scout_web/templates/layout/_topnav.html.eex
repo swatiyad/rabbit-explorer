@@ -22,7 +22,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link topnav-nav-link dropdown-toggle" href="#" id="navbarBlocksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 
-              <%= gettext("Blockschain") %>
+              <%= gettext("Blockchain") %>
               <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarBlocksDropdown">
@@ -150,14 +150,15 @@
             </div>
           </li>
         <% end %>
-
-        <div class="btn btn-success truncate_custom mobile_btn" id="wallet_connect"> Connect Wallet  </div>
-        <div class="dropdown mb-sm mt-sm" id="checklist">
+      </ul>
+      <div class="" style="display: -webkit-inline-box;">
+       <div class="btn btn-success truncate_custom mb-sm" id="wallet_connect"> Connect Wallet  </div>
+        <div class="dropdown mb-sm" id="checklist">
           <a class="btn btn-success custom_btn dropdown-toggle mobile_btn" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none">User Details</span>
-            <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none text-secondary"></span>
+            <%# <span class="d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none">User Details</span> %>
+            <%# <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none text-secondary"></span> %>
           </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="right: 0;left: auto;">
+          <div class="dropdown-menu mobile_drpdwn" aria-labelledby="dropdownMenuButton" style="right: 0;left: auto">
             <%= link("KYC Verification", to: "/kycselect" , class: "dropdown-item")%>
             <%= link("Contract Address verification", to: "/#",class: "dropdown-item")%>
             <%= link("Token Update", to: "/tokenupdate",class: "dropdown-item")%>
@@ -167,7 +168,7 @@
             <%= link("txn Private Notes", to: "/#",class: "dropdown-item")%>
           </div>
         </div>
-      </ul>
+      </div>
     </div>
  </div>
 </nav>

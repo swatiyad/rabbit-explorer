@@ -1,6 +1,6 @@
 <section class="container mt-3" data-page="transaction-pending-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
-  <div class="row mb-2">
+  <div class="row mb-2" data-async-listing="<%= @current_path %>">
       <div class="col-md-6">
         <h1 class="mb-2 list-title-description">
           <%= gettext "Pending Transactions" %>
@@ -24,11 +24,6 @@
       <button data-error-message class="alert alert-danger col-12 text-left" style="display: none;">
         <span href="#" class="alert-link"><%= gettext("Something went wrong, click to reload.") %></span>
       </button>
-      <div data-empty-response-message class="tile tile-muted text-center m-3" style="display: none;">
-        <span data-selector="empty-transactions-list">
-          <%= gettext "There are no pending transactions." %>
-        </span>
-      </div>
       <div class="table-hover">
         <table class="table mb-0 fixed-layout">
               <thead>
@@ -46,19 +41,22 @@
                 </tr>
               </thead>
         </table>
-         </div>
+      </div>
       <div data-items data-selector="transactions-pending-list">
         <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
       </div>
-
-
-
+      <div data-empty-response-message class="tile tile-muted text-center m-3" style="display: none;">
+        <span data-selector="empty-transactions-list">
+          <%= gettext "There are no pending transactions." %>
+        </span>
+      </div>
+      <div class="col-md-12 py-2">
+        <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
+      </div>
     </div>
   </div>
 
-  <div class="col-md-12 py-2">
-    <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
-  </div>
+
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/pending-transactions.js") %>"></script>
   <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/token-transfers-toggle.js") %>"></script>
 </section>
