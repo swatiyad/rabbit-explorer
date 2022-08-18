@@ -20,15 +20,15 @@
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--awaiting-internal-transactions" do %>
-                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error in Txn: execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--error--awaiting-internal-transactions" do %>
-                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error in Txn: execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error: Internal Transaction"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
                 <% end %>
 
                 <%= if status_class(@transaction) == "tile-status--error--reason" do %>
-                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error in Txn: execution reverted"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
+                <span class="text-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Error in Txn"><strong><i class="fa fa-exclamation-circle"></i></strong></span>
                 <% end %>
               </div>
 
