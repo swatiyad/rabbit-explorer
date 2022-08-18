@@ -11,7 +11,7 @@
       <div class="logs-topbar">
 
         <div data-search class="logs-search">
-          <input data-search-field class="logs-search-input" type='text' placeholder=<%= gettext("Topic") %> id='search-text-input' />
+          <input data-search-field class="logs-search-input" type='text' placeholder="<%= gettext("Topic") %>" id='search-text-input' />
           <button data-cancel-search-button class="logs-search-btn-cancel" type="button">x</button>
           <button data-search-button class="logs-search-btn" type="button"><%= gettext("Search") %></button>
         </div>

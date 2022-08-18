@@ -143,7 +143,9 @@
               <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
             </a>
               <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
-              <a class="dropdown-item " href="#">Contract Verification</a>
+              <a class="dropdown-item" href="#">Coming Soon</a>
+              <a class="dropdown-item" href="#">Coming Soon</a>
+              <a class="dropdown-item" href="#">Coming Soon</a>
             </div>
           </li>
         <% end %>

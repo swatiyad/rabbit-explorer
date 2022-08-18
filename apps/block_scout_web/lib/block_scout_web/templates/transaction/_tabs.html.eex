@@ -7,7 +7,7 @@
         )
       %>
   <% end %>
-  <%# <%= link(
+  <%= link(
         gettext("Internal Transactions"),
         class: "card-tab #{tab_status("internal-transactions", @conn.request_path, @show_token_transfers)}",
         to: AccessHelpers.get_path(@conn, :transaction_internal_transaction_path, :index, @transaction)
