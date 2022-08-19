@@ -2,7 +2,7 @@
 <div class=" tile-type-internal-transaction fade-in <%= if error, do: "tile-status--error--reason"%>" data-test="internal_transaction" data-key="<%= @internal_transaction.transaction_hash %>_<%= @internal_transaction.index %>" data-internal-transaction-transaction-hash="<%= @internal_transaction.transaction_hash %>" data-internal-transaction-index="<%= @internal_transaction.index %>">
 
     <div class="">
-        <table class="table fixed-layout">
+        <table class="table fixed-layout mb-0">
             <tbody class="table-group-divider">
               <tr>
                 <td class="wideRow">
@@ -38,7 +38,7 @@
                 </td>
 
                 <td class="screenRow">
-                    <div class="text-truncate d-flex m-1 width100 text-success">
+                    <div class="text-truncate d-flex-- m-1 width100 text-success">
                         <span>
                              <%= @internal_transaction |> BlockScoutWeb.AddressView.address_partial_selector(:from, assigns[:current_address]) |> (&(if is_list(&1), do: Keyword.put(&1, :ignore_implementation_name, true), else: &1)).() |> BlockScoutWeb.RenderHelpers.render_partial() %>
                         </span>
@@ -57,7 +57,7 @@
 
                   <td class="screenRow">
                     <div class="d-flex m-1">
-                    <span class="tile-label">
+                    <span class="tile-label font-weight-normal">
                       <%= gettext("Internal Transaction") %>
                     </span>
                     </div>
