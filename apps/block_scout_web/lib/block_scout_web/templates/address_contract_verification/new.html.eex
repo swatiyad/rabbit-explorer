@@ -82,14 +82,14 @@
                 gettext("Next"),
                 to: address_verify_contract_via_flattened_code_path(@conn, :new, @address_hash),
                 id: "verify_via_flattened_code_button",
-                class: "btn btn-teal mr-2",
+                class: "btn btn-success mr-2",
                 "data-button-loading": "animation"
               ) %>
               <%= link(
                 gettext("Next"),
                 to: address_verify_contract_via_json_path(@conn, :new, @address_hash),
                 id: "verify_via_sourcify_button",
-                class: "btn btn-teal mr-2",
+                class: "btn btn-success mr-2",
                 style: "display: none;",
                 "data-button-loading": "animation"
               ) %>
@@ -97,7 +97,7 @@
                 gettext("Next"),
                 to: address_verify_vyper_contract_path(@conn, :new, @address_hash),
                 id: "verify_vyper_contract_button",
-                class: "btn btn-teal mr-2",
+                class: "btn btn-success mr-2",
                 style: "display: none;",
                 "data-button-loading": "animation"
               ) %>
@@ -105,7 +105,7 @@
                 gettext("Next"),
                 to: address_verify_contract_via_standard_json_input_path(@conn, :new, @address_hash),
                 id: "verify_via_standard_json_input",
-                class: "btn btn-teal mr-2",
+                class: "btn btn-success mr-2",
                 style: "display: none;",
                 "data-button-loading": "animation"
               ) %>

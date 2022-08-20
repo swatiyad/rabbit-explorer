@@ -150,7 +150,7 @@
 
     <div class="smart-contract-form-buttons text-center d-flex justify-content-center mr-0">
 
-      <%= submit gettext("Verify & publish"), class: "btn btn-teal mr-2", "data-button-loading": "animation"  %>
+      <%= submit gettext("Verify & publish"), class: "btn btn-success mr-2", "data-button-loading": "animation"  %>
       <%= reset gettext("Reset"), class: "btn btn-light border mr-2 js-smart-contract-form-reset" %>
       <%=
         link(

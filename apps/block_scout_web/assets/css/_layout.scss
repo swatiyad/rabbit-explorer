@@ -1,5 +1,38 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
+.dark-theme-applied .ace-chrome .ace_constant.ace_numeric {
+  color: #8282fc;
+}
+
+.dark-theme-applied .ace-chrome .ace_storage, 
+.dark-theme-applied .ace-chrome .ace_keyword, 
+.dark-theme-applied .ace-chrome .ace_meta.ace_tag {
+  color: rgb(247 61 220);
+}
+
+.dark-theme-applied .ace-chrome .ace_comment.ace_doc {
+  color: #9bd09c;
+}
+.dark-theme-applied .ace-chrome .ace_comment {
+  color: #236e24;
+}
+.dark-theme-applied .ace-chrome .ace_comment.ace_doc.ace_tag {
+  color: #9bd09c;
+}
+.dark-theme-applied .ace-chrome .ace_comment {
+  color: #69a16a;
+}
+.dark-theme-applied .ace-chrome .ace_string {
+  color: #2196f3;
+}
+.dark-theme-applied .ace-chrome .ace_gutter {
+  background: #2a2a2a;
+  color: #969696;
+}
+
+.dark-theme-applied .ace-chrome .ace_gutter-active-line {
+  background-color: #222222;
+}
 .btn-outline {
   border: 1px solid #04AA6D;
   background-color: white;
@@ -8,6 +41,12 @@
   font-size: 14px;
   cursor: pointer;
   border-radius: 3px;
+}
+.dark-theme-applied .btn-outline {
+  border: 1px solid #04AA6D;
+  background-color:transparent;
+  color: rgb(66, 198, 112);
+
 }
 
 #scrollupbtn {
