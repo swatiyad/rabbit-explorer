@@ -90,7 +90,7 @@
     <%= render BlockScoutWeb.AddressContractVerificationCommonFieldsView, "_constructor_args.html", f: f, display_constructor_arguments_text_area: display_constructor_arguments_text_area %>
 
     <div class="add-contract-libraries-wrapper">
-      <span class="btn btn-teal btn-sm js-btn-add-contract-libraries"><i class="fas fa-plus"></i> Add Contract Libraries</span>
+      <span class="btn btn-success btn-sm js-btn-add-contract-libraries"><i class="fas fa-plus"></i> Add Contract Libraries</span>
     </div>
 
     <div class="smart-contract-libraries-wrapper js-smart-contract-libraries-wrapper bg-light p-4 border">
