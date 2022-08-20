@@ -1187,3 +1187,20 @@ $light-dark:#383838;
 	border-color: $dark-primary;
 	color: $dark-primary;
 }
+
+
+body.dark-theme-applied ::-webkit-scrollbar {
+	width: 12px;
+  }
+   
+
+body.dark-theme-applied ::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px $light-dark; 
+border-radius: 0px;
+}
+
+
+body.dark-theme-applied ::-webkit-scrollbar-thumb {
+border-radius: 0px;
+background: $dark-light-bg;
+}
