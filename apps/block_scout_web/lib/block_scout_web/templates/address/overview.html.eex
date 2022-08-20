@@ -126,23 +126,14 @@
                           <% end %>
                         </dd>
                       </dl>
-                      <!-- BNB Value -->
-                      <dl class="row" data-test="outside_of_dropdown">
-                        <dt class="col-sm-4 col-md-4 col-lg-4 text-muted">
-                          <span class="d-none d-sm-inline-block"><%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
-                          text: gettext("BNB Value") %></span>
-                          <%= gettext("BNB Value") %>
-                        </dt>
-                        <dd class="col-sm-8 col-md-8 col-lg-8">
-                          $68.66 (@ $319.24/BNB)
-                        </dd>
-                      </dl>
+
                       <!-- Tokens -->
                       <dl class="row" data-test="outside_of_dropdown">
                         <dt class="col-sm-4 col-md-4 col-lg-4 text-muted">
                           <span class="d-none d-sm-inline-block"><%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
                           text: gettext("All tokens in the account and total value.") %></span>
                           <%= gettext("Tokens") %>
+
                         </dt>
                         <dd class="col-sm-8 col-md-8 col-lg-8" data-test="address_tokens" data-selector="balance-card">
                           <%= render BlockScoutWeb.AddressView, "_balance_dropdown.html", conn: @conn, address: @address %>

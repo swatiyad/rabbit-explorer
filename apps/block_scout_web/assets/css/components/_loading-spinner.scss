@@ -5,26 +5,24 @@
 // SpinKit - Simple loading spinners animated with CSS.
 // https://github.com/tobiasahlin/SpinKit
 
-.loader-spinner {
-  border: 5px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 5px solid #37AA6D;
-  width: 15px;
-  height: 15px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
-}
-
-/* Safari */
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
+.loader-spinner {  
+    height: 0;
+    width: 0;
+    padding: 6px;
+    border: 3px solid #ccc;
+    border-right-color: rgb(252, 177, 106);
+    border-radius: 22px;
+    -webkit-animation: rotate 1s infinite linear;
+    
+  }
+  
+  @-webkit-keyframes rotate {
+    /* 100% keyframe for  clockwise. 
+       use 0% instead for anticlockwise */
+    100% {
+      -webkit-transform: rotate(360deg);
+    }
+  }
 
 
 .loading-spinner {
@@ -105,5 +103,32 @@
   }
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+
+.loader img {
+  height: 120px;
+  width: 120px;
+  animation: spinlogo 2s linear infinite;
+}
+
+@keyframes spinloader {
+  0% {
+      transform: rotate(0deg);
+  }
+
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+@keyframes spinlogo {
+  0% {
+      transform: rotate(360deg);
+  }
+
+  100% {
+      transform: rotate(0deg);
   }
 }

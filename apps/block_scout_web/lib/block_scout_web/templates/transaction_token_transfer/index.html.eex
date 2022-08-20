@@ -1,6 +1,5 @@
 <section class="container">
   <%= render BlockScoutWeb.TransactionView, "overview.html", assigns %>
-
   <div class="card">
     <%= render BlockScoutWeb.TransactionView, "_tabs.html", assigns %>
     <div class="card-body" data-async-load data-async-listing="<%= @current_path %>">
@@ -20,7 +19,7 @@
           </div>
         </div>
 
-        <div data-items>
+        <div class="overflow-auto" data-items>
           <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>
         </div>
 

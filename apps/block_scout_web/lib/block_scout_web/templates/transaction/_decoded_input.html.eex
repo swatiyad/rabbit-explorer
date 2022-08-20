@@ -1,5 +1,5 @@
-<h1 class="card-title--"><%= gettext "Input" %> </h1>
-<div class="card">
+<h1 class="card-title--"><%= gettext "Input Data" %> </h1>
+<div class="card shadow-sm">
   <div class="card-body">
     <!-- Input -->
     <%= case @decoded_input_data do %>

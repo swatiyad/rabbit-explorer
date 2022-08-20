@@ -257,7 +257,7 @@
                       text: gettext("List of token transferred in the transaction.") %></span>
                     <%= gettext "Tokens Transferred" %></dt>
                   <dd class="col-sm-9 col-lg-10 transfers-list-mobile-container">
-                    <table cellpadding="3" cellspacing="0">
+                    <table>
                       <%= for transfer <- transfers do %>
                         <%= render BlockScoutWeb.TransactionView, "_total_transfers_from_to.html", Map.put(assigns, :transfer, transfer) %>
                       <% end %>
@@ -274,7 +274,7 @@
                     <%= gettext "Tokens Minted" %>
                   </dt>
                   <dd class="col-sm-9 col-lg-10 transfers-list-mobile-container">
-                    <table cellpadding="3" cellspacing="0">
+                    <table>
                       <%= for minting <- mintings do %>
                         <%= render BlockScoutWeb.TransactionView, "_total_transfers_from_to.html", Map.put(assigns, :transfer, minting) %>
                       <% end %>
@@ -291,7 +291,7 @@
                     <%= gettext "Tokens Burnt" %></dt>
                   <dd class="col-sm-9 col-lg-10 transfers-list-mobile-container">
                   <%= for burning  <- burnings do %>
-                    <table cellpadding="3" cellspacing="0">
+                    <table>
                       <%= render BlockScoutWeb.TransactionView, "_total_transfers_from_to.html", Map.put(assigns, :transfer, burning) %>
                     </table>
                   <% end %>
@@ -307,7 +307,7 @@
                     <%= gettext "Tokens Created" %></dt>
                   <dd class="col-sm-9 col-lg-10 transfers-list-mobile-container">
                   <%= for creation  <- creations do %>
-                    <table cellpadding="3" cellspacing="0">
+                    <table>
                       <%= render BlockScoutWeb.TransactionView, "_total_transfers_from_to.html", Map.put(assigns, :transfer, creation) %>
                     </table>
                   <% end %>
