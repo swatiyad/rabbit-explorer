@@ -18,7 +18,7 @@
         <%= render BlockScoutWeb.AddressContractVerificationCommonFieldsView, "_contract_address_field.html", f: f %>
       </div>
       <%= render BlockScoutWeb.AddressContractVerificationCommonFieldsView, "_contract_name_field.html", f: f, tooltip: "Must match the name specified in the code. For example, in <span class=\"tooltip-quote\">contract MyContract {..}</span> <strong>MyContract</strong> is the contract name." %>
-      <%#= render BlockScoutWeb.AddressContractVerificationCommonFieldsView, "_include_nightly_builds_field.html", f: f %>
+      <div style="display:none"> <%= render BlockScoutWeb.AddressContractVerificationCommonFieldsView, "_include_nightly_builds_field.html", f: f %> </div>
 
       <%= render BlockScoutWeb.AddressContractVerificationCommonFieldsView, "_compiler_field.html", f: f, compiler_versions: @compiler_versions, tooltip: "The compiler version is specified in <span class=\"tooltip-quote\">pragma solidity X.X.X</span>. Use the compiler version rather than the nightly build. If using the Solidity compiler, run <span class=\"tooltip-quote\">solc —version</span> to check." %>
 
