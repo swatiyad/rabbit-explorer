@@ -57,7 +57,7 @@
             <img src="/images/inrx.png" width="20" height="20"/>
           </div>
           <div class="tile_right">
-            <a href="#"><i class="fas fa-eye view_btn text-success"></i></a>
+            <a href="/token/0xEbf94773bF40aBBF04f25dB970f1c43bDdCc5890/token-transfers"><i class="fas fa-eye view_btn text-success"></i></a>
             <h5 class="p-0 m-0">INRx</h5>
             <p class="small p-0 m-0 text-truncate tile_text_mac">£500 435</p>
 

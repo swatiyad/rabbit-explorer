@@ -13,7 +13,7 @@
           </div>
         </div>
         <%= render BlockScoutWeb.CommonComponentsView, "_channel_disconnected_message.html", text: gettext("Connection Lost, click to load newer internal transactions") %>
-        <div class="clearfix p-2">
+        <div class="clearfix p-3">
           <h2 class="card-title float-left mb-4 p-2"><%= gettext "Internal Transactions" %></h2>
           <div class="top-pagination-outer-container float-right">
            <!-- <div class="dropdown u-push-sm">

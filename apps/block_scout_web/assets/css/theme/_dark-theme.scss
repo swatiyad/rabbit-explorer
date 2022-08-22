@@ -2,7 +2,7 @@ $body-dark: #242424; // body background
 $dark-bg: #242424; // hero shade
 $dark-light-bg: #2A2A2A; // pills bg shade
 $dark-light: #383838; // tile light top share
-$labels-dark: #fff; // header nav, labels
+$labels-dark: #a9a9a9; // header nav, labels
 $dark-stakes-banned-background: #222222;
 $light-dark:#383838;
 
@@ -566,7 +566,7 @@ $light-dark:#383838;
 
 	// dark text
 	.text-dark {
-		color: #fff !important;
+		color: #a9a9a9 !important;
 	}
 
 	// Contract Verification
@@ -578,10 +578,10 @@ $light-dark:#383838;
 		}
 	}
 	.smart-contract-form-group-inner-wrapper .smart-contract-form-group-tooltip {
-		color: $labels-dark;
+		color:#888;
 	}
 	.smart-contract-title {
-		color: #fff;
+		color: $labels-dark;
 	}
 	.smart-contract-form-group-inner-wrapper > label {
 		color: $labels-dark;
@@ -611,7 +611,7 @@ $light-dark:#383838;
 	.form-control {
 		background-color: $dark-bg;
 		border-color: $dark-light;
-		color: #fff;
+		color: #a9a9a9;
 		transition: border-color 0.15s ease-in-out;
 
 		&[readonly] {
@@ -792,7 +792,7 @@ $light-dark:#383838;
 
 	// Decoded data
 	.table.thead-light.table-bordered {
-		color: #fff !important;
+		color: #a9a9a9 !important;
 	}
 	.table-bordered, .table-bordered td, .table-bordered th {
 		border-color: $light-dark;
@@ -833,7 +833,7 @@ $light-dark:#383838;
 
 	// 'text dark' label
 	.text-dark {
-		color: #fff;
+		color: #a9a9a9;
 	}
 
 	// validator info
@@ -1204,3 +1204,4 @@ body.dark-theme-applied ::-webkit-scrollbar-thumb {
 border-radius: 0px;
 background: $dark-light-bg;
 }
+

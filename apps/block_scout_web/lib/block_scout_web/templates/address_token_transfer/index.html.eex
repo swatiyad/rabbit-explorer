@@ -15,7 +15,7 @@
         <% end %>
 
         <%= if !assigns[:token] do %>
-        <div class="clearfix p-2">
+        <div class="clearfix p-3">
           <h5 class="font-weight-normal text-gray float-left my-2"> Latest
             <span class="" data-test="address_transfer_count">
               <%= if @conn.request_path |> String.contains?("/token-transfers") do %>

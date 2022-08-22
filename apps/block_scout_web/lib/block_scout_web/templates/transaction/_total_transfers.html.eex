@@ -18,6 +18,6 @@
             </div>
         <% end %>
     <% {:ok, value} -> %>
-        <%= value %>
-        <%= " " %><%= render BlockScoutWeb.TransactionView, "_link_to_token_symbol.html", transfer: @transfer %>
+        <div class="text-truncate mr-1"><%= value %></div>
+        <div><%= " " %><%= render BlockScoutWeb.TransactionView, "_link_to_token_symbol.html", transfer: @transfer %></div>
 <% end %>
