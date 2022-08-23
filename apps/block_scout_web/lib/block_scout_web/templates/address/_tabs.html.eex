@@ -54,10 +54,10 @@
 
 <%= if contract?(@address) do %>
     <%= link(
-            gettext("Contracts" ),
-            class: "card-tab #{tab_status("contracts", @conn.request_path)}",
-            to: AccessHelpers.get_path(@conn, :address_contract_path, :index, @address.hash)
-          ) %>
+      gettext("Contracts" ),
+      class: "card-tab #{tab_status("contracts", @conn.request_path)}",
+      to: AccessHelpers.get_path(@conn, :address_contract_path, :index, @address.hash)
+    ) %>
 
       <%= if smart_contract_verified?(@address) do %>
         <%= cond do %>
@@ -66,7 +66,7 @@
               <%= render BlockScoutWeb.IconsView, "_check_dark_forest_icon.html" %>
             </i>
           <% true -> %>
-            <i class="fa-regular fa-check-circle"></i>
+            <i class="fa-regular fa-check-circle contract-verfiied-icon text-success"></i>
         <% end %>
       <% end %>
     <% end %>
