@@ -1205,3 +1205,7 @@ border-radius: 0px;
 background: $dark-light-bg;
 }
 
+.modal-footer {
+	border-top-color: darken($labels-dark, 30);
+}
+
