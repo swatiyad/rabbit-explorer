@@ -32,8 +32,8 @@
 
         <% end %>
         <td class="address-mobile" style="word-break: break-all; white-space: nowrap;">
-            <b style="margin-right: 10px;"> For  </b>:
-                <%= render BlockScoutWeb.TransactionView, "_total_transfers.html", transfer: @transfer %>
+            <div class="d-flex"><div><b style="margin-right: 10px;"> For  </b>: </div>
+                <%= render BlockScoutWeb.TransactionView, "_total_transfers.html", transfer: @transfer %></div>
         </td>
 </tr>
 <tr><td style="height: 10px;"></td></tr>
