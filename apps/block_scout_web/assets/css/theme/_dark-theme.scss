@@ -1206,6 +1206,13 @@ background: $dark-light-bg;
 }
 
 .modal-footer {
-	border-top-color: darken($labels-dark, 30);
+  border-top-color: darken($labels-dark, 30);
 }
 
+.dark-theme-applied .modal-backdrop {
+  background-color:rgba(#000, 0.8)
+}
+
+.card-tab {
+ border-bottom: 0;
+}

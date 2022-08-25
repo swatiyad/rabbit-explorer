@@ -70,7 +70,7 @@
                 <ul>
                   <li><a href="http://inrx.foundation/" rel="noreferrer" class="footer-link text-white" target="_blank"><%= gettext("INRx Foundation") %></a></li>
                   <li><a href="#" rel="noreferrer" class="footer-link text-white"><%= gettext("Analog Foundation") %></a></li>
-                  <li><a href="deo.foundation" rel="noreferrer" class="footer-link text-white"><%= gettext("DEO Foundation") %></a></li>
+                  <li><a href="http://deo.foundation/" rel="noreferrer" class="footer-link text-white"><%= gettext("DEO Foundation") %></a></li>
                 </ul>
               </div>
             <% end %>

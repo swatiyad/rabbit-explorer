@@ -106,6 +106,16 @@
   }
 }
 
+.loadersmall {  
+  width: 16px;
+  height: 16px;
+}
+
+.loadersmall img {
+  height: 16px;  
+  width: 16px;
+  animation: spinloader 2s linear infinite;
+}
 
 .loader img {
   height: 120px;
@@ -113,7 +123,10 @@
   animation: spinlogo 2s linear infinite;
 }
 
+
+
 @keyframes spinloader {
+  
   0% {
       transform: rotate(0deg);
   }
@@ -132,3 +145,4 @@
       transform: rotate(0deg);
   }
 }
+
