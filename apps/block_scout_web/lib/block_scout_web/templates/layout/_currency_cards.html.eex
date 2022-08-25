@@ -1,7 +1,7 @@
 <div class="col-sm-12 col-md-6 col-lg-6 d-none d-sm-inline d-inline d-md-none d-lg-none d-xl-none">
   <div class="row currency_tile mx-0">
     <div class="w-25">
-     <a class="text-dark" href="/token/0xEbf94773bF40aBBF04f25dB970f1c43bDdCc5890/token-transfers">
+     <a class="text-dark" href="/token/0x2f5d41CbA7aaE91F1bA8fb7D23F1493bD25460c2/token-transfers">
         <div class="media card-border rounded px-2 py-1 white-bg shadow-sm">
           <div class="media-left icon_img">
             <img src="/images/inrx.png" width="20" height="20"/>
@@ -66,7 +66,7 @@
             <img src="/images/inrx.png" width="20" height="20"/>
           </div>
           <div class="tile_right">
-            <a href="/token/0xEbf94773bF40aBBF04f25dB970f1c43bDdCc5890/token-transfers"><i class="fas fa-eye view_btn text-success"></i></a>
+            <a href="/token/0x2f5d41CbA7aaE91F1bA8fb7D23F1493bD25460c2/token-transfers"><i class="fas fa-eye view_btn text-success"></i></a>
             <h5 class="p-0 m-0">INRx</h5>
             <p class="small p-0 m-0 text-truncate tile_text_mac">£500 435</p>
 

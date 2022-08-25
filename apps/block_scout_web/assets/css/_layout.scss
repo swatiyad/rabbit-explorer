@@ -109,6 +109,9 @@
   visibility: visible;
 }
 
+.bg-lighter {
+  background-color: #f1f1f1!important;
+}
 .bg-light-blue {
   background-color: #f6feff;
 }
@@ -235,6 +238,9 @@ a.card-tab:focus{
   width:17px;
 }
 
+.dark-theme-applied .bg-lighter {
+  background-color: #343434!important;
+}
 .dark-theme-applied .dashboard-banner-chart canvas {
   filter: brightness(0) invert(1) !important;
 }

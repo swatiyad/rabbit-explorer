@@ -207,23 +207,25 @@ $card-tab-icon-color-active: #fff !default;
 .card-tab {
   align-items: center;
   // background-color: $card-background-color;
-  color: #333;
+  color: #6c6868;
   cursor: pointer;
   display: flex;
-  font-size: 14.5px;
+  font-size: 14px;
   font-weight: normal;
   height: 50px;
   padding: 0 25px;
   text-align: center;
-  transition: $transition-cont;
-  border-bottom: 4px solid transparent;
+  //transition: $transition-cont;
+  border-top: 4px solid transparent;
+  border-bottom: 1px solid #e5e1e1;
 
   &:hover {
     // background-color: rgba($card-tab-active, .15);
     background-color: #fff;
-    border-bottom: 4px solid $card-tab-active ;
+    border-top: 4px solid $card-tab-active ;
     color: $card-tab-active;
     text-decoration: none;
+    border-bottom: 0;
   }
 
   @include media-breakpoint-down(md) {
@@ -238,10 +240,11 @@ $card-tab-icon-color-active: #fff !default;
 
   &.active {
     background-color: white;
-    border-bottom: 4px solid $card-tab-active ;
+    border-top: 4px solid $card-tab-active ;
     color: $card-tab-active;
     cursor: default;
     text-decoration: none;
+    border-bottom: 0;
 
     .fa-check-circle {
       color: $card-tab-icon-color-active;
