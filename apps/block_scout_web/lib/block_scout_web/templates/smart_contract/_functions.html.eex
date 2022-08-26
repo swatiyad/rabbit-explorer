@@ -166,7 +166,7 @@
 <style>
 .btnclass{
     background: #42C670;
-    border-radius: 5px;
+    border-radius: 3px;
     color: white;
     /*width: 10%;*/
     cursor: pointer;

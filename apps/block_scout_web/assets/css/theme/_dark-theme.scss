@@ -2,7 +2,7 @@ $body-dark: #242424; // body background
 $dark-bg: #242424; // hero shade
 $dark-light-bg: #2A2A2A; // pills bg shade
 $dark-light: #383838; // tile light top share
-$labels-dark: #a9a9a9; // header nav, labels
+$labels-dark: #c6c6c6; // header nav, labels
 $dark-stakes-banned-background: #222222;
 $light-dark:#383838;
 
@@ -566,7 +566,7 @@ $light-dark:#383838;
 
 	// dark text
 	.text-dark {
-		color: #a9a9a9 !important;
+		color: #c6c6c6 !important;
 	}
 
 	// Contract Verification
@@ -611,7 +611,7 @@ $light-dark:#383838;
 	.form-control {
 		background-color: $dark-bg;
 		border-color: $dark-light;
-		color: #a9a9a9;
+		color: #c6c6c6;
 		transition: border-color 0.15s ease-in-out;
 
 		&[readonly] {
@@ -792,7 +792,7 @@ $light-dark:#383838;
 
 	// Decoded data
 	.table.thead-light.table-bordered {
-		color: #a9a9a9 !important;
+		color: #c6c6c6 !important;
 	}
 	.table-bordered, .table-bordered td, .table-bordered th {
 		border-color: $light-dark;
@@ -833,7 +833,7 @@ $light-dark:#383838;
 
 	// 'text dark' label
 	.text-dark {
-		color: #a9a9a9;
+		color: #c6c6c6;
 	}
 
 	// validator info

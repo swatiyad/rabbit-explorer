@@ -6,7 +6,7 @@
       <% else %>
         <span class="d-none d-md-none d-lg-inline d-xl-inline"><%= short_contract_name(name, 30) %></span>
         <span class="d-inline d-md-inline d-lg-none d-xl-none"><%= short_contract_name(name, 10) %></span>
-        <span> (<%= BlockScoutWeb.AddressView.trimmed_hash(@address.hash) %>)</span>
+        <span class="text-truncate width100">(<%= BlockScoutWeb.AddressView.trimmed_hash(@address.hash) %>)</span>
       <% end %>
     <% else %>
       <%= if @use_custom_tooltip == true do %>
@@ -15,7 +15,7 @@
         <span data-toggle="tooltip" data-placement="top" data-html="true" title="<%= name %> <%= @address %>">
           <span class="d-none d-md-none d-lg-inline d-xl-inline"><%= short_contract_name(name, 30) %></span>
           <span class="d-inline d-md-inline d-lg-none d-xl-none"><%= short_contract_name(name, 10) %></span>
-          <span> (<%= BlockScoutWeb.AddressView.trimmed_hash(@address.hash) %>)</span>
+         <span class="text-truncate width100"> (<%= BlockScoutWeb.AddressView.trimmed_hash(@address.hash) %>)</span>
         </span>
       <% end %>
     <% end %>
@@ -24,7 +24,7 @@
       <%= BlockScoutWeb.AddressView.trimmed_hash(@address.hash) %>
     <% else %>
 
-      <span class=""> <%= @address %> </span>
+      <span class="text-truncate"> <%= @address %> </span>
       <!--<span class="d-md-inline-block d-xl-none"><%= BlockScoutWeb.AddressView.trimmed_hash(@address.hash) %></span>-->
 
     <% end %>

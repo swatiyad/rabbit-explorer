@@ -6,7 +6,7 @@
   <section data-page="address-token-transfers" id="transfers">
     <div class="card">
       <%= render BlockScoutWeb.AddressView, "_tabs.html", address: @address, is_proxy: is_proxy, conn: @conn %>
-      <div data-async-load data-async-listing="<%= @current_path %>" class="card-body">
+      <div data-async-load data-async-listing="<%= @current_path %>" class="card-body overflow-auto p-0">
 
         <%= if assigns[:token] do %>
         <h2 class="card-title">
@@ -79,6 +79,22 @@
             <%= gettext "Something went wrong, click to reload." %>
           </span>
         </button>
+        <!--table heading for token transfer (/address)-->
+        <table class="table fixed-layout table-hover mb-0">
+          <thead>
+            <tr class="table-head">
+              <th class="wideRow">Txn Hash</th>
+              <th class="screenRow">Method</th>
+              <th class="screenRow">Block</th>
+              <th class="screenRow">Age</th>
+              <th class="screenRow">From</th>
+              <th class="" style="width:36px"></th>
+              <th class="screenRow"> To</th>
+              <th class="screenRow">Amount</th>
+              <th class="screenRow"> Stake</th>
+            </tr>
+          </thead>
+        </table>
 
         <div data-items>
           <%= render BlockScoutWeb.CommonComponentsView, "_tile-loader.html" %>

@@ -37,7 +37,7 @@
 
        <td class="screenRow"> <%= render(BlockScoutWeb.CommonComponentsView, "_token_transfer_type_display_name.html", type: Chain.get_token_transfer_type(@token_transfer)) %></td>
 
-      <td class="wideRow"> <span class="text-truncate d-flex text-success width190>
+      <td class="wideRow"> <span class="text-truncate d-flex text-success width190">
       <%= render BlockScoutWeb.AddressView, "_link.html", address: @token_transfer.from_address, contract: BlockScoutWeb.AddressView.contract?(@token_transfer.from_address), use_custom_tooltip: false %></span></td>
 
       <td class="" style="width:66px">

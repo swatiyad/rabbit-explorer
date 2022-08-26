@@ -31,7 +31,7 @@
     <div class="col-md-12">
       <!-- Transaction Details -->
       <h1> <%= gettext "Transaction Details" %></h1>
-      <div class="card js-ad-dependant-mb-3 shadow border">
+      <div class="card js-ad-dependant-mb-3 border">
         <div class="card-body">
           <%= cond do %>
             <% Enum.member?(circles_addresses_list, address_hash_str) -> %>
