@@ -1,10 +1,33 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
+ul.social-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.social-list li {
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+ul.social-list li:last-child {
+  display: inline-block;
+  margin-right: 0;
+}
+
+ul.social-list li a {
+color:#333;
+}
+
+ul.social-list li a:hover {
+  color: #236e24;
+}
+
 .contract-verfiied-icon {
   position: relative;
   right: 22px;
   top: 2px;
 }
+
 .well {
   min-height: 20px;
   padding: 19px;

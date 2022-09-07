@@ -91,10 +91,10 @@
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
             <img class="mr-3 media_icon" src="images/market-cap.svg" width="50" height="40" style="width:50px;">
             <div class="media-body" >
-              <span class="dashboard-banner-network-stats-label font-weight-bold  text-uppercase">
+              <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
                 Global Market Cap
               </span>
-              <span class="dashboard-banner-network-stats-value" data-selector="transaction-count">
+              <span class="dashboard-banner-network-stats-value">
              112,25 USD
               </span>
 

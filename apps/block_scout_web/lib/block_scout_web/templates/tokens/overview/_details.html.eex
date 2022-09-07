@@ -191,6 +191,38 @@
                 </dl>
               <% end %>
 
+              <dl class="row">
+                <dt class="col-sm-4 col-md-4 col-lg-3 text-muted">
+                <%= render BlockScoutWeb.CommonComponentsView, "_i_tooltip_2.html",
+                  text: gettext("Connect with social profiles") %>
+                  <%= gettext("Socials Profiles") %>
+                </dt>
+                <dd class="col-sm-8 col-md-8 col-lg-9">
+                  <ul class="social-list mb-0">
+                  <li>
+                  <a class="" data-placement="top" data-toggle="tooltip" data-original-title="Email" href="#"><span class="fa fa-envelope"></span></a>
+                  </li>
+                  <li>
+                    <a data-placement="top" data-toggle="tooltip" data-original-title="Blog" rel="nofollow" target="_blank" href="#"><i class="fas fa-pencil-alt"></i></a>
+                  </li>
+
+                  <li>
+                    <a data-placement="top" data-toggle="tooltip" data-original-title="Reddit" rel="nofollow" target="_blank" href="#"><span class="fab fa-reddit-square"></span></a></li>
+
+                  <li>
+                    <a data-placement="top" data-toggle="tooltip" data-original-title="Twitter" rel="nofollow" target="_blank" href="#"><span class="fab fa-twitter"></span></a></li>
+
+                  <li>
+                    <a data-placement="top" data-toggle="tooltip" data-original-title="Github" rel="nofollow" target="_blank" href="#"><span class="fab fa-github"></span></a></li>
+
+                  <li>
+                    <a data-placement="top" data-toggle="tooltip" data-original-title="Telegram" rel="nofollow" target="_blank" href="#"><span class="fab fa-telegram"></span></a></li>
+
+
+                  </ul>
+                </dd>
+              </dl>
+
             </div>
         </div>
       </div>
