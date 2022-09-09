@@ -6,8 +6,8 @@
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
   <div class="row js-ad-dependant-mb-2 js-ad-dependant-mb-5-reverse">
     <div class="col-md-12 js-ad-dependant-mb-2">
-      <div class="row">
-        <div class="col-md-6">
+      <div class="d-flex mb-2">
+        <div class="col-md-6 pl-0">
           <%= cond do %>
             <% Enum.member?(circles_addresses_list, address_hash_str) -> %>
               <div class="custom-dapp-header-container">
@@ -62,7 +62,7 @@
         </div>
       </div>
       <div class="row js-ad-dependant-mb-2">
-        <div class="col-md-6">
+        <div class="col-md-6 mb-2">
           <div class="card">
            <div class="card-header">Overview</div>
             <div class="card-body" token-page data-async-counters="<%= @counters_path %>">
@@ -151,7 +151,7 @@
           </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-6 mb-2">
           <div class="card">
           <div class="card-header">Profile Summary</div>
             <div class="card-body" token-page data-async-counters="<%= @counters_path %>">

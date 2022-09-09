@@ -1,3 +1,6 @@
+
+<!-- cards for mobile --->
+
 <div class="col-sm-12 col-md-6 col-lg-6 d-none d-sm-inline d-inline d-md-none d-lg-none d-xl-none">
   <div class="row currency_tile mx-0">
     <div class="w-25">
@@ -58,88 +61,104 @@
     </a>
 </div>
 
+
+
+
+
+
+
+
+
+<!-- cards for desktop --->
+
 <div class="col-sm-12 col-md-12 col-lg-6 d-none d-md-inline d-lg-inline d-xl-inline">
   <div class="row currency_tile">
     <div class="col-lg-3 col-sm-3 col-md-3 sm_padding">
         <div class="tile_card white-bg border rounded shadow">
-          <div class="tile_left media-img">
-            <img src="/images/inrx.png" width="20" height="20"/>
-          </div>
-          <div class="tile_right">
+          <div class="d-flex">
+            <div class="tile_left media-img">
+              <img src="/images/inrx.png" width="20" height="20"/>
+            </div>
+            <div class="tile_right">
+              <h5 class="p-0 m-0">INRx</h5>
+              <p class="small p-0 m-0 text-truncate tile_text_mac">£500 435</p>
+            </div>
             <a href="/token/0x2f5d41CbA7aaE91F1bA8fb7D23F1493bD25460c2/token-transfers"><i class="fas fa-eye view_btn text-success"></i></a>
-            <h5 class="p-0 m-0">INRx</h5>
-            <p class="small p-0 m-0 text-truncate tile_text_mac">£500 435</p>
-
           </div>
           <div class="col-md-12 px-0" style="clear:both">
             <div class="tile_details text-center text-truncate">
-              <span class="font-weight-bold ">M:</span> <span class="sub-text" id="inrx_marketcap">00 </span>
-              <span class="font-weight-bold">T:</span> <span class="sub-text" id="inrx_transfer">00</span>
-              <span class="font-weight-bold">H:</span> <span class="sub-text" id="inrx_holders">00</span>
-              <span class="font-weight-bold">P:</span> <span class="sub-text" id="inrx_price">00</span>
+              <span class="font-weight-bold ">M:</span> <span class="text-success" id="inrx_marketcap">00 </span>
+              <span class="font-weight-bold">T:</span> <span class="text-success" id="inrx_transfer">00</span>
+              <span class="font-weight-bold">H:</span> <span class="text-success" id="inrx_holders">00</span>
+              <span class="font-weight-bold">P:</span> <span class="text-success" id="inrx_price">00</span>
             </div>
           </div>
         </div>
     </div>
-    <div class="col-lg-3 col-sm-3 col-md-3 sm_padding">
+    <div class=" col-lg-3 col-sm-3 col-md-3 sm_padding">
       <div class=" tile_card white-bg border rounded shadow">
-        <div class="tile_left media-img">
-          <img src="/images/tether.png" width="20" height="20"/>
-        </div>
-        <div class="tile_right">
+        <div class="d-flex">
+          <div class="tile_left media-img">
+            <img src="/images/tether.png" width="20" height="20"/>
+          </div>
+          <div class="tile_right">
+            <h5 class="p-0 m-0">USDT</h5>
+            <p class="small p-0 m-0 text-truncate tile_text_mac">£500 5645 435</p>
+          </div>
           <a href="#"><i class="fas fa-eye view_btn text-success"></i></a>
-          <h5 class="p-0 m-0">USDT</h5>
-          <p class="small p-0 m-0 text-truncate tile_text_mac">£500 5645 435</p>
         </div>
         <div class="col-md-12 px-0" style="clear:both">
           <div class="tile_details text-center text-truncate">
-            <span class="font-weight-bold">M:</span> <span class="sub-text">00 </span>
-            <span class="font-weight-bold">T:</span> <span class="sub-text">00</span>
-            <span class="font-weight-bold">H:</span> <span class="sub-text">00</span>
-            <span class="font-weight-bold">P:</span> <span class="sub-text">00</span>
+            <span class="font-weight-bold">M:</span> <span class="text-success">00 </span>
+            <span class="font-weight-bold">T:</span> <span class="text-success">00</span>
+            <span class="font-weight-bold">H:</span> <span class="text-success">00</span>
+            <span class="font-weight-bold">P:</span> <span class="text-success">00</span>
           </div>
         </div>
       </div>
     </div>
     <div class="col-lg-3 col-sm-3 col-md-3 sm_padding">
       <div class="tile_card white-bg border rounded shadow border rounded shadow">
-        <div class="tile_left media-img">
-          <img src="/images/calculas.png" width="20" height="20"/>
-        </div>
-        <div class="tile_right">
+        <div class="d-flex">
+          <div class="tile_left media-img">
+            <img src="/images/calculas.png" width="20" height="20"/>
+          </div>
+          <div class="tile_right">
+            <h5 class="p-0 m-0">Calculas</h5>
+            <p class="small p-0 m-0 text-truncate tile_text_mac">£500 5645 435</p>
+          </div>
           <a href="#"><span class="fas fa-eye view_btn text-success"></span></a>
-          <h5 class="p-0 m-0">Calculas</h5>
-          <p class="small p-0 m-0 text-truncate tile_text_mac">£500 5645 435</p>
-
         </div>
         <div class="col-md-12 px-0" style="clear:both">
           <div class="tile_details text-center text-truncate">
-            <span class="font-weight-bold ">M:</span> <span class="sub-text">00 </span>
-            <span class="font-weight-bold">T:</span> <span class="sub-text">00</span>
-            <span class="font-weight-bold">H:</span> <span class="sub-text">00</span>
-            <span class="font-weight-bold">P:</span> <span class="sub-text">00</span>
+            <span class="font-weight-bold ">M:</span> <span class="text-success">00</span>
+            <span class="font-weight-bold">T:</span> <span class="text-success">00</span>
+            <span class="font-weight-bold">H:</span> <span class="text-success">00</span>
+            <span class="font-weight-bold">P:</span> <span class="text-success">00</span>
           </div>
         </div>
       </div>
     </div>
-     <div class="col-lg-3 col-sm-3 col-md-3 sm_padding">
+     <div class=" col-lg-3 col-sm-3 col-md-3 sm_padding">
       <div class="tile_card border rounded white-bg shadow">
-        <div class="tile_left media-img">
-          <img src="/images/pepper.png" width="20" height="20"/>
-        </div>
-        <div class="tile_right">
-        <a href="#"><span class="fas fa-eye view_btn text-success"></span></a>
-          <h5 class="p-0 m-0">Pepper</h5>
-          <p class="small p-0 m-0 text-truncate tile_text_mac">£500 5645 435</p>
-        </div>
-          <div class="col-md-12 px-0" style="clear:both">
-            <div class="tile_details text-center text-truncate">
-              <span class="font-weight-bold ">M:</span> <span class="sub-text">00 </span>
-              <span class="font-weight-bold">T:</span> <span class="sub-text">00</span>
-              <span class="font-weight-bold">H:</span> <span class="sub-text">00</span>
-              <span class="font-weight-bold">P:</span> <span class="sub-text">00</span>
-            </div>
+        <div class="d-flex">
+          <div class="tile_left media-img">
+            <img src="/images/pepper.png" width="20" height="20"/>
           </div>
+          <div class="tile_right">
+            <h5 class="p-0 m-0">Pepper</h5>
+            <p class="small p-0 m-0 text-truncate tile_text_mac">£500 5645 435</p>
+          </div>
+          <a href="#"><span class="fas fa-eye view_btn text-success"></span></a>
+        </div>
+        <div class="col-md-12 px-0" style="clear:both">
+          <div class="tile_details text-center text-truncate">
+            <span class="font-weight-bold ">M:</span> <span class="text-success">00 </span>
+            <span class="font-weight-bold">T:</span> <span class="text-success">00</span>
+            <span class="font-weight-bold">H:</span> <span class="text-success">00</span>
+            <span class="font-weight-bold">P:</span> <span class="text-success">00</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>

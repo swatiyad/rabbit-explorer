@@ -22,6 +22,14 @@ ul.social-list li a:hover {
   color: #236e24;
 }
 
+.dark-theme-applied ul.social-list li a {
+  color:#fefefe;
+  }
+  
+.dark-theme-applied ul.social-list li a:hover {
+    color: #236e24;
+  }
+
 .contract-verfiied-icon {
   position: relative;
   right: 22px;
@@ -227,7 +235,7 @@ a.card-tab:focus{
   padding:4px;
   -webkit-box-shadow: 2px 1px 5px #ddd ;
   box-shadow: 2px 1px 5px #ddd;
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #d0d0d0 !important;
 }
 .tile_card:hover{
   background:#e9ffee;
@@ -244,7 +252,7 @@ a.card-tab:focus{
 .tile_details {
     padding: 0;
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     width: 144px;
     margin: 0;
 }
@@ -315,8 +323,8 @@ a.card-tab:focus{
 .view_btn {
   position: absolute;
   font-size: 10px;
-  transform: translateX(100px);
-  top:3px;
+  top:10px;
+  right: 10px;
 }
 
 .dark-theme-applied .currency_tile .media-img  {
@@ -600,6 +608,10 @@ td.stakes-td {
   vertical-align: baseline!important;
 }
 
+.sm_padding {
+  padding: 0 .25rem;
+}
+
 
 @media only screen and (max-width: 600px) {
 .deep-shadow{
@@ -861,7 +873,6 @@ ul.side_nav {
   .deep-shadow{
     box-shadow: none;
   } 
-
   
    .width150 {
      width: 100px;
@@ -877,7 +888,7 @@ ul.side_nav {
   }
 }
 
-@media only screen and (min-device-width: 240px) and (max-device-width: 576px) {
+@media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
 
  
   .dark-theme-applied .currency_tile .icon_img  {
@@ -886,10 +897,13 @@ ul.side_nav {
  
   .currency_tile .media {
     height:41px;
+    margin:2px;
+    border: 1px solid #ccc;
   }
   .currency_tile .media-body {
     width:50px;
   }
+  
 
   .footer-social-icons {
     float: left!important;
@@ -900,6 +914,7 @@ ul.side_nav {
     padding: 12px 0;
   }   
 }
+
 
 
 @media only screen and (min-device-width: 240px) and (max-device-width: 991px) {
@@ -937,23 +952,21 @@ ul.side_nav {
 
   .mobile_drpdwn {
     min-width: 23.5rem;
-  }
-  
-  
+  } 
 
 }
 
 /* For cards of currency in mobile, tablet and desktop */
 
 @media only screen and ( min-device-width: 768px) and ( max-device-width: 991px) {
-  .tile_details {
-    display:none;
+  // .tile_details {
+  //   display:none;
+  // }
+  
+  .view_btn { 
+    right: 20px;
   }
-  .view_btn {
-    transform: translateX(93px);
-    top: 7px;
 
-  }
   .custom_btn {    
     margin-top: 6px;
     margin-bottom: 6px;    
@@ -963,47 +976,24 @@ ul.side_nav {
     color:#fff;
   }
 
+  .tile_text_mac {
+    display: inline!important;
+  }
+
+  .sm_padding {
+    padding:0 .85rem;
+  }
+
 }
 
-@media only screen and ( min-device-width: 992px) and ( max-device-width: 1200px) {
-  .view_btn {
-    position: absolute;
-    font-size: 10px;
-    transform: translateX(60px);
-    top: 7px;
-  }
-}
 
 /*currency card in mobile, tablet, desktop css*/
-
-
 
 @media only screen and ( min-device-width: 768px) and ( max-device-width: 991px) {
   .tile_details {
     display:none;
-  }
-  .view_btn {
-    transform: translateX(93px);
-    top: 7px;
+  } 
 
-  }
-
-}
-@media only screen and ( min-device-width: 812px) and ( max-device-width: 990px) {
-    .view_btn {
-      transform: translateX(100px)!important;
-      top: 7px;
-    }
-}
-
- 
-@media only screen and ( min-device-width: 992px) and ( max-device-width: 1200px) {
-  .view_btn {
-    position: absolute;
-    font-size: 10px;
-    transform: translateX(60px);
-    top: 7px;
-  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1390px) {
@@ -1012,11 +1002,7 @@ ul.side_nav {
   }
   .tile_text_mac {
     display: inline!important;
-  }
-  .sm_padding {
-    padding:0;
-    margin:0
-  }
+  }  
   .digi_time {
     font-family: unset;
     margin: 0;
@@ -1036,7 +1022,6 @@ ul.side_nav {
   width: 250px;
   border-top: 4px solid #33A042!important;
  }
-
 
  .custom_btn .dropdown-toggle::after {
   color:#fff;

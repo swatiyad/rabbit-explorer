@@ -26,7 +26,8 @@
               <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarBlocksDropdown">
-             <a class="dropdown-item " href="/blocks">Node</a>
+            <a class="dropdown-item " href="/accounts">Top Accounts</a>
+             <a class="dropdown-item " href="#">Node</a>
 
               <a class="dropdown-item " href="/transaction">Transaction</a>
 
@@ -119,7 +120,7 @@
                 <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
               </a>
               <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
-              <a class="dropdown-item " href="#">Top Log 20 Token</a>
+              <a class="dropdown-item " href="/tokens">Top Log 20 Token</a>
               <a class="dropdown-item " href="#">Log 20 Txns</a>
               <a class="dropdown-item " href="#">Top Log 721 Token</a>
               <a class="dropdown-item " href="#">Log 721 Txns</a>

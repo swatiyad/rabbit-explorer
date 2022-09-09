@@ -1,3 +1,7 @@
+<% burned_fee = if !is_nil(@block.base_fee_per_gas), do: Wei.mult(@block.base_fee_per_gas, BlockBurnedFeeCounter.fetch(@block.hash)), else: nil %>
+<% priority_fee = if !is_nil(@block.base_fee_per_gas), do: BlockPriorityFeeCounter.fetch(@block.hash), else: nil %>
+
+
 <div class="block-cards white-bg border rounded shadow-sm fade-up-blocks-chain" data-selector="chain-block" data-block-number="<%= @block.number %>" >
   <div class="">
     <div class="">
@@ -36,7 +40,10 @@
           <% end %>
           <div class="">
             <span class="font-weight-bold"><%= gettext "Txn Fee" %></span>
-              <span>510.2236</span>
+              <span>
+            <%= format_wei_value(%Wei{value: priority_fee}, :ether) %>
+                    <%# <% gas = if Decimal.cmp(@block.gas_limit, 0) == :gt, do: Decimal.to_integer(@block.gas_used) / Decimal.to_integer(@block.gas_limit), else: 0  %>
+                    </span>
           </div>
         </div>
       </div>
