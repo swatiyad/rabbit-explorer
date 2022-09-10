@@ -144,9 +144,25 @@
               <span class="fas fa-angle-down mobile_arrow d-none d-sm-inline d-inline d-md-inline d-lg-none d-xl-none"></span>
             </a>
               <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
-              <a class="dropdown-item" href="#">Coming Soon</a>
-              <a class="dropdown-item" href="#">Coming Soon</a>
-              <a class="dropdown-item" href="#">Coming Soon</a>
+                <a class="dropdown-item header division">APIs</a>
+
+                <%= link(
+                      gettext("GraphQL"),
+                      class: "dropdown-item #{tab_status("graphiql", @conn.request_path)}",
+                      to: api_url() <> "/graphiql"
+                    ) %>
+
+                <%= link(
+                    gettext("RPC"),
+                    class: "dropdown-item #{tab_status("api-docs", @conn.request_path)}",
+                    to: api_url() <> api_docs_path(@conn, :index)
+                  ) %>
+
+                <%= link(
+                    gettext("Eth RPC"),
+                    class: "dropdown-item #{tab_status("eth-rpc-api-docs", @conn.request_path)}",
+                    to: api_url() <> api_docs_path(@conn, :eth_rpc)
+                  ) %>
             </div>
           </li>
         <% end %>

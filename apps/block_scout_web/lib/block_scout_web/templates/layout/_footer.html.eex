@@ -20,47 +20,18 @@
               </ul>
             </div>
             <% main_nets = main_nets(other_networks()) %>
-
-            <%= unless Enum.empty?(main_nets) do %>
-              <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
-                <h2><%= gettext("Developers") %></h2>
-                <ul>
-                  <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Github") %></a></li>
-                  <li><a href="https://xide.work" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Xide Work") %></a></li>
-                  <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Documentation") %></a></li>
-                  <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Developer Hub") %></a></li>
-                  <%= if Application.get_env(:block_scout_web, BlockScoutWeb.ApiRouter)[:reading_enabled] || Application.get_env(:block_scout_web, :api_url) do %>
-
-                </ul>
-
-                 <h2> APIs</h2>
+              <%= unless Enum.empty?(main_nets) do %>
+                <div class="col-xs-12 col-md-4 col-lg-<%= col_size %> footer-list">
+                  <h2><%= gettext("Developers") %></h2>
                   <ul>
-                  <li>
-                  <%= link(
-                        gettext("GraphQL"),
-                        class: "footer-link text-white #{tab_status("graphiql", @conn.request_path)}",
-                        to: api_url() <> "/graphiql"
-                      ) %>
-                  </li>
-                  <li>
-                      <%= link(
-                        gettext("RPC"),
-                        class: "footer-link text-white #{tab_status("api-docs", @conn.request_path)}",
-                        to: api_url() <> api_docs_path(@conn, :index)
-                      ) %>
-                  </li>
-                  <li>
-                   <%= link(
-                          gettext("Eth RPC"),
-                          class: "footer-link text-white #{tab_status("eth-rpc-api-docs", @conn.request_path)}",
-                          to: api_url() <> api_docs_path(@conn, :eth_rpc)
-                        ) %>
-                  </li>
-
-                <% end %>
-
-                </ul>
-              </div>
+                    <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Github") %></a></li>
+                    <li><a href="https://xide.work" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Xide Work") %></a></li>
+                    <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Documentation") %></a></li>
+                    <li><a href="<%= issue_link(@conn) %>" rel="noreferrer" class="footer-link text-white text-white" target="_blank"><%= gettext("Developer Hub") %></a></li>
+                    <%= if Application.get_env(:block_scout_web, BlockScoutWeb.ApiRouter)[:reading_enabled] || Application.get_env(:block_scout_web, :api_url) do %>
+                  </ul>
+                </div>
+              <% end %>
             <% end %>
 
             <% test_nets = test_nets(other_networks()) %>
