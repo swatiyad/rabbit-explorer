@@ -22,7 +22,7 @@
 	</div>
 
   <div class="card">
-    <div class="card-body" data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls>
+    <div class="card-body p-0" data-async-load data-async-listing="<%= @current_path %>" data-no-self-calls>
     <div class="">
       <div class="stakes-table-container table-responsive table-hover">
 			<table class="table">
