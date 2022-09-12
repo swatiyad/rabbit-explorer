@@ -231,11 +231,14 @@
         </div>
       <% end %>
       <%= render BlockScoutWeb.LayoutView, "_topnav.html", assigns %>
-      <div class="container">
-        <div class="row my-3">
-        <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-show"] %>
-        <%= render BlockScoutWeb.LayoutView, "_currency_cards.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide"] %>
-        <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
+      <div class="container-fluid search-backdrop bg-green pt-5 mb-4 pb-5">
+        <div class="container">
+        <h3 class="text-white" style="font-size:21px">Rabbit Network Explorer</h3>
+          <div class="row">
+          <%= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-show"] %>
+          <%= render BlockScoutWeb.LayoutView, "_currency_cards.html", conn: @conn, id: "main-search-autocomplete", additional_classes: ["mobile-search-hide"] %>
+          <%#= render BlockScoutWeb.LayoutView, "_search.html", conn: @conn, id: "main-search-autocomplete-mobile", additional_classes: ["mobile-search-show"] %>
+          </div>
         </div>
       </div>
 

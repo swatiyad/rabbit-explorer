@@ -2,7 +2,7 @@
 <% apps_menu = Application.get_env(:block_scout_web, :apps_menu) %>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4/web3.min.js" integrity="sha512-oMd9Re3VgJcXuZJn9DN6X7S7JUc7xLYZ2UyZ85Mm/xzaW3lwBr4fV2zjuu/n5jY/Of/2JOx35CTa6zvQNxb31Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-<nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom bg-light shadow py-0" data-selector="navbar" id="top-navbar">
+<nav class="navbar navbar-dark navbar-expand-lg navbar-primary border-bottom bg-light shadow-sm py-0" data-selector="navbar" id="top-navbar">
   <div class="container-fluid navbar-container">
     <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
       <%= if logo() do %>

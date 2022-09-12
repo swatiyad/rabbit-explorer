@@ -233,8 +233,8 @@ a.card-tab:focus{
 
 .tile_card {
   padding:4px;
-  -webkit-box-shadow: 2px 1px 5px #ddd ;
-  box-shadow: 2px 1px 5px #ddd;
+  // -webkit-box-shadow: 2px 1px 5px #ddd ;
+  // box-shadow: 2px 1px 5px #ddd;
   border: 1px solid #d0d0d0 !important;
 }
 .tile_card:hover{
@@ -612,6 +612,13 @@ td.stakes-td {
   padding: 0 .25rem;
 }
 
+.bg-green {
+  background-color: #02c675!important;
+}
+
+.mt-n60 {
+  margin-top: -60px;
+ }
 
 @media only screen and (max-width: 600px) {
 .deep-shadow{

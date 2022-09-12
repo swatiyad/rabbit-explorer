@@ -50,7 +50,6 @@
   top:40%;
 }
 
-
 @media screen and (min-device-width: 290px) and (max-device-width: 1024px) {
   .block-bg-animate-wrap {
   width: 100%!important;
@@ -58,7 +57,6 @@
 }
 
 @media screen and (min-device-width: 290px) and (max-device-width: 991px) {
-
 .block-cards {
   width:290px;
   margin-right:15px;
@@ -71,9 +69,8 @@
 }
 
 </style>
-<div class="container pt-2">
-
-  <div class="card border shadow rounded mb-3">
+<div class="container pt-2 mt-n60">
+  <div class="card border shadow-sm rounded mb-3">
     <div class="card-body py-3">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm1">
@@ -84,7 +81,7 @@
                  Analog Price
                 </span>
                 <span class="dashboard-banner-network-stats-value fs-14 text-truncate width160">
-               $1,474.30 @ 0.06687 BTC (+8.81%)
+                 $0,00,000 @ 0.00000 BTC (+8.81%)
                 </span>
               </div>
 
@@ -96,7 +93,7 @@
                 Global Market Cap
               </span>
               <span class="dashboard-banner-network-stats-value">
-             112,25 USD
+             000,00 USD
               </span>
 
             </div>
@@ -158,7 +155,7 @@
           </div>
 
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
-            <img class="mr-3 media_icon" src="images/adhar-front.svg" width="50" height="40" style="width:50px;">
+            <img class="mr-3 media_icon" src="images/block-bg-slider.svg" width="50" height="40" style="width:50px;">
             <div class="media-body">
               <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
                  <%= gettext "Total blocks" %>
@@ -221,10 +218,12 @@
   </div>
 </div>
 
-<div class="advertisement_placement mx-auto">
+<div class="advertisement_placement mx-auto py-1">
   <img class="img-responsive" width= "728" height="90" src="images/rabbit-testnet-728x90.gif"/>
+  <%#= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
 </div>
-<section class="container px-0" >
+
+<section class="container">
   <div class="d-flex justify-content-between">
     <h1 class="pt-1"><%= gettext "Blocks" %></h1>
     <%= link(gettext(" More"), to: blocks_path(BlockScoutWeb.Endpoint, :index), class: "btn-more") %>
@@ -291,15 +290,10 @@
                 </div>
               </div>
             </div>
-            </div>
+          </div>
       </div>
     </div>
   </div>
-
-
-
-
-  <%= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
 
 <div class="d-flex justify-content-between">
   <h1 class="pt-1"><%= gettext "Transactions" %></h1>

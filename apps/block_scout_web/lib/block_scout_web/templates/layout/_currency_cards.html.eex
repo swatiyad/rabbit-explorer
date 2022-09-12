@@ -5,7 +5,7 @@
   <div class="row currency_tile mx-0">
     <div class="w-25">
      <a class="text-dark" href="/token/0x2f5d41CbA7aaE91F1bA8fb7D23F1493bD25460c2/token-transfers">
-        <div class="media card-border rounded px-2 py-1 white-bg shadow-sm">
+        <div class="media card-border rounded px-2 py-1 white-bg">
           <div class="media-left icon_img">
             <img src="/images/inrx.png" width="20" height="20"/>
           </div>
@@ -19,7 +19,7 @@
 
     <div class="w-25">
      <a class="text-dark" href="/token/0x4A96d86e49F7E64C0FC6EA4a442FCA3971ab9ba1/token-transfers">
-     <div class="media card-border rounded px-2 py-1 white-bg shadow-sm">
+     <div class="media card-border rounded px-2 py-1 white-bg">
           <div class="media-left icon_img">
             <img src="/images/tether.png" width="20" height="20"/>
           </div>
@@ -33,7 +33,7 @@
     </div>
     <div class="w-25">
      <a class="text-dark" href="/token/0x910439b4855c3F45624cA2154778F13Ff2D3243E/token-transfers">
-     <div class="media card-border rounded px-2 py-1 white-bg shadow-sm">
+     <div class="media card-border rounded px-2 py-1 white-bg">
           <div class="media-left icon_img">
             <img src="/images/calculas.png" width="20" height="20"/>
           </div>
@@ -47,7 +47,7 @@
     </div>
     <div class="w-25">
      <a class="text-dark" href="#">
-     <div class="media card-border rounded px-2 py-1 white-bg shadow-sm">
+     <div class="media card-border rounded px-2 py-1 white-bg">
           <div class="media-left icon_img">
             <img src="/images/pepper.png" width="20" height="20"/>
           </div>
@@ -74,7 +74,7 @@
 <div class="col-sm-12 col-md-12 col-lg-6 d-none d-md-inline d-lg-inline d-xl-inline">
   <div class="row currency_tile">
     <div class="col-lg-3 col-sm-3 col-md-3 sm_padding">
-        <div class="tile_card white-bg border rounded shadow">
+        <div class="tile_card white-bg border rounded">
           <div class="d-flex">
             <div class="tile_left media-img">
               <img src="/images/inrx.png" width="20" height="20"/>
@@ -96,7 +96,7 @@
         </div>
     </div>
     <div class=" col-lg-3 col-sm-3 col-md-3 sm_padding">
-      <div class=" tile_card white-bg border rounded shadow">
+      <div class=" tile_card white-bg border rounded">
         <div class="d-flex">
           <div class="tile_left media-img">
             <img src="/images/tether.png" width="20" height="20"/>
@@ -118,7 +118,7 @@
       </div>
     </div>
     <div class="col-lg-3 col-sm-3 col-md-3 sm_padding">
-      <div class="tile_card white-bg border rounded shadow border rounded shadow">
+      <div class="tile_card white-bg border rounded">
         <div class="d-flex">
           <div class="tile_left media-img">
             <img src="/images/calculas.png" width="20" height="20"/>
@@ -140,7 +140,7 @@
       </div>
     </div>
      <div class="col-lg-3 col-sm-3 col-md-3 sm_padding">
-      <div class="tile_card border rounded white-bg shadow">
+      <div class="tile_card border rounded white-bg">
         <div class="d-flex">
           <div class="tile_left media-img">
             <img src="/images/pepper.png" width="20" height="20"/>
