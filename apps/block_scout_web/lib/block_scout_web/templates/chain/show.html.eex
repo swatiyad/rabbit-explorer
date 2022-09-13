@@ -219,7 +219,7 @@
 </div>
 
 <div class="advertisement_placement mx-auto py-1">
-  <img class="img-responsive" width= "728" height="90" src="images/rabbit-testnet-728x90.gif"/>
+  <img class="img-responsive" width= "728" height="90" src="images/announcement.gif"/>
   <%#= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
 </div>
 
