@@ -2,13 +2,16 @@
 <style>
 input::placeholder {
     color: #888889!important;
+	font-size:0.9rem!important;
   }
 input:-moz-placeholder {
     color: #888889;
+	font-size:0.9rem!important;
   }
 
 input::-moz-placeholder {
     color: #888889;
+	font-size:0.9rem!important;
   }
 
 input.nosubmit {
@@ -22,7 +25,7 @@ input.nosubmit {
 	<div class="search-form d-lg-flex d-inline-block w-100 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>">
 		<div class="input-group" title='<%= gettext("Search by Address / Token / Name / Txn Hash / Block") %>'>
 			<div class="form-control form-control-lg search-control me auto px-0 <%= if assigns[:additional_classes] do @additional_classes |> Enum.join(" ") end %>" style="border-color:#71D492">
-				<span style="position: absolute; padding-left: 10px; z-index: 1; top: 12px;"><i class="fa fa-search"></i></span>
+				<span style="position: absolute; padding-left: 10px; z-index: 1; top: 10px;"><i class="fa fa-search"></i></span>
 				<input
 					id="<%= @id %>"
 					class="main-search-autocomplete nosubmit"

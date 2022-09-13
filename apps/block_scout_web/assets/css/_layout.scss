@@ -1,7 +1,6 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
-.dashboard-banner-network-stats-label {
-  color: #888888!important;
+.dashboard-banner-network-stats-label {  
   font-size: 12.25px;
 }
 
@@ -246,7 +245,7 @@ a.card-tab:focus{
   padding:4px;
   // -webkit-box-shadow: 2px 1px 5px #ddd ;
   // box-shadow: 2px 1px 5px #ddd;
-  border: 1px solid #d0d0d0 !important;
+  //border: 1px solid #d0d0d0 !important;
 }
 .tile_card:hover{
   background:#e9ffee;
@@ -343,7 +342,7 @@ a.card-tab:focus{
   filter: brightness(0) invert(1)
 }
 .dark-theme-applied .currency_tile .white-bg {
-  background-color: #363636;
+  background-color: #242424;
 }
 .font16 {
   font-size: 16px;
@@ -614,6 +613,10 @@ dl:last-child {
 .table thead th {
   vertical-align: baseline!important;
   border-bottom: none!important;
+  color: #6c757e;
+}
+.dark-theme-applied .table thead th {
+  color: #fff;
 }
 .table td,
 td.stakes-td {
@@ -624,27 +627,29 @@ td.stakes-td {
   padding: 0 .25rem;
 }
 
-.bg-green {
-  background-color: #02c675;
+.search-backdrop {
+  background: #02c675;
+  padding: 50px 0 40px;
 }
-.dark-theme-applied .bg-green {
+
+
+.dark-theme-applied .search-backdrop  {
   background-color: #313131!important;
 }
 
-.mt-n60 {
-  margin-top: -60px;
+.mt-n40 {
+  margin-top: -40px;
  }
 
  .footer-overlay {
-    background-image: url(https://demo.moxcreative.com/cryptokit/wp-content/uploads/sites/37/2021/05/global_map.png);
+    background-image: url(/images/global_map.png);
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center center;
     filter: brightness( 205% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
  }
 
- .dark-theme-applied .footer-overlay {
-  
+ .dark-theme-applied .footer-overlay {  
     filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
  }
  
@@ -926,7 +931,10 @@ ul.side_nav {
 
 @media only screen and (min-device-width: 240px) and (max-device-width: 767px) {
 
- 
+  .search-backdrop {
+    padding: 20px 0 35px;
+  }
+  
   .dark-theme-applied .currency_tile .icon_img  {
     filter: brightness(0) invert(1)
   }

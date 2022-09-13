@@ -14,7 +14,7 @@
         %>
       </div>
 
-      <div class="card-body" data-async-load data-async-listing="<%= @current_path %>" id="txs">
+      <div class="card-body overflow-auto" data-async-load data-async-listing="<%= @current_path %>" id="txs">
 
       <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
 

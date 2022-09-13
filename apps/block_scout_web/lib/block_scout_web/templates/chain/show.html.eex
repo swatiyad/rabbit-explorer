@@ -69,9 +69,9 @@
 }
 
 </style>
-<div class="container pt-2 mt-n60">
+<div class="container pt-2 mt-n40">
   <div class="card border shadow-sm rounded mb-3">
-    <div class="card-body py-3">
+    <div class="card-body py-4">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 border-right-sm1">
           <div class="media border-bottom mb-4 pb-4">
@@ -178,17 +178,18 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-4">
-          <div class='mt-n5' data-page="chain-details">
+          <div style='margin-top:-30px' data-page="chain-details">
             <div class="">
               <div class="dashboard-banner">
                 <!-- Graph and legend -->
 
                 <!-- Graph -->
                   <div class="dashboard-banner-chart">
+                  <p class="gray-text">Analog Transaction History last 28 days</p>
                     <button data-chart-error-message class="alert alert-danger col-12 text-left mt-5" style="display: none;">
                       <span><%= gettext("There was a problem loading the chart.") %></span>
                     </button>
-                    <canvas data-chart="historyChart"
+                    <canvas style="margin-top:-35px" data-chart="historyChart"
                             data-history_chart_paths=
                             '{<%= for {{key, value}, x} <- Enum.with_index(@chart_data_paths) do %>
                                   "<%= key %>":"<%= value %>"
@@ -218,7 +219,7 @@
   </div>
 </div>
 
-<div class="advertisement_placement mx-auto py-1">
+<div class="advertisement_placement mx-auto py-1 px-3">
   <img class="img-responsive" width= "728" height="90" src="images/announcement.gif"/>
   <%#= render BlockScoutWeb.Advertisement.BannersAdView, "_banner_728.html", conn: @conn %>
 </div>
