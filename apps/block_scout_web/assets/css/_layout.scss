@@ -1,5 +1,11 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
+.dashboard-banner-network-stats-label {
+  color: #888888!important;
+  font-size: 12.25px;
+}
+
+
 ul.social-list {
   list-style: none;
   padding-left: 0;
@@ -231,6 +237,11 @@ a.card-tab:focus{
   border-radius: 3px;
 }
 
+.gray-text {
+  color: #7b7f84;
+  
+}
+
 .tile_card {
   padding:4px;
   // -webkit-box-shadow: 2px 1px 5px #ddd ;
@@ -257,7 +268,8 @@ a.card-tab:focus{
     margin: 0;
 }
 .currency_tile h5 {
-  font-size: 12px;  
+  font-size: 12px;
+  font-weight: 200;  
 }
 .currency_tile .sub-text {font-size:11px}
 .currency_tile .tile_left img,
@@ -613,12 +625,29 @@ td.stakes-td {
 }
 
 .bg-green {
-  background-color: #02c675!important;
+  background-color: #02c675;
+}
+.dark-theme-applied .bg-green {
+  background-color: #313131!important;
 }
 
 .mt-n60 {
   margin-top: -60px;
  }
+
+ .footer-overlay {
+    background-image: url(https://demo.moxcreative.com/cryptokit/wp-content/uploads/sites/37/2021/05/global_map.png);
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center center;
+    filter: brightness( 205% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+ }
+
+ .dark-theme-applied .footer-overlay {
+  
+    filter: brightness( 100% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );
+ }
+ 
 
 @media only screen and (max-width: 600px) {
 .deep-shadow{

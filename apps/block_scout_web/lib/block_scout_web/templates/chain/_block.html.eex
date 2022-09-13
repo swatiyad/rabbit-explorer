@@ -8,7 +8,7 @@
       <div class="d-flex justify-content-between">
         <%= link(
               @block,
-              class: "text-success font-weight-bold font18",
+              class: "text-success font18",
               to: block_path(BlockScoutWeb.Endpoint, :show, @block),
               "data-selector": "block-number"
             ) %>
@@ -16,12 +16,12 @@
       </div>
       <div class="tileee tile-bottom-contents mb-0 border-top">
         <div class="tile-transactions d-flex justify-content-between align-items-center mb-3">
-          <div class="font-weight-bold">
+          <div class="gray-text">
             <%= gettext("Txns %{count} ", count: Enum.count(@block.transactions)) %>
           </div>
           <%# <%= if BlockScoutWeb.BlockView.show_reward?(@block.rewards) do %>
             <div class="">
-              <span class="font-weight-bold"><%= gettext "Reward" %></span>
+              <span class="gray-text"><%= gettext "Reward" %></span>
               <span><%= BlockScoutWeb.BlockView.combined_rewards_value(@block) %></span>
             </div>
         <%# <% end %>
@@ -29,7 +29,7 @@
         <div class="d-flex justify-content-between align-items-center">
           <%= if System.get_env("HIDE_BLOCK_MINER") !== "true" do %>
             <div class="text-truncate width110">
-              <span class="font-weight-bold"><%= gettext "Miner" %></span>
+              <span class="gray-text"><%= gettext "Miner" %></span>
               <%= render BlockScoutWeb.AddressView,
                 "_link.html",
                 address: @block.miner,
@@ -39,7 +39,7 @@
             </div>
           <% end %>
           <div class="">
-            <span class="font-weight-bold"><%= gettext "Txn Fee" %></span>
+            <span class="gray-text"><%= gettext "Txn Fee" %></span>
               <span>
             <%= format_wei_value(%Wei{value: priority_fee}, :ether) %>
                     <%# <% gas = if Decimal.cmp(@block.gas_limit, 0) == :gt, do: Decimal.to_integer(@block.gas_used) / Decimal.to_integer(@block.gas_limit), else: 0  %>

@@ -1,17 +1,13 @@
 <style>
  .footer {
-    background-image: url(/images/globe_polygon.png)!important;
+    background-image: url(/images/globe_polygon.png);
     background-repeat:no-repeat;
     background-size:contain;
     background-position:bottom right;
     }
 </style>
 <footer class="footer pb-0">
-  <div style="background-image: url(https://demo.moxcreative.com/cryptokit/wp-content/uploads/sites/37/2021/05/global_map.png);
-      background-repeat:no-repeat;
-      background-size:contain;
-      background-position:center center;
-      filter: brightness( 205% ) contrast( 100% ) saturate( 100% ) blur( 0px ) hue-rotate( 0deg );">
+  <div class="footer-overlay">
     <div class="container">
           <!-- Logo -->
       <% other_explorers = other_explorers() %>

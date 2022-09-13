@@ -77,7 +77,7 @@
           <div class="media border-bottom mb-4 pb-4">
               <img class="mr-3 media_icon" src="images/analog_icon.svg" width="50" height="40"  style="width:50px;">
               <div class="media-body">
-                <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
+                <span class="dashboard-banner-network-stats-label text-uppercase">
                  Analog Price
                 </span>
                 <span class="dashboard-banner-network-stats-value fs-14 text-truncate width160">
@@ -89,7 +89,7 @@
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
             <img class="mr-3 media_icon" src="images/market-cap.svg" width="50" height="40" style="width:50px;">
             <div class="media-body" >
-              <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
+              <span class="dashboard-banner-network-stats-label text-uppercase">
                 Global Market Cap
               </span>
               <span class="dashboard-banner-network-stats-value">
@@ -103,7 +103,7 @@
           <div class="media border-bottom mb-4 pb-4">
           <img class="mr-3 media_icon" src="images/transaction.svg" width="50" height="42"  style="width:50px;height: 42px;">
             <div class="media-body" >
-              <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
+              <span class="dashboard-banner-network-stats-label text-uppercase">
                Transaction
               </span>
               <span class="dashboard-banner-network-stats-value" data-selector="transaction-count">
@@ -157,7 +157,7 @@
           <div class="media mb-lg-0 mb-md-4 pb-md-4 pb-lg-0 pb-sm mb-sm border-bottm-sm">
             <img class="mr-3 media_icon" src="images/block-bg-slider.svg" width="50" height="40" style="width:50px;">
             <div class="media-body">
-              <span class="dashboard-banner-network-stats-label font-weight-bold text-uppercase">
+              <span class="dashboard-banner-network-stats-label text-uppercase">
                  <%= gettext "Total blocks" %>
               </span>
               <span class="dashboard-banner-network-stats-value d-inline" data-selector="block-count">
