@@ -7262,7 +7262,7 @@ defmodule Explorer.Chain do
 
     if chain_name do
       try_url =
-        "https://raw.githubusercontent.com/amankumarp/papperwallet-assets/new-token/asset/blockchain/#{chain_name}/#{address_hash}/logo.png"
+        "https://raw.githubusercontent.com/analogchain/explorer/main/assets/blockchain/#{chain_name}/#{address_hash}/logo.png"
 
       try_url
     else

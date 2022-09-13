@@ -15,7 +15,7 @@ function getTokenIconUrl (chainID, addressHash) {
       break
   }
   if (chainName) {
-    return `https://raw.githubusercontent.com/amankumarp/papperwallet-assets/new-token/asset/blockchain/${chainName}/${addressHash}/logo.png`
+    return `https://raw.githubusercontent.com/analogchain/explorer/main/assets/blockchain/rabbit/${chainName}/${addressHash}/logo.png`
   } else {
     return null
   }
