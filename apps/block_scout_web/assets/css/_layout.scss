@@ -1,10 +1,5 @@
 @import '~@tarekraafat/autocomplete.js/dist/css/autoComplete.01.css';
 
-.dashboard-banner-network-stats-label {  
-  font-size: 12.25px;
-}
-
-
 ul.social-list {
   list-style: none;
   padding-left: 0;
@@ -627,22 +622,35 @@ td.stakes-td {
   padding: 0 .25rem;
 }
 
-.search-backdrop {
-  background: #02c675;
-  padding: 50px 0 40px;
+// .search-backdrop {
+//   background: #02c675;
+//   padding: 50px 0 40px;
+// }
+
+.bg-green {
+  background-color: #02c675;
 }
 
 
-.dark-theme-applied .search-backdrop  {
+.dark-theme-applied .bg-green  {
   background-color: #313131!important;
 }
+
+// .dark-theme-applied .search-backdrop  {
+//   background-color: #313131!important;
+// }
 
 .mt-n40 {
   margin-top: -40px;
  }
 
+ .dashboard-banner-network-stats-label {  
+  font-size: 12.25px;
+}
+
+
  .footer-overlay {
-    background-image: url(/images/global_map.png);
+    background-image: url(https://demo.moxcreative.com/cryptokit/wp-content/uploads/sites/37/2021/05/global_map.png);
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center center;
