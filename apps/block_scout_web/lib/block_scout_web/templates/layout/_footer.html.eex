@@ -98,13 +98,13 @@
       <div class="col-md-6 col-4">
         <%# <span><i class="fas fa-copyright"></i>  copyright Rabbit Testnet - Analog Blockchain Explorer</span> %>
         <div class="footer-social-icons">
-            <a href="https://github.com/blockscout/blockscout" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
+            <a href="https://github.com/deochain" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Github") %>'>
               <div class="footer-social-icon-container fontawesome-icon github"></div>
             </a>
-            <a href="https://www.twitter.com/blockscoutcom/" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Twitter") %>'>
+            <a href="https://twitter.com/deo_foundation" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Twitter") %>'>
               <div class="footer-social-icon-container fontawesome-icon twitter"></div>
             </a>
-            <a href="https://t.me/poa_network" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
+            <a href="https://t.me/deofoundation" rel="noreferrer" target="_blank" class="footer-social-icon" title='<%= gettext("Telegram") %>'>
               <div class="footer-social-icon-container fontawesome-icon telegram"></div>
             </a>
         </div>
